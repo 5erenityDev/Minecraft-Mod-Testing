@@ -1,8 +1,10 @@
 package com.test.testmod.serenity.item;
 
 import com.test.testmod.TestMod;
+import com.test.testmod.serenity.item.custom.MaceItem;
 import com.test.testmod.serenity.item.custom.TeleportStaffItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.SwordItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -26,5 +28,10 @@ public class ModItems {
     public static final RegistryObject<Item> TELEPORT_STAFF = SERENITY_ITEMS.register(
             "teleport_staff",
             () -> new TeleportStaffItem(new Item.Properties().durability(100))
+    );
+
+    public static final RegistryObject<Item> MACE = SERENITY_ITEMS.register(
+            "mace",
+            () -> new MaceItem(new Item.Properties().durability(100))
     );
 }

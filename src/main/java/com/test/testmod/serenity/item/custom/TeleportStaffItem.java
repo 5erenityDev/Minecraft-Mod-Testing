@@ -18,6 +18,7 @@ public class TeleportStaffItem extends Item {
         super(pProperties);
     }
 
+
     @Override
     public InteractionResult useOn(UseOnContext pContext) {
         if(!pContext.getLevel().isClientSide()){

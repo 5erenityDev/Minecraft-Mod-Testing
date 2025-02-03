@@ -30,6 +30,7 @@ public class ModCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModBlocks.SPEED_BLOCK.get());
                         output.accept(ModItems.TELEPORT_STAFF.get());
+                        output.accept(ModItems.MACE.get());
                         output.accept(ModItems.CHUCKSTER_FRUIT.get());
                     }).build()
     );
