@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "testmod:chuckster_fruit"
+    }
+  },
+  "result": {
+    "item": "testmod:speed_block"
+  }
+}
