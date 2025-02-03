@@ -25,7 +25,7 @@ public class ModCreativeModeTabs {
     // Creates Tabs
     public static final RegistryObject<CreativeModeTab> SERENITY_TAB = CREATIVE_MODE_TABS.register(
             "serenity_tab",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.TELEPORT_STAFF.get()))
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.TELEPORT_STAFF.get()))
                     .title(Component.translatable("creativetab.serenity_tab"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModBlocks.SPEED_BLOCK.get());
