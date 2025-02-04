@@ -3,10 +3,12 @@ package com.test.testmod.neighbor.block;
 import com.test.testmod.TestMod;
 import com.test.testmod.neighbor.block.custom.TomblerBlock;
 import com.test.testmod.neighbor.item.ModItems;
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -50,8 +52,13 @@ public class ModBlocks {
             ("garugamesh", () -> new Block(BlockBehaviour.Properties.copy(Blocks.BEDROCK).sound(SoundType.AMETHYST)
             ));
     public static final RegistryObject<Block> SLIMPO = registerBlock
-            ("slimpo", () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIRT).sound(SoundType.CHAIN)
-                    .requiresCorrectToolForDrops()
-                    .strength(3, 1)
+            ("slimpo", () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.STONE)
+                    .sound(SoundType.NETHERRACK)
+                    .strength(1f).requiresCorrectToolForDrops(), UniformInt.of(2, 3)
+            ));
+    public static final RegistryObject<Block> SLIMPO_NETHERRACK = registerBlock
+            ("slimpo_netherrack", () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.STONE)
+                    .sound(SoundType.NETHERRACK)
+                    .strength(0.8f).requiresCorrectToolForDrops(), UniformInt.of(1, 4)
             ));
 }

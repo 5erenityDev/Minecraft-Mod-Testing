@@ -32,6 +32,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.TOMBLER.get());
                         output.accept(ModBlocks.GARUGAMESH.get());
                         output.accept(ModBlocks.SLIMPO.get());
+                        output.accept(ModBlocks.SLIMPO_NETHERRACK.get());
                         output.accept(ModItems.SLOP.get());
                         output.accept(ModItems.GROBBLER.get());
                         output.accept(ModItems.THE_SLORBO.get());

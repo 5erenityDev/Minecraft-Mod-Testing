@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "ore",
+  "cookingtime": 50,
+  "experience": 100,
+  "group": "wingle",
+  "ingredient": {
+    "item": "testmod:wingle"
+  },
+  "result": "testmod:the_slorbo"
+}
