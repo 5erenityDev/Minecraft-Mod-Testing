@@ -8,8 +8,8 @@ public class ModFoods {
     public static final FoodProperties SLOP = new FoodProperties.Builder()
             .nutrition(1)
             .saturationMod(0.1f)
-            .effect(() -> new MobEffectInstance(MobEffects.BAD_OMEN, 200, 50), 1f)
-            .effect(() -> new MobEffectInstance(MobEffects.HUNGER, 200, 50), 1f)
+            .effect(() -> new MobEffectInstance(MobEffects.BAD_OMEN, 200, 1), 1f)
+            .effect(() -> new MobEffectInstance(MobEffects.HUNGER, 200, 1), 1f)
             .build();
 
 }

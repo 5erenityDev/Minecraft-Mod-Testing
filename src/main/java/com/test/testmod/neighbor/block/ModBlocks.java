@@ -45,6 +45,13 @@ public class ModBlocks {
                     .sound(SoundType.COPPER)
                     .strength(1f)
                     .requiresCorrectToolForDrops()
-            )
-    );
+            ));
+    public static final RegistryObject<Block> GARUGAMESH = registerBlock
+            ("garugamesh", () -> new Block(BlockBehaviour.Properties.copy(Blocks.BEDROCK).sound(SoundType.AMETHYST)
+            ));
+    public static final RegistryObject<Block> SLIMPO = registerBlock
+            ("slimpo", () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIRT).sound(SoundType.CHAIN)
+                    .requiresCorrectToolForDrops()
+                    .strength(3, 1)
+            ));
 }

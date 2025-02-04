@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "testmod:garugamesh"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "testmod:the_slorbo"
+  }
+}
