@@ -1,10 +1,15 @@
 package com.test.testmod.neighbor.item.custom;
-
 import net.minecraft.network.chat.Component;
-import net.minecraft.world.InteractionResult;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.sounds.SoundSource;
+import net.minecraft.world.InteractionHand;
+import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.context.UseOnContext;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.Level;
+
+
 
 public class GrobblerItem extends Item {
     //I believe this to be the constructor, correct me if im wrong
@@ -12,16 +17,17 @@ public class GrobblerItem extends Item {
         super(pProperties);
     }
 
-    @Override
-    public InteractionResult useOn(UseOnContext pContext) {
-        if (!pContext.getLevel().isClientSide()) {
-            Player player = pContext.getPlayer();
-            if (player != null){
-                player.sendSystemMessage(Component.literal(player.getEnderChestInventory().toString()));
-            }
-        }
-        pContext.getItemInHand().hurtAndBreak(2, pContext.getPlayer(), player -> player.broadcastBreakEvent(player.getUsedItemHand()));
-        return InteractionResult.SUCCESS;
-    }
 
+    @Override
+    public InteractionResultHolder<ItemStack> use(Level pLevel, Player pPlayer, InteractionHand pUsedHand) {
+        ItemStack itemstack = pPlayer.getItemInHand(pUsedHand);
+        if(!pLevel.isClientSide) {
+            if (pPlayer != null) {
+                pPlayer.sendSystemMessage(Component.literal(pPlayer.getEnderChestInventory().toString()));
+                pLevel.playSound((Player) null, pPlayer.getX(), pPlayer.getY(), pPlayer.getZ(), SoundEvents.ENDERMAN_TELEPORT, SoundSource.NEUTRAL, 1F, 1F);
+            }
+            pPlayer.getItemInHand(pUsedHand).hurtAndBreak(2, pPlayer, player -> player.broadcastBreakEvent(player.getUsedItemHand()));
+        }
+        return InteractionResultHolder.success(itemstack);
+    }
 }
