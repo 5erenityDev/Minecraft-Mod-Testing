@@ -10,8 +10,10 @@
   "item.testmod.the_slorbo": "The Slorbo",
   "item.testmod.grobbler": "Grobbler",
   "item.testmod.wingle": "Wingle!",
+  "item.testmod.angry_slorp": "Angry Slorp",
 
-
+  "tooltip.testmod.grobbler": "Gives you the contents of your enderchest",
+  "tooltip.testmod.tombler": "Do not click them, they despise you",
 
 
   "creativetab.serenity_tab": "Serenity's Stuff",

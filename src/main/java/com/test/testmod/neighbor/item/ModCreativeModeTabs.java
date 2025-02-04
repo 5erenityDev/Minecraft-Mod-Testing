@@ -37,6 +37,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.GROBBLER.get());
                         output.accept(ModItems.THE_SLORBO.get());
                         output.accept(ModItems.WINGLE.get());
+                        output.accept(ModItems.ANGRY_SLORP.get());
                     }).build()
     );
 

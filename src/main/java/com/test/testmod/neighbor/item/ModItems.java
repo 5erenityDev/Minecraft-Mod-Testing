@@ -1,11 +1,8 @@
 package com.test.testmod.neighbor.item;
 
 import com.test.testmod.TestMod;
-import com.test.testmod.neighbor.item.ModFoods;
+import com.test.testmod.neighbor.item.custom.FuelItem;
 import com.test.testmod.neighbor.item.custom.GrobblerItem;
-import net.minecraft.world.effect.MobEffectInstance;
-import net.minecraft.world.effect.MobEffects;
-import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -31,5 +28,7 @@ public class ModItems {
             ("wingle", () -> new Item(new Item.Properties()));
     public  static final  RegistryObject<Item> GROBBLER = NEIGHBOR_ITEMS.register
             ("grobbler", () -> new GrobblerItem(new Item.Properties().defaultDurability(200)));
+    public static final RegistryObject<Item> ANGRY_SLORP = NEIGHBOR_ITEMS.register
+            ("angry_slorp", () -> new FuelItem(new Item.Properties(), 2000));
 
 }
