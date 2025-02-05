@@ -55,7 +55,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         ///////////////////////////
         /////////SERENITY//////////
         ///////////////////////////
-        //this.dropSelf(ModBlocks.SPEED_BLOCK.get());
+        //this.dropSelf(com.test.testmod.serenity.block.ModBlocks.SPEED_BLOCK.get());
 
     }
 
@@ -89,8 +89,9 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
     @Override
     protected Iterable<Block> getKnownBlocks() {
-        Collection<RegistryObject<Block>> combinedCollection = ModBlocks.NEIGHBOR_BLOCKS.getEntries();
-        combinedCollection.addAll(com.test.testmod.serenity.block.ModBlocks.SERENITY_BLOCKS.getEntries());
-        return combinedCollection.stream().map(RegistryObject::get)::iterator;
+        //Collection<RegistryObject<Block>> combinedCollection = ModBlocks.NEIGHBOR_BLOCKS.getEntries();
+        //Collection<RegistryObject<Block>> otherCollection = com.test.testmod.serenity.block.ModBlocks.SERENITY_BLOCKS.getEntries();
+        //combinedCollection.addAll(otherCollection);
+        return ModBlocks.NEIGHBOR_BLOCKS.getEntries().stream().map(RegistryObject::get)::iterator;
     }
 }
