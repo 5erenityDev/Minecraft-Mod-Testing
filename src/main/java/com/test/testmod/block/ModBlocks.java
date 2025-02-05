@@ -1,8 +1,9 @@
-package com.test.testmod.neighbor.block;
+package com.test.testmod.block;
 
 import com.test.testmod.TestMod;
 import com.test.testmod.neighbor.block.custom.TomblerBlock;
 import com.test.testmod.neighbor.item.ModItems;
+import com.test.testmod.serenity.block.custom.SpeedBlock;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
@@ -19,17 +20,17 @@ import java.util.function.Supplier;
 
 public class ModBlocks {
     // Creates Register
-    public static final DeferredRegister<Block> NEIGHBOR_BLOCKS =
+    public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, TestMod.MODID);
 
     // Puts Items on Register
     public static void register(IEventBus eventBus) {
-        NEIGHBOR_BLOCKS.register(eventBus);
+        BLOCKS.register(eventBus);
     }
 
     // Initialize Block
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
-        RegistryObject<T> toReturn = NEIGHBOR_BLOCKS.register(name, block);
+        RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);
         return toReturn;
     }
@@ -104,4 +105,17 @@ public class ModBlocks {
             ("garugamesh_trapdoor", () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK).sound(SoundType.AMETHYST).noOcclusion(),
                     BlockSetType.DARK_OAK
             ));
+
+
+    public static final RegistryObject<Block> SPEED_BLOCK = registerBlock(
+            "speed_block",
+            () -> new SpeedBlock(BlockBehaviour.Properties
+                    .copy(Blocks.DARK_PRISMARINE)
+                    .sound(SoundType.AMETHYST)
+                    .strength(0.1f)
+                    .jumpFactor(5f)
+                    .speedFactor(5f)
+                    .requiresCorrectToolForDrops()
+            )
+    );
 }

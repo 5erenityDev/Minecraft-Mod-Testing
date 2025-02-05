@@ -1,6 +1,6 @@
 package com.test.testmod.datagen.loot;
 
-import com.test.testmod.neighbor.block.ModBlocks;
+import com.test.testmod.block.ModBlocks;
 import com.test.testmod.neighbor.item.ModItems;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
@@ -13,10 +13,8 @@ import net.minecraft.world.level.storage.loot.entries.LootPoolEntryContainer;
 import net.minecraft.world.level.storage.loot.functions.ApplyBonusCount;
 import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
 import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
-import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
 
-import java.util.Collection;
 import java.util.Set;
 
 public class ModBlockLootTables extends BlockLootSubProvider {
@@ -55,7 +53,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         ///////////////////////////
         /////////SERENITY//////////
         ///////////////////////////
-        //this.dropSelf(com.test.testmod.serenity.block.ModBlocks.SPEED_BLOCK.get());
+        this.dropSelf(ModBlocks.SPEED_BLOCK.get());
 
     }
 
@@ -92,6 +90,6 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         //Collection<RegistryObject<Block>> combinedCollection = ModBlocks.NEIGHBOR_BLOCKS.getEntries();
         //Collection<RegistryObject<Block>> otherCollection = com.test.testmod.serenity.block.ModBlocks.SERENITY_BLOCKS.getEntries();
         //combinedCollection.addAll(otherCollection);
-        return ModBlocks.NEIGHBOR_BLOCKS.getEntries().stream().map(RegistryObject::get)::iterator;
+        return ModBlocks.BLOCKS.getEntries().stream().map(RegistryObject::get)::iterator;
     }
 }

@@ -1,7 +1,7 @@
 package com.test.testmod.neighbor.item;
 
 import com.test.testmod.TestMod;
-import com.test.testmod.neighbor.block.ModBlocks;
+import com.test.testmod.block.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;

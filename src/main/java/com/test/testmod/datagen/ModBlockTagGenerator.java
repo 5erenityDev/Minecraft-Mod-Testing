@@ -1,7 +1,7 @@
 package com.test.testmod.datagen;
 
 import com.test.testmod.TestMod;
-import com.test.testmod.neighbor.block.ModBlocks;
+import com.test.testmod.block.ModBlocks;
 import com.test.testmod.neighbor.util.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;

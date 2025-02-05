@@ -38,15 +38,5 @@ public class ModBlocks {
         return ModItems.SERENITY_ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
     }
 
-    public static final RegistryObject<Block> SPEED_BLOCK = registerBlock(
-            "speed_block",
-            () -> new SpeedBlock(BlockBehaviour.Properties
-                    .copy(Blocks.DARK_PRISMARINE)
-                    .sound(SoundType.AMETHYST)
-                    .strength(0.1f)
-                    .jumpFactor(5f)
-                    .speedFactor(5f)
-                    .requiresCorrectToolForDrops()
-            )
-    );
+
 }

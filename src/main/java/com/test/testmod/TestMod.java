@@ -34,11 +34,10 @@ public class TestMod
         modEventBus.addListener(this::commonSetup);
 
         com.test.testmod.serenity.item.ModItems.register(modEventBus);
-        com.test.testmod.serenity.block.ModBlocks.register(modEventBus);
+        com.test.testmod.block.ModBlocks.register(modEventBus);
         com.test.testmod.serenity.item.ModCreativeModeTabs.register(modEventBus);
 
         com.test.testmod.neighbor.item.ModItems.register(modEventBus);
-        com.test.testmod.neighbor.block.ModBlocks.register(modEventBus);
         com.test.testmod.neighbor.item.ModCreativeModeTabs.register(modEventBus);
 
         // Register ourselves for server and other game events we are interested in

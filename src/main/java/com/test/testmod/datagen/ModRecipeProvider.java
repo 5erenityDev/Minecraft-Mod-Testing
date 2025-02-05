@@ -1,7 +1,7 @@
 package com.test.testmod.datagen;
 
 import com.test.testmod.TestMod;
-import com.test.testmod.neighbor.block.ModBlocks;
+import com.test.testmod.block.ModBlocks;
 import com.test.testmod.neighbor.item.ModItems;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
@@ -55,7 +55,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         ///////////////////////////
         /////////SERENITY//////////
         ///////////////////////////
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, com.test.testmod.serenity.block.ModBlocks.SPEED_BLOCK.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.SPEED_BLOCK.get())
                 .pattern("CCC")
                 .pattern("CCC")
                 .pattern("CCC")
@@ -64,8 +64,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .save(pWriter);
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, com.test.testmod.serenity.item.ModItems.CHUCKSTER_FRUIT.get(), 9)
-                .requires(com.test.testmod.serenity.block.ModBlocks.SPEED_BLOCK.get())
-                .unlockedBy(getHasName(com.test.testmod.serenity.block.ModBlocks.SPEED_BLOCK.get()), has(com.test.testmod.serenity.block.ModBlocks.SPEED_BLOCK.get()))
+                .requires(ModBlocks.SPEED_BLOCK.get())
+                .unlockedBy(getHasName(ModBlocks.SPEED_BLOCK.get()), has(ModBlocks.SPEED_BLOCK.get()))
                 .save(pWriter);
     }
 

@@ -1,7 +1,7 @@
 package com.test.testmod.datagen;
 
 import com.test.testmod.TestMod;
-import com.test.testmod.neighbor.block.ModBlocks;
+import com.test.testmod.block.ModBlocks;
 import net.minecraft.data.PackOutput;
 import net.minecraft.world.level.block.*;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
@@ -41,7 +41,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         ///////////////////////////
         /////////SERENITY//////////
         ///////////////////////////
-        blockWithItem(com.test.testmod.serenity.block.ModBlocks.SPEED_BLOCK);
+        blockWithItem(ModBlocks.SPEED_BLOCK);
 
     }
 
