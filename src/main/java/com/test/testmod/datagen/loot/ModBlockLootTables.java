@@ -1,4 +1,4 @@
-package com.test.testmod.neighbor.datagen.loot;
+package com.test.testmod.datagen.loot;
 
 import com.test.testmod.neighbor.block.ModBlocks;
 import com.test.testmod.neighbor.item.ModItems;
@@ -13,18 +13,22 @@ import net.minecraft.world.level.storage.loot.entries.LootPoolEntryContainer;
 import net.minecraft.world.level.storage.loot.functions.ApplyBonusCount;
 import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
 import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
+import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
 
+import java.util.Collection;
 import java.util.Set;
 
-public class Neighbor_ModBlockLootTables extends BlockLootSubProvider {
-    public Neighbor_ModBlockLootTables() {
+public class ModBlockLootTables extends BlockLootSubProvider {
+    public ModBlockLootTables() {
         super(Set.of(), FeatureFlags.REGISTRY.allFlags());
     }
 
     @Override
     protected void generate() {
-        //this.dropSelf(ModBlocks.SPEED_BLOCK.get());
+        ///////////////////////////
+        /////////NEIGHBOR//////////
+        ///////////////////////////
         this.dropSelf(ModBlocks.TOMBLER.get());
         this.dropSelf(ModBlocks.GARUGAMESH.get());
 
@@ -47,6 +51,11 @@ public class Neighbor_ModBlockLootTables extends BlockLootSubProvider {
                 block -> createSlabItemTable(ModBlocks.GARUGAMESH_SLAB.get()));
         this.add(ModBlocks.GARUGAMESH_DOOR.get(),
                 block -> createDoorTable(ModBlocks.GARUGAMESH_DOOR.get()));
+
+        ///////////////////////////
+        /////////SERENITY//////////
+        ///////////////////////////
+        //this.dropSelf(ModBlocks.SPEED_BLOCK.get());
 
     }
 
@@ -80,6 +89,8 @@ public class Neighbor_ModBlockLootTables extends BlockLootSubProvider {
 
     @Override
     protected Iterable<Block> getKnownBlocks() {
-        return ModBlocks.NEIGHBOR_BLOCKS.getEntries().stream().map(RegistryObject::get)::iterator;
+        Collection<RegistryObject<Block>> combinedCollection = ModBlocks.NEIGHBOR_BLOCKS.getEntries();
+        combinedCollection.addAll(com.test.testmod.serenity.block.ModBlocks.SERENITY_BLOCKS.getEntries());
+        return combinedCollection.stream().map(RegistryObject::get)::iterator;
     }
 }

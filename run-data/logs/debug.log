@@ -257,7 +257,7 @@
 [04Feb2025 20:41:02.018] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.config.ConfigTracker/CONFIG]: Config file testmod-common.toml for testmod tracking
 [04Feb2025 20:41:02.019] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Attempting to inject @EventBusSubscriber classes into the eventbus for testmod
 [04Feb2025 20:41:02.025] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.test.testmod.Config to MOD
-[04Feb2025 20:41:02.033] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.test.testmod.neighbor.datagen.DataGenerators to MOD
+[04Feb2025 20:41:02.033] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.test.testmod.datagen.DataGenerators to MOD
 [04Feb2025 20:41:02.037] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.test.testmod.TestMod$ClientModEvents to MOD
 [04Feb2025 20:41:02.059] [modloading-worker-0/DEBUG] [io.netty.util.internal.PlatformDependent0/]: -Dio.netty.noUnsafe: false
 [04Feb2025 20:41:02.060] [modloading-worker-0/DEBUG] [io.netty.util.internal.PlatformDependent0/]: Java version: 17

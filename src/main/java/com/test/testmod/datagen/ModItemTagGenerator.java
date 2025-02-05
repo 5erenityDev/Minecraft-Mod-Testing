@@ -1,4 +1,4 @@
-package com.test.testmod.neighbor.datagen;
+package com.test.testmod.datagen;
 
 import com.test.testmod.TestMod;
 import net.minecraft.core.HolderLookup;
@@ -10,13 +10,20 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.concurrent.CompletableFuture;
 
-public class Neighbor_ModItemTagGenerator extends ItemTagsProvider {
-    public Neighbor_ModItemTagGenerator(PackOutput p_275343_, CompletableFuture<HolderLookup.Provider> p_275729_, CompletableFuture<TagLookup<Block>> p_275322_, @Nullable ExistingFileHelper existingFileHelper) {
+public class ModItemTagGenerator extends ItemTagsProvider {
+    public ModItemTagGenerator(PackOutput p_275343_, CompletableFuture<HolderLookup.Provider> p_275729_, CompletableFuture<TagLookup<Block>> p_275322_, @Nullable ExistingFileHelper existingFileHelper) {
         super(p_275343_, p_275729_, p_275322_, TestMod.MODID, existingFileHelper);
     }
 
     @Override
     protected void addTags(HolderLookup.Provider provider) {
+        ///////////////////////////
+        /////////NEIGHBOR//////////
+        ///////////////////////////
 
+
+        ///////////////////////////
+        /////////SERENITY//////////
+        ///////////////////////////
     }
 }

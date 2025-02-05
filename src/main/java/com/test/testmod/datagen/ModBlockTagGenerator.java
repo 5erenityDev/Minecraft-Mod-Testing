@@ -1,4 +1,4 @@
-package com.test.testmod.neighbor.datagen;
+package com.test.testmod.datagen;
 
 import com.test.testmod.TestMod;
 import com.test.testmod.neighbor.block.ModBlocks;
@@ -9,19 +9,21 @@ import net.minecraft.tags.BlockTags;
 import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.data.BlockTagsProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
-import net.minecraftforge.fml.common.Mod;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.concurrent.CompletableFuture;
 
-public class Neighbor_ModBlockTagGenerator extends BlockTagsProvider {
+public class ModBlockTagGenerator extends BlockTagsProvider {
 
-    public Neighbor_ModBlockTagGenerator(PackOutput output, CompletableFuture<HolderLookup.Provider> lookupProvider, @Nullable ExistingFileHelper existingFileHelper) {
+    public ModBlockTagGenerator(PackOutput output, CompletableFuture<HolderLookup.Provider> lookupProvider, @Nullable ExistingFileHelper existingFileHelper) {
         super(output, lookupProvider, TestMod.MODID, existingFileHelper);
     }
 
     @Override
     protected void addTags(HolderLookup.Provider provider) {
+        ///////////////////////////
+        /////////NEIGHBOR//////////
+        ///////////////////////////
         this.tag(ModTags.Blocks.SLORP_REVENGE).add(ModBlocks.SLIMPO.get());
 
 
@@ -60,6 +62,12 @@ public class Neighbor_ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.GARUGAMESH_FENCE_GATE.get());
         this.tag(BlockTags.WALLS)
                 .add(ModBlocks.GARUGAMESH_WALLS.get());
+
+
+
+        ///////////////////////////
+        /////////SERENITY//////////
+        ///////////////////////////
 
     }
 }

@@ -1,4 +1,4 @@
-package com.test.testmod.neighbor.datagen;
+package com.test.testmod.datagen;
 
 import com.test.testmod.TestMod;
 import com.test.testmod.neighbor.block.ModBlocks;
@@ -8,13 +8,16 @@ import net.minecraftforge.client.model.generators.BlockStateProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.RegistryObject;
 
-public class Neighbor_ModBlockStateProvider extends BlockStateProvider {
-    public Neighbor_ModBlockStateProvider(PackOutput output, ExistingFileHelper exFileHelper) {
+public class ModBlockStateProvider extends BlockStateProvider {
+    public ModBlockStateProvider(PackOutput output, ExistingFileHelper exFileHelper) {
         super(output, TestMod.MODID, exFileHelper);
     }
 
     @Override
     protected void registerStatesAndModels() {
+        ///////////////////////////
+        /////////NEIGHBOR//////////
+        ///////////////////////////
         blockWithItem(ModBlocks.GARUGAMESH);
         blockWithItem(ModBlocks.SLIMPO);
         blockWithItem(ModBlocks.SLIMPO_NETHERRACK);
@@ -34,6 +37,12 @@ public class Neighbor_ModBlockStateProvider extends BlockStateProvider {
 
         doorBlockWithRenderType((DoorBlock) ModBlocks.GARUGAMESH_DOOR.get(), modLoc("block/garugamesh_door_bottom"), modLoc("block/garugamesh_door_top"), "cutout");
         trapdoorBlockWithRenderType(((TrapDoorBlock) ModBlocks.GARUGAMESH_TRAPDOOR.get()), modLoc("block/garugamesh_trapdoor"), true, "cutout");
+
+        ///////////////////////////
+        /////////SERENITY//////////
+        ///////////////////////////
+        blockWithItem(com.test.testmod.serenity.block.ModBlocks.SPEED_BLOCK);
+
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {

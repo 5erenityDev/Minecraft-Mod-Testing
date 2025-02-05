@@ -1,4 +1,4 @@
-package com.test.testmod.neighbor.datagen;
+package com.test.testmod.datagen;
 
 import com.test.testmod.TestMod;
 import com.test.testmod.neighbor.block.ModBlocks;
@@ -15,16 +15,19 @@ import java.util.List;
 import java.util.function.Consumer;
 
 
-public class Neighbor_ModRecipeProvider extends RecipeProvider implements IConditionBuilder {
+public class ModRecipeProvider extends RecipeProvider implements IConditionBuilder {
     private static final List<ItemLike> WINGLE_SMELTABLES = List.of(ModItems.WINGLE.get(),
             ModBlocks.SLIMPO.get(), ModBlocks.SLIMPO_NETHERRACK.get());
 
-    public Neighbor_ModRecipeProvider(PackOutput pOutput) {
+    public ModRecipeProvider(PackOutput pOutput) {
         super(pOutput);
     }
 
     @Override
     protected void buildRecipes(Consumer<FinishedRecipe> pWriter) {
+        ///////////////////////////
+        /////////NEIGHBOR//////////
+        ///////////////////////////
         oreBlasting(pWriter, WINGLE_SMELTABLES, RecipeCategory.MISC, ModItems.THE_SLORBO.get(), 1, 150, "Slorbo");
         oreSmelting(pWriter, WINGLE_SMELTABLES, RecipeCategory.MISC, ModItems.THE_SLORBO.get(), 1, 50, "Slorbo");
 
@@ -47,6 +50,22 @@ public class Neighbor_ModRecipeProvider extends RecipeProvider implements ICondi
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.WINGLE.get(), 9)
                 .requires(ModBlocks.GARUGAMESH.get())
                 .unlockedBy(getHasName(ModBlocks.GARUGAMESH.get()), has(ModBlocks.GARUGAMESH.get()))
+                .save(pWriter);
+
+        ///////////////////////////
+        /////////SERENITY//////////
+        ///////////////////////////
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, com.test.testmod.serenity.block.ModBlocks.SPEED_BLOCK.get())
+                .pattern("CCC")
+                .pattern("CCC")
+                .pattern("CCC")
+                .define('C', com.test.testmod.serenity.item.ModItems.CHUCKSTER_FRUIT.get())
+                .unlockedBy(getHasName(com.test.testmod.serenity.item.ModItems.CHUCKSTER_FRUIT.get()), has(com.test.testmod.serenity.item.ModItems.CHUCKSTER_FRUIT.get()))
+                .save(pWriter);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, com.test.testmod.serenity.item.ModItems.CHUCKSTER_FRUIT.get(), 9)
+                .requires(com.test.testmod.serenity.block.ModBlocks.SPEED_BLOCK.get())
+                .unlockedBy(getHasName(com.test.testmod.serenity.block.ModBlocks.SPEED_BLOCK.get()), has(com.test.testmod.serenity.block.ModBlocks.SPEED_BLOCK.get()))
                 .save(pWriter);
     }
 

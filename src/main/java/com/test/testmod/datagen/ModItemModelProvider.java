@@ -1,4 +1,4 @@
-package com.test.testmod.neighbor.datagen;
+package com.test.testmod.datagen;
 
 import com.test.testmod.TestMod;
 import com.test.testmod.neighbor.block.ModBlocks;
@@ -13,13 +13,16 @@ import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
-public class Neighbor_ModItemModelProvider extends ItemModelProvider {
-    public Neighbor_ModItemModelProvider(PackOutput output, ExistingFileHelper existingFileHelper) {
+public class ModItemModelProvider extends ItemModelProvider {
+    public ModItemModelProvider(PackOutput output, ExistingFileHelper existingFileHelper) {
         super(output, TestMod.MODID, existingFileHelper);
     }
 
     @Override
     protected void registerModels() {
+        ///////////////////////////
+        /////////NEIGHBOR//////////
+        ///////////////////////////
         simpleItem(ModItems.ANGRY_SLORP);
         simpleItem(ModItems.SLOP);
         simpleItem(ModItems.GROBBLER);
@@ -37,6 +40,15 @@ public class Neighbor_ModItemModelProvider extends ItemModelProvider {
         buttonInventory("garugamesh_button", modLoc("block/garugamesh"));
         wallInventory("garugamesh_walls", modLoc("block/garugamesh"));
         trapdoorBottom("garugamesh_trapdoor", modLoc("block/garugamesh_trapdoor"));
+
+
+        ///////////////////////////
+        /////////SERENITY//////////
+        ///////////////////////////
+        simpleItem(com.test.testmod.serenity.item.ModItems.CHUCKSTER_FRUIT);
+        simpleItem(com.test.testmod.serenity.item.ModItems.MACE);
+        simpleItem(com.test.testmod.serenity.item.ModItems.TELEPORT_STAFF);
+
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {
