@@ -9,6 +9,7 @@ import net.minecraft.tags.BlockTags;
 import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.data.BlockTagsProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
+import net.minecraftforge.fml.common.Mod;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.concurrent.CompletableFuture;
@@ -34,7 +35,9 @@ public class Neighbor_ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.SLIMPO.get());
 
         this.tag(BlockTags.MINEABLE_WITH_HOE)
-                .add(ModBlocks.SLORP_BLOCK.get());;
+                .add(ModBlocks.SLORP_BLOCK.get());
+
+
 
         this.tag(Tags.Blocks.NEEDS_NETHERITE_TOOL);
 
@@ -50,5 +53,13 @@ public class Neighbor_ModBlockTagGenerator extends BlockTagsProvider {
 
         this.tag(Tags.Blocks.NEEDS_WOOD_TOOL)
                 .add(ModBlocks.SLORP_BLOCK.get());
+
+        this.tag(BlockTags.FENCES)
+                .add(ModBlocks.GARUGAMESH_FENCE.get());
+        this.tag(BlockTags.FENCE_GATES)
+                .add(ModBlocks.GARUGAMESH_FENCE_GATE.get());
+        this.tag(BlockTags.WALLS)
+                .add(ModBlocks.GARUGAMESH_WALLS.get());
+
     }
 }

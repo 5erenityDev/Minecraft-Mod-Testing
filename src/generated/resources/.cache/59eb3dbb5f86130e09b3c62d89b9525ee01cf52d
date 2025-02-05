@@ -1,5 +1,14 @@
-// 1.20.1	2025-02-04T19:04:18.1444004	Loot Tables
+// 1.20.1	2025-02-04T20:21:02.7324607	Loot Tables
 737bc65e5641c21d14707b20f673619b0a249bc4 data/testmod/loot_tables/blocks/garugamesh.json
+1b3b7aa05178645753edef2b76c5839ebcb36c17 data/testmod/loot_tables/blocks/garugamesh_button.json
+de10e95a1eee501455e9b3e0cd84cecf20b2f157 data/testmod/loot_tables/blocks/garugamesh_door.json
+98d3841eb90c63df08d0010d36c0b18cc1851007 data/testmod/loot_tables/blocks/garugamesh_fence.json
+b97c37da5b36a56c8a9c895f94002033f88f32b3 data/testmod/loot_tables/blocks/garugamesh_fence_gate.json
+87fd55871af89d12dab713d41c956fbaf6e796a1 data/testmod/loot_tables/blocks/garugamesh_pressure_plate.json
+f67e5362d384d370ecffe06da091455ad926b3fc data/testmod/loot_tables/blocks/garugamesh_slab.json
+adfe8d0bc2e51c766c0092f25e78478b6bda6d96 data/testmod/loot_tables/blocks/garugamesh_stairs.json
+bbaa11bf3b84309f4bbf73014a4e2ab3b7c33bb9 data/testmod/loot_tables/blocks/garugamesh_trapdoor.json
+b8114547091f8c9b78ff349666d1a1e89e0b7345 data/testmod/loot_tables/blocks/garugamesh_walls.json
 0d42567eb318dfa41261605b6fec81990fd0ddd9 data/testmod/loot_tables/blocks/slimpo.json
 943aac898321f701851ba8fd563b878626dbc55b data/testmod/loot_tables/blocks/slimpo_netherrack.json
 f92aac0731883cc6d163cab09af6f56bcbfc2fd1 data/testmod/loot_tables/blocks/slorp_block.json

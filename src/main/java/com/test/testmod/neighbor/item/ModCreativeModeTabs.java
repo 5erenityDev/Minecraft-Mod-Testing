@@ -36,6 +36,16 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.THE_SLORBO.get());
                         output.accept(ModItems.WINGLE.get());
                         output.accept(ModItems.ANGRY_SLORP.get());
+
+                        output.accept(ModBlocks.GARUGAMESH_SLAB.get());
+                        output.accept(ModBlocks.GARUGAMESH_STAIRS.get());
+                        output.accept(ModBlocks.GARUGAMESH_DOOR.get());
+                        output.accept(ModBlocks.GARUGAMESH_FENCE.get());
+                        output.accept(ModBlocks.GARUGAMESH_FENCE_GATE.get());
+                        output.accept(ModBlocks.GARUGAMESH_BUTTON.get());
+                        output.accept(ModBlocks.GARUGAMESH_PRESSURE_PLATE.get());
+                        output.accept(ModBlocks.GARUGAMESH_TRAPDOOR.get());
+                        output.accept(ModBlocks.GARUGAMESH_WALLS.get());
                     }).build()
     );
 

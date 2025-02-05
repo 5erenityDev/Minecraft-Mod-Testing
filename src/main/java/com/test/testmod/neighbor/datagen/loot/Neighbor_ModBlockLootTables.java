@@ -33,6 +33,21 @@ public class Neighbor_ModBlockLootTables extends BlockLootSubProvider {
         this.add(ModBlocks.SLIMPO.get(), block -> createBulkOreDrops(ModBlocks.SLIMPO.get(), ModItems.WINGLE.get()));
         this.add(ModBlocks.SLIMPO_NETHERRACK.get(), block -> createBulkOreDrops(ModBlocks.SLIMPO_NETHERRACK.get(), ModItems.WINGLE.get()));
         this.add(ModBlocks.SLORP_BLOCK.get(), block -> createBulkOreDrops(ModBlocks.SLORP_BLOCK.get(), ModItems.ANGRY_SLORP.get()));
+
+        this.dropSelf(ModBlocks.GARUGAMESH_WALLS.get());
+        this.dropSelf(ModBlocks.GARUGAMESH_FENCE.get());
+        this.dropSelf(ModBlocks.GARUGAMESH_FENCE_GATE.get());
+        this.dropSelf(ModBlocks.GARUGAMESH_BUTTON.get());
+        this.dropSelf(ModBlocks.GARUGAMESH_PRESSURE_PLATE.get());
+        this.dropSelf(ModBlocks.GARUGAMESH_STAIRS.get());
+        this.dropSelf(ModBlocks.GARUGAMESH_TRAPDOOR.get());
+
+
+        this.add(ModBlocks.GARUGAMESH_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.GARUGAMESH_SLAB.get()));
+        this.add(ModBlocks.GARUGAMESH_DOOR.get(),
+                block -> createDoorTable(ModBlocks.GARUGAMESH_DOOR.get()));
+
     }
 
     protected LootTable.Builder createCopperLikeOreDrops(Block pBlock, Item item) {

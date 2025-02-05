@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "testmod:block/garugamesh_slab"
+    },
+    "type=double": {
+      "model": "testmod:block/garugamesh"
+    },
+    "type=top": {
+      "model": "testmod:block/garugamesh_slab_top"
+    }
+  }
+}

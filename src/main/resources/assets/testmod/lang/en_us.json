@@ -13,6 +13,18 @@
   "item.testmod.wingle": "Wingle!",
   "item.testmod.angry_slorp": "Angry Slorp",
 
+  "block.testmod.garugamesh_stairs": "Garugamesh Stairs",
+  "block.testmod.garugamesh_slab": "Garugamesh Slab",
+  "block.testmod.garugamesh_button": "Garugamesh Button",
+  "block.testmod.garugamesh_pressure_plate": "Garugamesh Pressure Plate",
+  "block.testmod.garugamesh_fence": "Garugamesh Fence",
+  "block.testmod.garugamesh_fence_gate": "Garugamesh Fence Gate",
+  "block.testmod.garugamesh_walls": "Garugamesh Wall",
+  "block.testmod.garugamesh_door": "Garugamesh Door",
+  "block.testmod.garugamesh_trapdoor": "Garugamesh Trap Door",
+
+
+
   "tooltip.testmod.grobbler": "Gives you the contents of your enderchest",
   "tooltip.testmod.tombler": "Do not click them, they despise you",
 

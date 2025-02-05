@@ -3,14 +3,13 @@ package com.test.testmod.neighbor.block;
 import com.test.testmod.TestMod;
 import com.test.testmod.neighbor.block.custom.TomblerBlock;
 import com.test.testmod.neighbor.item.ModItems;
+import net.minecraft.sounds.SoundEvents;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.DropExperienceBlock;
-import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -49,7 +48,7 @@ public class ModBlocks {
                     .requiresCorrectToolForDrops()
             ));
     public static final RegistryObject<Block> GARUGAMESH = registerBlock
-            ("garugamesh", () -> new Block(BlockBehaviour.Properties.copy(Blocks.BEDROCK).sound(SoundType.AMETHYST)
+            ("garugamesh", () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK).sound(SoundType.AMETHYST)
             ));
     public static final RegistryObject<Block> SLIMPO = registerBlock
             ("slimpo", () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.STONE)
@@ -65,5 +64,44 @@ public class ModBlocks {
             ("slorp_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.SLIME_BLOCK)
                     .sound(SoundType.SLIME_BLOCK)
                     .strength(3).requiresCorrectToolForDrops()
+            ));
+
+
+    //Slabs, Stairs, Doors, Pressure plates, Buttons etc
+
+    public static final RegistryObject<Block> GARUGAMESH_STAIRS = registerBlock
+            ("garugamesh_stairs", () -> new StairBlock(() -> ModBlocks.GARUGAMESH.get().defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK).sound(SoundType.AMETHYST)
+            ));
+    public static final RegistryObject<Block> GARUGAMESH_SLAB = registerBlock
+            ("garugamesh_slab", () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK).sound(SoundType.AMETHYST)
+            ));
+    public static final RegistryObject<Block> GARUGAMESH_BUTTON = registerBlock
+            ("garugamesh_button", () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BUTTON).sound(SoundType.AMETHYST),
+                    BlockSetType.IRON, 20, true
+            ));
+    public static final RegistryObject<Block> GARUGAMESH_PRESSURE_PLATE = registerBlock
+            ("garugamesh_pressure_plate", () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,
+                    BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK).sound(SoundType.AMETHYST),
+                    BlockSetType.IRON
+            ));
+    public static final RegistryObject<Block> GARUGAMESH_FENCE = registerBlock
+            ("garugamesh_fence", () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK).sound(SoundType.AMETHYST)
+            ));
+    public static final RegistryObject<Block> GARUGAMESH_FENCE_GATE = registerBlock
+            ("garugamesh_fence_gate", () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK).sound(SoundType.AMETHYST),
+                    SoundEvents.IRON_DOOR_OPEN, SoundEvents.IRON_DOOR_CLOSE
+            ));
+    public static final RegistryObject<Block> GARUGAMESH_WALLS = registerBlock
+            ("garugamesh_walls", () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK).sound(SoundType.AMETHYST)
+            ));
+    //.noOcclusion() prevents an xray pretty much, cant see through the world. these are complicated but if you read them they are very simple
+    public static final RegistryObject<Block> GARUGAMESH_DOOR = registerBlock
+            ("garugamesh_door", () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK).sound(SoundType.AMETHYST).noOcclusion(),
+                    BlockSetType.DARK_OAK
+            ));
+    public static final RegistryObject<Block> GARUGAMESH_TRAPDOOR = registerBlock
+            ("garugamesh_trapdoor", () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK).sound(SoundType.AMETHYST).noOcclusion(),
+                    BlockSetType.DARK_OAK
             ));
 }
