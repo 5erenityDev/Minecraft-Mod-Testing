@@ -1,26 +1,23 @@
-package com.test.testmod.neighbor.datagen;
+package com.test.testmod.serenity.datagen;
 
 import com.test.testmod.TestMod;
-import com.test.testmod.neighbor.block.ModBlocks;
-import com.test.testmod.neighbor.util.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
-import net.minecraft.tags.BlockTags;
 import net.minecraftforge.common.data.BlockTagsProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.concurrent.CompletableFuture;
 
-public class ModBlockTagGenerator extends BlockTagsProvider {
+public class Serenity_ModBlockTagGenerator extends BlockTagsProvider {
 
-    public ModBlockTagGenerator(PackOutput output, CompletableFuture<HolderLookup.Provider> lookupProvider, @Nullable ExistingFileHelper existingFileHelper) {
+    public Serenity_ModBlockTagGenerator(PackOutput output, CompletableFuture<HolderLookup.Provider> lookupProvider, @Nullable ExistingFileHelper existingFileHelper) {
         super(output, lookupProvider, TestMod.MODID, existingFileHelper);
     }
 
     @Override
     protected void addTags(HolderLookup.Provider provider) {
-        this.tag(ModTags.Blocks.SLORP_REVENGE).add(ModBlocks.SLIMPO.get());
+        //this.tag(ModTags.Blocks.METAL_DETCTOR_VALUABLES).add(ModBlocks.SAPPHIRE_ORE.get()).addTag(Tags.Blocks.ORES);
 
 
         //this.tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ModBlocks.SAPPHIRE_BLOCK.get(), ModBlocks.SAPPHIRE_BLOCK.get());
@@ -33,7 +30,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
 
         //this.tag(BlockTags.NEEDS_DIAMOND_TOOL).add(ModBlocks.SAPPHIRE_ORE.get());
 
-        this.tag(BlockTags.NEEDS_IRON_TOOL).add(ModBlocks.SLIMPO.get()).add(ModBlocks.SLIMPO_NETHERRACK.get());
+        //this.tag(BlockTags.NEEDS_IRON_TOOL).add(ModBlocks.SAPPHIRE_ORE.get());
 
         //this.tag(BlockTags.NEEDS_STONE_TOOL).add(ModBlocks.SAPPHIRE_ORE.get());
     }

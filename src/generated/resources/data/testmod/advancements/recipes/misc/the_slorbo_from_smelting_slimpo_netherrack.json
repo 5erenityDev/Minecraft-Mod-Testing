@@ -1,34 +1,34 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_the_recipe": {
-      "conditions": {
-        "recipe": "testmod:garugamesh"
-      },
-      "trigger": "minecraft:recipe_unlocked"
-    },
-    "has_wingle": {
+    "has_slimpo_netherrack": {
       "conditions": {
         "items": [
           {
             "items": [
-              "testmod:wingle"
+              "testmod:slimpo_netherrack"
             ]
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "testmod:the_slorbo_from_smelting_slimpo_netherrack"
+      },
+      "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_wingle",
+      "has_slimpo_netherrack",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "testmod:garugamesh"
+      "testmod:the_slorbo_from_smelting_slimpo_netherrack"
     ]
   },
   "sends_telemetry_event": false

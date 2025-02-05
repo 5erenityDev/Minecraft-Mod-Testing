@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_garugamesh": {
+    "has_slimpo": {
       "conditions": {
         "items": [
           {
             "items": [
-              "testmod:garugamesh"
+              "testmod:slimpo"
             ]
           }
         ]
@@ -15,20 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "testmod:the_slorbo"
+        "recipe": "testmod:the_slorbo_from_blasting_slimpo"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_garugamesh",
+      "has_slimpo",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "testmod:the_slorbo"
+      "testmod:the_slorbo_from_blasting_slimpo"
     ]
   },
   "sends_telemetry_event": false

@@ -8,16 +8,15 @@ import net.minecraft.data.recipes.*;
 import net.minecraft.world.item.crafting.AbstractCookingRecipe;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.RecipeSerializer;
-import net.minecraft.world.item.crafting.ShapelessRecipe;
 import net.minecraft.world.level.ItemLike;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
 
 import java.util.List;
 import java.util.function.Consumer;
 
-public class ModRecipeProvider extends RecipeProvider implements IConditionBuilder {
+public class Serenity_ModRecipeProvider extends RecipeProvider implements IConditionBuilder {
     //private static final List<ItemLike> SAPPHIRE_SMELTABLES = List.of(ModItems.RAW_SAPPHIRE.GET(), ModItems.NETHER_RAW_SAPPHIRE.GET());
-    public ModRecipeProvider(PackOutput pOutput) {
+    public Serenity_ModRecipeProvider(PackOutput pOutput) {
         super(pOutput);
     }
 

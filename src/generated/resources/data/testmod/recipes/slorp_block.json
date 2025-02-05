@@ -2,17 +2,17 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "W": {
-      "item": "testmod:the_slorbo"
+    "A": {
+      "item": "testmod:angry_slorp"
     }
   },
   "pattern": [
-    "WWW",
-    "WWW",
-    "WWW"
+    "AAA",
+    "AAA",
+    "AAA"
   ],
   "result": {
-    "item": "testmod:garugamesh"
+    "item": "testmod:slorp_block"
   },
   "show_notification": true
 }

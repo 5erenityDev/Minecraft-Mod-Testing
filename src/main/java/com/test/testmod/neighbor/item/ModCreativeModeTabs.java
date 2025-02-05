@@ -2,13 +2,10 @@ package com.test.testmod.neighbor.item;
 
 import com.test.testmod.TestMod;
 import com.test.testmod.neighbor.block.ModBlocks;
-import com.test.testmod.neighbor.item.ModItems;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
@@ -33,6 +30,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.GARUGAMESH.get());
                         output.accept(ModBlocks.SLIMPO.get());
                         output.accept(ModBlocks.SLIMPO_NETHERRACK.get());
+                        output.accept(ModBlocks.SLORP_BLOCK.get());
                         output.accept(ModItems.SLOP.get());
                         output.accept(ModItems.GROBBLER.get());
                         output.accept(ModItems.THE_SLORBO.get());

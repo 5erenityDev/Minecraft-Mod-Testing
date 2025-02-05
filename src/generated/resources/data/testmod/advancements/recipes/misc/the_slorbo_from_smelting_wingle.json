@@ -3,7 +3,7 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "testmod:garugamesh"
+        "recipe": "testmod:the_slorbo_from_smelting_wingle"
       },
       "trigger": "minecraft:recipe_unlocked"
     },
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "testmod:garugamesh"
+      "testmod:the_slorbo_from_smelting_wingle"
     ]
   },
   "sends_telemetry_event": false

@@ -61,4 +61,9 @@ public class ModBlocks {
                     .sound(SoundType.NETHERRACK)
                     .strength(0.8f).requiresCorrectToolForDrops(), UniformInt.of(1, 4)
             ));
+    public static final RegistryObject<Block> SLORP_BLOCK = registerBlock
+            ("slorp_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.SLIME_BLOCK)
+                    .sound(SoundType.SLIME_BLOCK)
+                    .strength(3).requiresCorrectToolForDrops()
+            ));
 }

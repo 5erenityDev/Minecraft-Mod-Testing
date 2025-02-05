@@ -14,26 +14,37 @@ import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
 import java.util.List;
 import java.util.function.Consumer;
 
-public class ModRecipeProvider extends RecipeProvider implements IConditionBuilder {
-    //private static final List<ItemLike> SAPPHIRE_SMELTABLES = List.of(ModItems.RAW_SAPPHIRE.GET(), ModItems.NETHER_RAW_SAPPHIRE.GET());
-    public ModRecipeProvider(PackOutput pOutput) {
+
+public class Neighbor_ModRecipeProvider extends RecipeProvider implements IConditionBuilder {
+    private static final List<ItemLike> WINGLE_SMELTABLES = List.of(ModItems.WINGLE.get(),
+            ModBlocks.SLIMPO.get(), ModBlocks.SLIMPO_NETHERRACK.get());
+
+    public Neighbor_ModRecipeProvider(PackOutput pOutput) {
         super(pOutput);
     }
 
     @Override
     protected void buildRecipes(Consumer<FinishedRecipe> pWriter) {
-        //oreSmelting(pWriter, ModItems.WINGLE, RecipeCategory.MISC, ModItems.THE_SLORBO.get(), 0.25f, 200, "slorbo");
-        //oreBlasting(pWriter, ModItems.WINGLE, RecipeCategory.MISC, ModItems.THE_SLORBO.get(), 0.25f, 100, "the_slorbo");
+        oreBlasting(pWriter, WINGLE_SMELTABLES, RecipeCategory.MISC, ModItems.THE_SLORBO.get(), 1, 150, "Slorbo");
+        oreSmelting(pWriter, WINGLE_SMELTABLES, RecipeCategory.MISC, ModItems.THE_SLORBO.get(), 1, 50, "Slorbo");
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.GARUGAMESH.get())
-                .pattern("SSS")
-                .pattern("SSS")
-                .pattern("SSS")
-                .define('S', ModItems.THE_SLORBO.get())
-                .unlockedBy(getHasName(ModItems.THE_SLORBO.get()), has(ModItems.THE_SLORBO.get()))
+                .pattern("WWW")
+                .pattern("WWW")
+                .pattern("WWW")
+                .define('W', ModItems.THE_SLORBO.get())
+                .unlockedBy(getHasName(ModItems.WINGLE.get()), has(ModItems.WINGLE.get()))
                 .save(pWriter);
 
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.THE_SLORBO.get(), 9)
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.SLORP_BLOCK.get())
+                .pattern("AAA")
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', ModItems.ANGRY_SLORP.get())
+                .unlockedBy(getHasName(ModItems.ANGRY_SLORP.get()), has(ModItems.ANGRY_SLORP.get()))
+                .save(pWriter);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.WINGLE.get(), 9)
                 .requires(ModBlocks.GARUGAMESH.get())
                 .unlockedBy(getHasName(ModBlocks.GARUGAMESH.get()), has(ModBlocks.GARUGAMESH.get()))
                 .save(pWriter);
@@ -49,9 +60,13 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
     protected static void oreCooking(Consumer<FinishedRecipe> pFinishedRecipeConsumer, RecipeSerializer<? extends AbstractCookingRecipe> pCookingSerializer, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTime, String pGroup, String pRecipeName) {
         for(ItemLike itemlike : pIngredients) {
-            SimpleCookingRecipeBuilder.generic(Ingredient.of(new ItemLike[]{itemlike}), pCategory, pResult, pExperience, pCookingTime, pCookingSerializer).group(pGroup).unlockedBy(getHasName(itemlike), has(itemlike))
-                    .save(pFinishedRecipeConsumer, TestMod.MODID + ":" +getItemName(pResult) + pRecipeName + "_" + getItemName(itemlike));
+            SimpleCookingRecipeBuilder.generic(Ingredient.of(new ItemLike[]{itemlike}), pCategory, pResult,
+                            pExperience, pCookingTime, pCookingSerializer)
+                    .group(pGroup).unlockedBy(getHasName(itemlike), has(itemlike))
+                    .save(pFinishedRecipeConsumer, TestMod.MODID + ":" + getItemName(pResult) + pRecipeName + "_" + getItemName(itemlike));
         }
 
     }
+
 }
+

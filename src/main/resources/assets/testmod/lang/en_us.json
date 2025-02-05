@@ -5,6 +5,7 @@
   "block.testmod.garugamesh": "Garugamesh",
   "block.testmod.slimpo": "Slimpo",
   "block.testmod.slimpo_netherrack": "Nether Slimpo",
+  "block.testmod.slorp_block": "Slorp Congregation",
 
   "item.testmod.slop": "Slop",
   "item.testmod.the_slorbo": "The Slorbo",
@@ -14,6 +15,8 @@
 
   "tooltip.testmod.grobbler": "Gives you the contents of your enderchest",
   "tooltip.testmod.tombler": "Do not click them, they despise you",
+
+
 
 
   "creativetab.serenity_tab": "Serenity's Stuff",

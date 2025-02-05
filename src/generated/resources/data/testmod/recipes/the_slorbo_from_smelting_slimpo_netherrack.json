@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 50,
+  "experience": 1.0,
+  "group": "Slorbo",
+  "ingredient": {
+    "item": "testmod:slimpo_netherrack"
+  },
+  "result": "testmod:the_slorbo"
+}

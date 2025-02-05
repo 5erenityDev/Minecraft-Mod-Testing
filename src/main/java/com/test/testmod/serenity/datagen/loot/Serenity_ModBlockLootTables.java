@@ -1,4 +1,4 @@
-package com.test.testmod.neighbor.datagen.loot;
+package com.test.testmod.serenity.datagen.loot;
 
 import com.test.testmod.serenity.block.ModBlocks;
 import net.minecraft.data.loot.BlockLootSubProvider;
@@ -15,8 +15,8 @@ import net.minecraftforge.registries.RegistryObject;
 
 import java.util.Set;
 
-public class ModBlockLootTables extends BlockLootSubProvider {
-    public ModBlockLootTables() {
+public class Serenity_ModBlockLootTables extends BlockLootSubProvider {
+    public Serenity_ModBlockLootTables() {
         super(Set.of(), FeatureFlags.REGISTRY.allFlags());
     }
 

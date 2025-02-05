@@ -1,6 +1,8 @@
 package com.test.testmod.neighbor.datagen;
 
 import com.test.testmod.TestMod;
+import com.test.testmod.serenity.datagen.*;
+import com.test.testmod.serenity.datagen.loot.Serenity_ModBlockLootTables;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
@@ -20,14 +22,17 @@ public class DataGenerators {
         ExistingFileHelper existingFileHelper = event.getExistingFileHelper();
         CompletableFuture<HolderLookup.Provider> lookupProvider = event.getLookupProvider();
 
-        generator.addProvider(event.includeServer(), new ModRecipeProvider(packOutput));
-        generator.addProvider(event.includeServer(), ModLootTableProvider.create(packOutput));
+        generator.addProvider(event.includeServer(), new Neighbor_ModRecipeProvider(packOutput));
+        generator.addProvider(event.includeServer(), Neighbor_ModLootTableProvider.create(packOutput));
 
-        generator.addProvider(event.includeClient(), new ModBlockStateProvider(packOutput, existingFileHelper));
-        generator.addProvider(event.includeClient(), new ModItemModelProvider(packOutput, existingFileHelper));
 
-        ModBlockTagGenerator blockTagGenerator = generator.addProvider(event.includeServer(),
-                new ModBlockTagGenerator(packOutput, lookupProvider, existingFileHelper));
-        generator.addProvider(event.includeServer(), new ModItemTagGenerator(packOutput, lookupProvider, blockTagGenerator.contentsGetter(), existingFileHelper));
+        generator.addProvider(event.includeClient(), new Neighbor_ModBlockStateProvider(packOutput, existingFileHelper));
+        generator.addProvider(event.includeClient(), new Neighbor_ModItemModelProvider(packOutput, existingFileHelper));
+
+
+        Neighbor_ModBlockTagGenerator neighbor_BlockTagGenerator = generator.addProvider(event.includeServer(),
+                new Neighbor_ModBlockTagGenerator(packOutput, lookupProvider, existingFileHelper));
+        generator.addProvider(event.includeServer(), new Neighbor_ModItemTagGenerator(packOutput, lookupProvider, neighbor_BlockTagGenerator.contentsGetter(), existingFileHelper));
+
     }
 }
