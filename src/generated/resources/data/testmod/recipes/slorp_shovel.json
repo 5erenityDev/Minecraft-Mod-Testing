@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "D": {
+      "item": "testmod:angry_slorp"
+    },
+    "S": {
+      "item": "testmod:the_slorbo"
+    }
+  },
+  "pattern": [
+    " D ",
+    " S ",
+    " S "
+  ],
+  "result": {
+    "item": "testmod:slorp_shovel"
+  },
+  "show_notification": true
+}

@@ -12,6 +12,7 @@ public class ModTags {
     public static class Blocks{
 
         public static final TagKey<Block> SLORP_REVENGE = tag("slorp_revenge");
+        public static final TagKey<Block> NEEDS_SLORP_TOOL = tag("needs_slorp_tool");
 
 
 
