@@ -27,7 +27,7 @@ public class GrobblerItem extends Item {
         if(!pLevel.isClientSide) {
             if (pPlayer != null) {
                 pPlayer.sendSystemMessage(Component.literal(pPlayer.getEnderChestInventory().toString()));
-                pLevel.playSound((Player) null, pPlayer.getX(), pPlayer.getY(), pPlayer.getZ(), SoundEvents.ENDERMAN_TELEPORT, SoundSource.NEUTRAL, 1F, 1F);
+                pLevel.playSound((Player) null, pPlayer.getX(), pPlayer.getY(), pPlayer.getZ(), SoundEvents.ENDERMAN_TELEPORT, SoundSource.PLAYERS, 1F, 1F);
             }
             pPlayer.getItemInHand(pUsedHand).hurtAndBreak(2, pPlayer, player -> player.broadcastBreakEvent(player.getUsedItemHand()));
         }

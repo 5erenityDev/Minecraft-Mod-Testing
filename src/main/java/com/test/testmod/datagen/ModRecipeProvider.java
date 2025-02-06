@@ -47,10 +47,24 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModItems.ANGRY_SLORP.get()), has(ModItems.ANGRY_SLORP.get()))
                 .save(pWriter);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.GARUGAMESH_DOOR.get())
+                .pattern("DD ")
+                .pattern("DD ")
+                .pattern("DD ")
+                .define('D', ModItems.THE_SLORBO.get())
+                .unlockedBy(getHasName(ModItems.WINGLE.get()), has(ModItems.WINGLE.get()))
+                .save(pWriter);
+
+
+
+
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.WINGLE.get(), 9)
                 .requires(ModBlocks.GARUGAMESH.get())
                 .unlockedBy(getHasName(ModBlocks.GARUGAMESH.get()), has(ModBlocks.GARUGAMESH.get()))
                 .save(pWriter);
+
+
+
 
         ///////////////////////////
         /////////SERENITY//////////
