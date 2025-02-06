@@ -26,22 +26,57 @@ public class MaceItem extends Item {
 
     @Override
     public boolean onLeftClickEntity(ItemStack stack, Player player, Entity entity) {
-        if (!player.level().isClientSide) {
-
-
-            entity.hurt(entity.damageSources().wither(), player.fallDistance*6);
-            stack.hurtAndBreak(1, player, (playerEntity) -> playerEntity.broadcastBreakEvent(EquipmentSlot.MAINHAND));
-        }
-            // Example: Damage the item
-
+        int damage = 5;
+        if (player.fallDistance > 1.5){
+            if (!player.level().isClientSide) {
+                damage = determineDamage(player.fallDistance);
+                entity.hurt(entity.damageSources().wither(), damage);
+                stack.hurtAndBreak(1, player, (playerEntity) -> playerEntity.broadcastBreakEvent(EquipmentSlot.MAINHAND));
+                player.fallDistance = 0;
+            }
+            /*
             Vec3 pMov = player.getDeltaMovement();
-            if (pMov.y < (double)0.0F) {
+            if (pMov.y < (double) 0.0F) {
                 player.setDeltaMovement(pMov.x, -pMov.y * 2, pMov.z);
             }
-
+             */
+        }
+        else
+        {
+            entity.hurt(entity.damageSources().wither(), damage);
+        }
         return false;
     }
 
+    public int determineDamage(float fallDistance) {
+        int damage = 5;
+        boolean initial_checks = true;
+        int first_check = 3;
+        int second_check = 5;
+        for (fallDistance = fallDistance; fallDistance > 0; fallDistance--) {
+            if (initial_checks) {
+                if (first_check > 0) {
+                    damage += 4;
+                }
+                else
+                {
+                    if (second_check > 0)
+                    {
+                        damage += 2;
+                    }
+                    else
+                    {
+                        initial_checks = false;
+                    }
+                }
+            }
+            else
+            {
+                damage += 1;
+            }
+        }
+        return damage;
+    }
     @Override
     public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
         pTooltipComponents.add(Component.translatable("tooltip.testmod.mace_item.tooltip"));

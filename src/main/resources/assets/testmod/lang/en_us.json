@@ -53,7 +53,7 @@
   "tooltip.testmod.speed_block.tooltip": "Block that increases speed and jump height when stood on.",
 
   "tooltip.testmod.mace_item.tooltip": "Powerful weapon that does more damage the longer you have fallen",
-  "tooltip.testmod.slime_mace_item.tooltip": "All the fun with none of the damage! Works on blocks too!",
+  "tooltip.testmod.slime_mace_item.tooltip": "The slime makes you bounce instead of attack! Right click on blocks and left click on entities to bounce!",
   "tooltip.testmod.telport_staff_item.tooltip": "Teleports player to nearby block, simply right click any block within range."
 
 

@@ -75,7 +75,7 @@ public class ModItemModelProvider extends ItemModelProvider {
 
 
         ///////////////////////////
-        /////////SERENITY//////////
+        /////////SERENITY//////////e
         ///////////////////////////
         simpleItem(ModItems.CHUCKSTER_FRUIT);
         simpleItem(ModItems.MACE);

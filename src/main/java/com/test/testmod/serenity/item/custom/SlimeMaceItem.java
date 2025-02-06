@@ -30,7 +30,7 @@ public class SlimeMaceItem extends Item {
 
             stack.hurtAndBreak(1, player, (playerEntity) -> playerEntity.broadcastBreakEvent(EquipmentSlot.MAINHAND));
         }
-
+        player.getCooldowns().addCooldown(this, 20);
         Vec3 pMov = player.getDeltaMovement();
         if (pMov.y < (double)0.0F) {
             player.setDeltaMovement(pMov.x, -pMov.y * 2, pMov.z);
@@ -41,19 +41,21 @@ public class SlimeMaceItem extends Item {
 
     @Override
     public boolean onLeftClickEntity(ItemStack stack, Player player, Entity entity) {
-        if (!player.level().isClientSide) {
+        if(!player.getCooldowns().isOnCooldown(stack.getItem())) {
+            if (!player.level().isClientSide) {
 
 
-            stack.hurtAndBreak(1, player, (playerEntity) -> playerEntity.broadcastBreakEvent(EquipmentSlot.MAINHAND));
-        }
-            // Example: Damage the item
+                stack.hurtAndBreak(1, player, (playerEntity) -> playerEntity.broadcastBreakEvent(EquipmentSlot.MAINHAND));
 
+            }
+            player.getCooldowns().addCooldown(this, 20);
             Vec3 pMov = player.getDeltaMovement();
-            if (pMov.y < (double)0.0F) {
+            if (pMov.y < (double) 0.0F) {
                 player.setDeltaMovement(pMov.x, -pMov.y * 2, pMov.z);
             }
-
-        return false;
+            return false;
+        }
+        return true;
     }
 
     @Override
