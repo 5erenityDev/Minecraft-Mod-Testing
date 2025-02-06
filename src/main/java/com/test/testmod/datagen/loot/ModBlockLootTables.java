@@ -1,7 +1,7 @@
 package com.test.testmod.datagen.loot;
 
 import com.test.testmod.block.ModBlocks;
-import com.test.testmod.neighbor.item.ModItems;
+import com.test.testmod.item.ModItems;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.item.Item;

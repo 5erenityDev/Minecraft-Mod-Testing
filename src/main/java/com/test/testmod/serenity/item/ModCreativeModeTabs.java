@@ -20,18 +20,6 @@ public class ModCreativeModeTabs {
         CREATIVE_MODE_TABS.register(eventBus);
     }
 
-    // Creates Tabs
-    public static final RegistryObject<CreativeModeTab> SERENITY_TAB = CREATIVE_MODE_TABS.register(
-            "serenity_tab",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.TELEPORT_STAFF.get()))
-                    .title(Component.translatable("creativetab.serenity_tab"))
-                    .displayItems((itemDisplayParameters, output) -> {
-                        output.accept(ModBlocks.SPEED_BLOCK.get());
-                        output.accept(ModItems.TELEPORT_STAFF.get());
-                        output.accept(ModItems.MACE.get());
-                        output.accept(ModItems.CHUCKSTER_FRUIT.get());
-                    }).build()
-    );
 
 
 }

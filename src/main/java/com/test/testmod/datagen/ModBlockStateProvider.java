@@ -42,7 +42,6 @@ public class ModBlockStateProvider extends BlockStateProvider {
         /////////SERENITY//////////
         ///////////////////////////
         blockWithItem(ModBlocks.SPEED_BLOCK);
-
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {

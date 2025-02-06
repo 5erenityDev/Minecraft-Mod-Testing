@@ -15,23 +15,5 @@ public class ModItems {
     public static final DeferredRegister<Item> SERENITY_ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, TestMod.MODID);
 
-    // Puts Items on Register
-    public static void register(IEventBus eventBus) {
-        SERENITY_ITEMS.register(eventBus);
-    }
 
-    public static final RegistryObject<Item> CHUCKSTER_FRUIT = SERENITY_ITEMS.register(
-            "chuckster_fruit",
-            () -> new Item(new Item.Properties().food(ModFoods.CHUCKSTER_FRUIT))
-    );
-
-    public static final RegistryObject<Item> TELEPORT_STAFF = SERENITY_ITEMS.register(
-            "teleport_staff",
-            () -> new TeleportStaffItem(new Item.Properties().durability(100))
-    );
-
-    public static final RegistryObject<Item> MACE = SERENITY_ITEMS.register(
-            "mace",
-            () -> new MaceItem(new Item.Properties().durability(100))
-    );
 }

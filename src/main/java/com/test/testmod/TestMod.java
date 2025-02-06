@@ -1,8 +1,9 @@
 package com.test.testmod;
 
 import com.mojang.logging.LogUtils;
-import com.test.testmod.serenity.item.ModItems;
-import com.test.testmod.serenity.block.ModBlocks;
+import com.test.testmod.block.ModBlocks;
+import com.test.testmod.item.ModCreativeModeTabs;
+import com.test.testmod.item.ModItems;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -33,12 +34,9 @@ public class TestMod
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
-        com.test.testmod.serenity.item.ModItems.register(modEventBus);
-        com.test.testmod.block.ModBlocks.register(modEventBus);
-        com.test.testmod.serenity.item.ModCreativeModeTabs.register(modEventBus);
-
-        com.test.testmod.neighbor.item.ModItems.register(modEventBus);
-        com.test.testmod.neighbor.item.ModCreativeModeTabs.register(modEventBus);
+        ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
+        ModCreativeModeTabs.register(modEventBus);
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);

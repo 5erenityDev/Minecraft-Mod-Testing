@@ -2,7 +2,7 @@ package com.test.testmod.block;
 
 import com.test.testmod.TestMod;
 import com.test.testmod.neighbor.block.custom.TomblerBlock;
-import com.test.testmod.neighbor.item.ModItems;
+import com.test.testmod.item.ModItems;
 import com.test.testmod.serenity.block.custom.SpeedBlock;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.util.valueproviders.UniformInt;
@@ -37,7 +37,7 @@ public class ModBlocks {
 
     // Initialize Item
     private static  <T extends Block> RegistryObject<Item> registerBlockItem(String name, RegistryObject<T> block){
-        return ModItems.NEIGHBOR_ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
+        return ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
     }
 
     public static final RegistryObject<Block> TOMBLER = registerBlock(

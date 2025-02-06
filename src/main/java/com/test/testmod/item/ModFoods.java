@@ -1,4 +1,4 @@
-package com.test.testmod.neighbor.item;
+package com.test.testmod.item;
 
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
@@ -12,4 +12,10 @@ public class ModFoods {
             .effect(() -> new MobEffectInstance(MobEffects.HUNGER, 200, 0), 1f)
             .build();
 
+    public static final FoodProperties CHUCKSTER_FRUIT = new FoodProperties.Builder()
+            .nutrition(2)
+            .saturationMod(0.2f)
+            .effect(() -> new MobEffectInstance(MobEffects.LEVITATION, 20, 50), 0.9f)
+            .fast()
+            .build();
 }

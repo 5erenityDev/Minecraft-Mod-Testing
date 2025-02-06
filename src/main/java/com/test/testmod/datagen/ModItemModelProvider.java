@@ -2,7 +2,7 @@ package com.test.testmod.datagen;
 
 import com.test.testmod.TestMod;
 import com.test.testmod.block.ModBlocks;
-import com.test.testmod.neighbor.item.ModItems;
+import com.test.testmod.item.ModItems;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
@@ -45,9 +45,9 @@ public class ModItemModelProvider extends ItemModelProvider {
         ///////////////////////////
         /////////SERENITY//////////
         ///////////////////////////
-        simpleItem(com.test.testmod.serenity.item.ModItems.CHUCKSTER_FRUIT);
-        simpleItem(com.test.testmod.serenity.item.ModItems.MACE);
-        simpleItem(com.test.testmod.serenity.item.ModItems.TELEPORT_STAFF);
+        simpleItem(ModItems.CHUCKSTER_FRUIT);
+        simpleItem(ModItems.MACE);
+        simpleItem(ModItems.TELEPORT_STAFF);
 
     }
 

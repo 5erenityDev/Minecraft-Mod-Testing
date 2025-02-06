@@ -2,7 +2,7 @@ package com.test.testmod.datagen;
 
 import com.test.testmod.TestMod;
 import com.test.testmod.block.ModBlocks;
-import com.test.testmod.neighbor.item.ModItems;
+import com.test.testmod.item.ModItems;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.world.item.crafting.AbstractCookingRecipe;
@@ -59,11 +59,11 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("CCC")
                 .pattern("CCC")
                 .pattern("CCC")
-                .define('C', com.test.testmod.serenity.item.ModItems.CHUCKSTER_FRUIT.get())
-                .unlockedBy(getHasName(com.test.testmod.serenity.item.ModItems.CHUCKSTER_FRUIT.get()), has(com.test.testmod.serenity.item.ModItems.CHUCKSTER_FRUIT.get()))
+                .define('C', ModItems.CHUCKSTER_FRUIT.get())
+                .unlockedBy(getHasName(ModItems.CHUCKSTER_FRUIT.get()), has(ModItems.CHUCKSTER_FRUIT.get()))
                 .save(pWriter);
 
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, com.test.testmod.serenity.item.ModItems.CHUCKSTER_FRUIT.get(), 9)
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.CHUCKSTER_FRUIT.get(), 9)
                 .requires(ModBlocks.SPEED_BLOCK.get())
                 .unlockedBy(getHasName(ModBlocks.SPEED_BLOCK.get()), has(ModBlocks.SPEED_BLOCK.get()))
                 .save(pWriter);
