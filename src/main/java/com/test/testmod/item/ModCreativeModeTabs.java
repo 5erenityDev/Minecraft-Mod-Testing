@@ -59,6 +59,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.MACE.get());
                         output.accept(ModItems.CHUCKSTER_FRUIT.get());
                         output.accept(ModItems.DOOHICKEY.get());
+                        output.accept(ModItems.SLIME_MACE.get());
                     }).build()
     );
 

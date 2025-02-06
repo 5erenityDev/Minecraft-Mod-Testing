@@ -1,4 +1,4 @@
-// 1.20.1	2025-02-05T23:10:52.2224976	Item Models: testmod
+// 1.20.1	2025-02-06T08:04:18.1350558	Item Models: testmod
 adb2ea84f25c9864828f71e7182f44fdb8de3d81 assets/testmod/models/item/angry_slorp.json
 44951230b880af5658570705e35c18d9127d3136 assets/testmod/models/item/chuckster_fruit.json
 066da84a7a0b271ee7cca4416bd65ac8d64ddf1f assets/testmod/models/item/doohickey.json
@@ -13,6 +13,7 @@ fd3fb7bbb67788fec8675af7fd8c10e0ecef4284 assets/testmod/models/item/garugamesh_p
 4f956b5bea0e96e6f2cef0e25bb78527a43a5df8 assets/testmod/models/item/garugamesh_walls.json
 7430bfbe55526b43779142774905856f0f1bcd84 assets/testmod/models/item/grobbler.json
 af80d2ea1812d21f2e2a98b3007bd50f3588e3f2 assets/testmod/models/item/mace.json
+33b0244feb9d455659960194542cef63d4fea0b2 assets/testmod/models/item/slime_mace.json
 0a1877f4f2017866410ca8a54f7178ea253ea766 assets/testmod/models/item/slop.json
 6fc7dbc13bd84671ab7e15e73698965e2ee637b8 assets/testmod/models/item/teleport_staff.json
 08c577af638bac558b0eb1c9a74e6c97c30cee77 assets/testmod/models/item/the_slorbo.json

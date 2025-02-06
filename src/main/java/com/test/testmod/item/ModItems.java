@@ -5,6 +5,7 @@ import com.test.testmod.neighbor.item.custom.FuelItem;
 import com.test.testmod.neighbor.item.custom.GrobblerItem;
 import com.test.testmod.serenity.item.custom.DoohickeyItem;
 import com.test.testmod.serenity.item.custom.MaceItem;
+import com.test.testmod.serenity.item.custom.SlimeMaceItem;
 import com.test.testmod.serenity.item.custom.TeleportStaffItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -54,6 +55,11 @@ public class ModItems {
     public static final RegistryObject<Item> DOOHICKEY = ITEMS.register(
             "doohickey",
             () -> new DoohickeyItem(new Item.Properties().durability(6))
+    );
+
+    public static final RegistryObject<Item> SLIME_MACE = ITEMS.register(
+            "slime_mace",
+            () -> new SlimeMaceItem(new Item.Properties().durability(100))
     );
 
 }
