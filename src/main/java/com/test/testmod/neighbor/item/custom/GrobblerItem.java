@@ -1,4 +1,5 @@
 package com.test.testmod.neighbor.item.custom;
+import net.minecraft.client.renderer.item.ItemProperties;
 import net.minecraft.network.chat.Component;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
@@ -19,7 +20,6 @@ public class GrobblerItem extends Item {
     public GrobblerItem(Properties pProperties) {
         super(pProperties);
     }
-
 
     @Override
     public InteractionResultHolder<ItemStack> use(Level pLevel, Player pPlayer, InteractionHand pUsedHand) {

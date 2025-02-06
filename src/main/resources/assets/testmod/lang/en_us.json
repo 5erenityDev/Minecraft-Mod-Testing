@@ -12,6 +12,15 @@
   "item.testmod.grobbler": "Grobbler",
   "item.testmod.wingle": "Wingle!",
   "item.testmod.angry_slorp": "Angry Slorp",
+  "item.testmod.slorper": "Slorper",
+
+  "item.testmod.slorp_sword": "Slorp Sword",
+  "item.testmod.slorp_pickaxe": "Slorp Pickaxe",
+  "item.testmod.slorp_shovel": "Slorp Shovel",
+  "item.testmod.slorp_axe": "Slorp Axe",
+  "item.testmod.slorp_hoe": "Slorp Hoe",
+
+
 
   "block.testmod.garugamesh_stairs": "Garugamesh Stairs",
   "block.testmod.garugamesh_slab": "Garugamesh Slab",

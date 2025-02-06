@@ -55,7 +55,46 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModItems.WINGLE.get()), has(ModItems.WINGLE.get()))
                 .save(pWriter);
 
-
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.SLORP_SWORD.get())
+                .pattern(" D ")
+                .pattern(" D ")
+                .pattern(" S ")
+                .define('D', ModItems.ANGRY_SLORP.get())
+                .define('S', ModItems.THE_SLORBO.get())
+                .unlockedBy(getHasName(ModItems.ANGRY_SLORP.get()), has(ModItems.ANGRY_SLORP.get()))
+                .save(pWriter);
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.SLORP_SHOVEL.get())
+                .pattern(" D ")
+                .pattern(" S ")
+                .pattern(" S ")
+                .define('D', ModItems.ANGRY_SLORP.get())
+                .define('S', ModItems.THE_SLORBO.get())
+                .unlockedBy(getHasName(ModItems.ANGRY_SLORP.get()), has(ModItems.ANGRY_SLORP.get()))
+                .save(pWriter);
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.SLORP_HOE.get())
+                .pattern("DD ")
+                .pattern(" S ")
+                .pattern(" S ")
+                .define('D', ModItems.ANGRY_SLORP.get())
+                .define('S', ModItems.THE_SLORBO.get())
+                .unlockedBy(getHasName(ModItems.ANGRY_SLORP.get()), has(ModItems.ANGRY_SLORP.get()))
+                .save(pWriter);
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.SLORP_PICKAXE.get())
+                .pattern("DDD")
+                .pattern(" S ")
+                .pattern(" S ")
+                .define('D', ModItems.ANGRY_SLORP.get())
+                .define('S', ModItems.THE_SLORBO.get())
+                .unlockedBy(getHasName(ModItems.ANGRY_SLORP.get()), has(ModItems.ANGRY_SLORP.get()))
+                .save(pWriter);
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.SLORP_AXE.get())
+                .pattern("DD ")
+                .pattern("DS ")
+                .pattern(" S ")
+                .define('D', ModItems.ANGRY_SLORP.get())
+                .define('S', ModItems.THE_SLORBO.get())
+                .unlockedBy(getHasName(ModItems.ANGRY_SLORP.get()), has(ModItems.ANGRY_SLORP.get()))
+                .save(pWriter);
 
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.WINGLE.get(), 9)

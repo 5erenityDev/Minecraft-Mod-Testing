@@ -1,4 +1,4 @@
-// 1.20.1	2025-02-05T20:59:47.4008051	Recipes
+// 1.20.1	2025-02-06T02:48:50.5154454	Recipes
 911db0f7effebf32d4541cf3481732caeba80cc5 data/testmod/advancements/recipes/misc/chuckster_fruit.json
 58318361200854178e7b8f068af2b7ff4851948b data/testmod/advancements/recipes/misc/garugamesh.json
 105283c319ac060da048b5f97d99a3b936def0a2 data/testmod/advancements/recipes/misc/garugamesh_door.json
@@ -11,10 +11,20 @@ b380f77aef9cfd3c461443154c0951697fc689cf data/testmod/advancements/recipes/misc/
 7e8799257557c1d821ffcbd4a6af4a3c00b174df data/testmod/advancements/recipes/misc/the_slorbo_from_smelting_slimpo_netherrack.json
 a613dc2a4044be8399d16faf6170c0989beb2468 data/testmod/advancements/recipes/misc/the_slorbo_from_smelting_wingle.json
 f7a6acfd20cc2c4044cc5b5da0af67cfb98e98f8 data/testmod/advancements/recipes/misc/wingle.json
+f846057f221982ab65402353a045a531a0e235c6 data/testmod/advancements/recipes/tools/slorp_axe.json
+3d43e164a3b2a63326b36114bdea9e7fdfb2e89f data/testmod/advancements/recipes/tools/slorp_hoe.json
+4b64ad0ffa9dfcc964d8bf2f1981391d9fa179a8 data/testmod/advancements/recipes/tools/slorp_pickaxe.json
+727b819840d04cb5dccd2e5ba7fc649edebadf4a data/testmod/advancements/recipes/tools/slorp_shovel.json
+edd80c57649e8a30972f820191bd9802179bbdb3 data/testmod/advancements/recipes/tools/slorp_sword.json
 f88cca0a08dbcb03f13c51ee4d5dc58145b7d580 data/testmod/recipes/chuckster_fruit.json
 7d2e337804422fab805a49c0e9a7aae0c6b2396b data/testmod/recipes/garugamesh.json
 275551e95feaef2f094b5405b27943a9551c850a data/testmod/recipes/garugamesh_door.json
+f89793ed21d91a6f2731b6435c3372db67ac59fe data/testmod/recipes/slorp_axe.json
 383acf08aa21f9175044a440516b63554226c4c0 data/testmod/recipes/slorp_block.json
+76bf72f2229bd2039693e62fc2c58edb3317cb2f data/testmod/recipes/slorp_hoe.json
+6fab9be64399c946a0f2bb3fc35d762cdb9554d4 data/testmod/recipes/slorp_pickaxe.json
+b93f8ee3da1371ee0f87600ab1c944431a0580d4 data/testmod/recipes/slorp_shovel.json
+06b65433720937cc381e396a41f56e478e86e5dc data/testmod/recipes/slorp_sword.json
 11a5f446159f37e2166d4c9367112669c6bca817 data/testmod/recipes/speed_block.json
 3ed5acf6e27d8733e03b84285dea67e762cf23f2 data/testmod/recipes/the_slorbo_from_blasting_slimpo.json
 5d2ac0c72f49a193943fab28df7d540ab835a4b7 data/testmod/recipes/the_slorbo_from_blasting_slimpo_netherrack.json

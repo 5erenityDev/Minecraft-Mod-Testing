@@ -1,0 +1,18 @@
+{
+  "parent": "minecraft:item/handheld",
+  "loader": "forge:separate_transforms",
+  "base": {
+    "parent": "testmod:item/slorper_3d"
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "testmod:item/slorper_2d"
+    },
+    "ground": {
+      "parent": "testmod:item/slorper_2d"
+    },
+    "fixed": {
+      "parent": "testmod:item/slorper_2d"
+    }
+  }
+}

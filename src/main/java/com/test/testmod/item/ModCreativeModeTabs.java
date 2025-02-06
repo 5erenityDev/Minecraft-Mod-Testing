@@ -35,7 +35,18 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.GROBBLER.get());
                         output.accept(ModItems.THE_SLORBO.get());
                         output.accept(ModItems.WINGLE.get());
+                        output.accept(ModItems.SLORPER.get());
                         output.accept(ModItems.ANGRY_SLORP.get());
+                        output.accept(ModItems.SLORP_AXE.get());
+                        output.accept(ModItems.SLORP_HOE.get());
+                        output.accept(ModItems.SLORP_PICKAXE.get());
+                        output.accept(ModItems.SLORP_SHOVEL.get());
+                        output.accept(ModItems.SLORP_SWORD.get());
+
+                        output.accept(ModItems.SLORP_HELMET.get());
+                        output.accept(ModItems.SLORP_CHESTPLATE.get());
+                        output.accept(ModItems.SLORP_LEGGINGS.get());
+                        output.accept(ModItems.SLORP_BOOTS.get());
 
                         output.accept(ModBlocks.GARUGAMESH_SLAB.get());
                         output.accept(ModBlocks.GARUGAMESH_STAIRS.get());
