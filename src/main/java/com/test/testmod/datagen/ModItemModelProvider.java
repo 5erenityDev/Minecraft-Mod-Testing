@@ -48,7 +48,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.CHUCKSTER_FRUIT);
         simpleItem(ModItems.MACE);
         simpleItem(ModItems.TELEPORT_STAFF);
-
+        simpleItem(ModItems.DOOHICKEY);
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {

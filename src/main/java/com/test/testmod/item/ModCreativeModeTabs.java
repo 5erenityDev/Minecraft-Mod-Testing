@@ -58,6 +58,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.TELEPORT_STAFF.get());
                         output.accept(ModItems.MACE.get());
                         output.accept(ModItems.CHUCKSTER_FRUIT.get());
+                        output.accept(ModItems.DOOHICKEY.get());
                     }).build()
     );
 

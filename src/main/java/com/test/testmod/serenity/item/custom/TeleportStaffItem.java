@@ -2,14 +2,21 @@ package com.test.testmod.serenity.item.custom;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
+import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
+import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.context.UseOnContext;
+import net.minecraft.world.level.ClipContext;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.phys.HitResult;
+import net.minecraft.world.phys.Vec3;
 import org.jetbrains.annotations.Nullable;
+import org.joml.Vector3d;
 
 import java.util.List;
 
@@ -20,30 +27,27 @@ public class TeleportStaffItem extends Item {
 
 
     @Override
-    public InteractionResult useOn(UseOnContext pContext) {
-        if(!pContext.getLevel().isClientSide()){
-            BlockPos positionClicked = pContext.getClickedPos();
-            int blockPosX = positionClicked.getX();
-            int blockPosY = positionClicked.getY();
-            int blockPosZ = positionClicked.getZ();
-            Player player = pContext.getPlayer();
-            if (player != null)
+    public InteractionResultHolder<ItemStack> use(Level pLevel, Player pPlayer, InteractionHand pUsedHand) {
+        ItemStack itemstack = pPlayer.getItemInHand(pUsedHand);
+        if(!pLevel.isClientSide()){
+            Vec3 eyePos = pPlayer.getEyePosition(1.0f);
+            Vec3 lookVec = pPlayer.getLookAngle();
+            Vec3 targetPos = eyePos.add(lookVec.scale(20)); // 20 blocks max distance
+
+            ClipContext context = new ClipContext(eyePos, targetPos, ClipContext.Block.COLLIDER, ClipContext.Fluid.NONE, null);
+            HitResult rayTraceResult = pLevel.clip(context);
+
+            Vec3 lookedAtPos = rayTraceResult.getLocation();
+
+            if (pPlayer != null)
             {
-                if (player.getScoreboardName() == "Dev")
-                {
-                    player.sendSystemMessage(Component.literal("You are the chosen one"));
-                }
-                else
-                {
-                    player.sendSystemMessage(Component.literal(player.getScoreboardName()));
-                }
-                player.teleportTo(blockPosX, blockPosY+1, blockPosZ);
-                player.sendSystemMessage(Component.literal("Teleporting to - X: " + positionClicked.getX() + " Y: " + positionClicked.getY() + " Z: "+ positionClicked.getZ()));
+                pPlayer.teleportTo(lookedAtPos.x, lookedAtPos.y, lookedAtPos.z);
+
             }
         }
 
-        pContext.getItemInHand().hurtAndBreak(1, pContext.getPlayer(), player -> player.broadcastBreakEvent(player.getUsedItemHand()));
-        return InteractionResult.SUCCESS;
+        itemstack.hurtAndBreak(1, pPlayer, player -> player.broadcastBreakEvent(player.getUsedItemHand()));
+        return InteractionResultHolder.success(itemstack);
     }
 
     @Override

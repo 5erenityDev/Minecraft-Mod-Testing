@@ -10,6 +10,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.phys.Vec3;
 import org.jetbrains.annotations.Nullable;
 import org.joml.Vector3d;
@@ -17,8 +18,6 @@ import org.joml.Vector3d;
 import java.util.List;
 
 public class MaceItem extends Item {
-
-    private int sword_damage;
 
     public MaceItem(Properties pProperties) {
         super(pProperties);
@@ -28,13 +27,18 @@ public class MaceItem extends Item {
     @Override
     public boolean onLeftClickEntity(ItemStack stack, Player player, Entity entity) {
         if (!player.level().isClientSide) {
-            player.sendSystemMessage(Component.literal(String.valueOf(player.fallDistance*6)));
+
 
             entity.hurt(entity.damageSources().wither(), player.fallDistance*6);
-
-            // Example: Damage the item
             stack.hurtAndBreak(1, player, (playerEntity) -> playerEntity.broadcastBreakEvent(EquipmentSlot.MAINHAND));
         }
+            // Example: Damage the item
+
+            Vec3 pMov = player.getDeltaMovement();
+            if (pMov.y < (double)0.0F) {
+                player.setDeltaMovement(pMov.x, -pMov.y * 2, pMov.z);
+            }
+
         return false;
     }
 
