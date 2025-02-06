@@ -118,4 +118,42 @@ public class ModBlocks {
                     .requiresCorrectToolForDrops()
             )
     );
+    public static final RegistryObject<Block> PLUSH_BLOCK = registerBlock
+            ("plush_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.PURPLE_WOOL)
+            ));
+    //Slabs, Stairs, Doors, Pressure plates, Buttons etc
+    public static final RegistryObject<Block> PLUSH_STAIRS = registerBlock
+            ("plush_stairs", () -> new StairBlock(() -> ModBlocks.PLUSH_BLOCK.get().defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.PURPLE_WOOL)
+            ));
+    public static final RegistryObject<Block> PLUSH_SLAB = registerBlock
+            ("plush_slab", () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.PURPLE_WOOL)
+            ));
+    public static final RegistryObject<Block> PLUSH_BUTTON = registerBlock
+            ("plush_button", () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BUTTON),
+                    BlockSetType.IRON, 20, true
+            ));
+    public static final RegistryObject<Block> PLUSH_PRESSURE_PLATE = registerBlock
+            ("plush_pressure_plate", () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,
+                    BlockBehaviour.Properties.copy(Blocks.PURPLE_WOOL),
+                    BlockSetType.IRON
+            ));
+    public static final RegistryObject<Block> PLUSH_FENCE = registerBlock
+            ("plush_fence", () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.PURPLE_WOOL)
+            ));
+    public static final RegistryObject<Block> PLUSH_FENCE_GATE = registerBlock
+            ("plush_fence_gate", () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.PURPLE_WOOL),
+                    SoundEvents.IRON_DOOR_OPEN, SoundEvents.IRON_DOOR_CLOSE
+            ));
+    public static final RegistryObject<Block> PLUSH_WALLS = registerBlock
+            ("plush_walls", () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.PURPLE_WOOL)
+            ));
+    public static final RegistryObject<Block> PLUSH_DOOR = registerBlock
+            ("plush_door", () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.PURPLE_WOOL).noOcclusion(),
+                    BlockSetType.DARK_OAK
+            ));
+    public static final RegistryObject<Block> PLUSH_TRAPDOOR = registerBlock
+            ("plush_trapdoor", () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.PURPLE_WOOL).noOcclusion(),
+                    BlockSetType.DARK_OAK
+            ));
 }

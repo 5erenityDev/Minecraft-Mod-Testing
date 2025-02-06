@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "D": {
+      "item": "testmod:slime_mace"
+    }
+  },
+  "pattern": [
+    "DD ",
+    "DD ",
+    "DD "
+  ],
+  "result": {
+    "item": "testmod:plush_door"
+  },
+  "show_notification": true
+}

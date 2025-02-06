@@ -42,6 +42,21 @@ public class ModBlockStateProvider extends BlockStateProvider {
         /////////SERENITY//////////
         ///////////////////////////
         blockWithItem(ModBlocks.SPEED_BLOCK);
+        blockWithItem(ModBlocks.PLUSH_BLOCK);
+
+        stairsBlock(((StairBlock) ModBlocks.PLUSH_STAIRS.get()), blockTexture(ModBlocks.PLUSH_BLOCK.get()));
+        slabBlock(((SlabBlock) ModBlocks.PLUSH_SLAB.get()), blockTexture(ModBlocks.PLUSH_BLOCK.get()), blockTexture(ModBlocks.PLUSH_BLOCK.get()));
+
+        buttonBlock(((ButtonBlock) ModBlocks.PLUSH_BUTTON.get()), blockTexture(ModBlocks.PLUSH_BLOCK.get()));
+        pressurePlateBlock(((PressurePlateBlock) ModBlocks.PLUSH_PRESSURE_PLATE.get()), blockTexture(ModBlocks.PLUSH_BLOCK.get()));
+
+        fenceBlock(((FenceBlock) ModBlocks.PLUSH_FENCE.get()), blockTexture(ModBlocks.PLUSH_BLOCK.get()));
+        fenceGateBlock(((FenceGateBlock) ModBlocks.PLUSH_FENCE_GATE.get()), blockTexture(ModBlocks.PLUSH_BLOCK.get()));
+
+        wallBlock(((WallBlock) ModBlocks.PLUSH_WALLS.get()), blockTexture(ModBlocks.PLUSH_BLOCK.get()));
+
+        doorBlockWithRenderType((DoorBlock) ModBlocks.PLUSH_DOOR.get(), modLoc("block/plush_door_bottom"), modLoc("block/plush_door_top"), "cutout");
+        trapdoorBlockWithRenderType(((TrapDoorBlock) ModBlocks.PLUSH_TRAPDOOR.get()), modLoc("block/plush_trapdoor"), true, "cutout");
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {

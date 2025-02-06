@@ -1,7 +1,8 @@
-// 1.20.1	2025-02-06T02:48:50.5154454	Recipes
+// 1.20.1	2025-02-06T13:17:59.6392681	Recipes
 911db0f7effebf32d4541cf3481732caeba80cc5 data/testmod/advancements/recipes/misc/chuckster_fruit.json
 58318361200854178e7b8f068af2b7ff4851948b data/testmod/advancements/recipes/misc/garugamesh.json
 105283c319ac060da048b5f97d99a3b936def0a2 data/testmod/advancements/recipes/misc/garugamesh_door.json
+5880fccf534c5ef61469613df80a154a818ca818 data/testmod/advancements/recipes/misc/plush_door.json
 e2963b7acb962013d118b411e12105b7240b3069 data/testmod/advancements/recipes/misc/slorp_block.json
 4971e65e1f22c0d6bbeb22b91346c224c7709638 data/testmod/advancements/recipes/misc/speed_block.json
 a891f65d6a3e3097b84b1fe769e756d25d7fb121 data/testmod/advancements/recipes/misc/the_slorbo_from_blasting_slimpo.json
@@ -19,6 +20,7 @@ edd80c57649e8a30972f820191bd9802179bbdb3 data/testmod/advancements/recipes/tools
 f88cca0a08dbcb03f13c51ee4d5dc58145b7d580 data/testmod/recipes/chuckster_fruit.json
 7d2e337804422fab805a49c0e9a7aae0c6b2396b data/testmod/recipes/garugamesh.json
 275551e95feaef2f094b5405b27943a9551c850a data/testmod/recipes/garugamesh_door.json
+39afc67e00da4b4e958f22d4775ab13dea155b20 data/testmod/recipes/plush_door.json
 f89793ed21d91a6f2731b6435c3372db67ac59fe data/testmod/recipes/slorp_axe.json
 383acf08aa21f9175044a440516b63554226c4c0 data/testmod/recipes/slorp_block.json
 76bf72f2229bd2039693e62fc2c58edb3317cb2f data/testmod/recipes/slorp_hoe.json

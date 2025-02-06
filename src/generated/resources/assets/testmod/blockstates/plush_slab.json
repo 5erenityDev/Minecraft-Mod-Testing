@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "testmod:block/plush_slab"
+    },
+    "type=double": {
+      "model": "testmod:block/plush_block"
+    },
+    "type=top": {
+      "model": "testmod:block/plush_slab_top"
+    }
+  }
+}

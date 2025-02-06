@@ -40,9 +40,24 @@
 
 
 
+
+
+
+
   "creativetab.serenity_tab": "Serenity's Stuff",
 
   "block.testmod.speed_block": "Speed Block",
+  "block.testmod.plush_block": "Plush Block",
+
+  "block.testmod.plush_stairs": "Plush Stairs",
+  "block.testmod.plush_slab": "Plush Slab",
+  "block.testmod.plush_button": "Plush Button",
+  "block.testmod.plush_pressure_plate": "Plush Pressure Plate",
+  "block.testmod.plush_fence": "Plush Fence",
+  "block.testmod.plush_fence_gate": "Plush Fence Gate",
+  "block.testmod.plush_walls": "Plush Wall",
+  "block.testmod.plush_door": "Plush Door",
+  "block.testmod.plush_trapdoor": "Plush Trap Door",
 
   "item.testmod.teleport_staff": "Teleport Staff",
   "item.testmod.mace": "Mace",

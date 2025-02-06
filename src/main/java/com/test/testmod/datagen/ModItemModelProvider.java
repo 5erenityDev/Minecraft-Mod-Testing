@@ -82,6 +82,17 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.TELEPORT_STAFF);
         simpleItem(ModItems.DOOHICKEY);
         simpleItem(ModItems.SLIME_MACE);
+
+        evenSimplerBlockItem(ModBlocks.PLUSH_STAIRS);
+        evenSimplerBlockItem(ModBlocks.PLUSH_SLAB);
+        evenSimplerBlockItem(ModBlocks.PLUSH_PRESSURE_PLATE);
+        evenSimplerBlockItem(ModBlocks.PLUSH_FENCE_GATE);
+        simpleBlockItem(ModBlocks.PLUSH_DOOR);
+
+        fenceInventory("plush_fence", modLoc("block/plush_block"));
+        buttonInventory("plush_button", modLoc("block/plush_block"));
+        wallInventory("plush_walls", modLoc("block/plush_block"));
+        trapdoorBottom("plush_trapdoor", modLoc("block/plush_trapdoor"));
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {

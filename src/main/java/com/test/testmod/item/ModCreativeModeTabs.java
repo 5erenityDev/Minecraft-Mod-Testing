@@ -71,6 +71,16 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.CHUCKSTER_FRUIT.get());
                         output.accept(ModItems.DOOHICKEY.get());
                         output.accept(ModItems.SLIME_MACE.get());
+
+                        output.accept(ModBlocks.PLUSH_SLAB.get());
+                        output.accept(ModBlocks.PLUSH_STAIRS.get());
+                        output.accept(ModBlocks.PLUSH_DOOR.get());
+                        output.accept(ModBlocks.PLUSH_FENCE.get());
+                        output.accept(ModBlocks.PLUSH_FENCE_GATE.get());
+                        output.accept(ModBlocks.PLUSH_BUTTON.get());
+                        output.accept(ModBlocks.PLUSH_PRESSURE_PLATE.get());
+                        output.accept(ModBlocks.PLUSH_TRAPDOOR.get());
+                        output.accept(ModBlocks.PLUSH_WALLS.get());
                     }).build()
     );
 

@@ -1,4 +1,4 @@
-// 1.20.1	2025-02-05T19:49:28.3716533	Loot Tables
+// 1.20.1	2025-02-06T13:17:59.6392681	Loot Tables
 737bc65e5641c21d14707b20f673619b0a249bc4 data/testmod/loot_tables/blocks/garugamesh.json
 1b3b7aa05178645753edef2b76c5839ebcb36c17 data/testmod/loot_tables/blocks/garugamesh_button.json
 de10e95a1eee501455e9b3e0cd84cecf20b2f157 data/testmod/loot_tables/blocks/garugamesh_door.json
@@ -9,6 +9,16 @@ f67e5362d384d370ecffe06da091455ad926b3fc data/testmod/loot_tables/blocks/garugam
 adfe8d0bc2e51c766c0092f25e78478b6bda6d96 data/testmod/loot_tables/blocks/garugamesh_stairs.json
 bbaa11bf3b84309f4bbf73014a4e2ab3b7c33bb9 data/testmod/loot_tables/blocks/garugamesh_trapdoor.json
 b8114547091f8c9b78ff349666d1a1e89e0b7345 data/testmod/loot_tables/blocks/garugamesh_walls.json
+ffc094bd78afe2c1b198a7bf480ca3917ed1f12d data/testmod/loot_tables/blocks/plush_block.json
+ad61e558d64ff80b89bbae84716b8e9ab2c5aa59 data/testmod/loot_tables/blocks/plush_button.json
+33ddf12155e1ba576a073211bc095ca748a9bc57 data/testmod/loot_tables/blocks/plush_door.json
+1af1fc7c1bf86be339b14ab17b881fb20dac7107 data/testmod/loot_tables/blocks/plush_fence.json
+6ec0e9867134a80b2bf0eaa7fd699f6eff7bf7f5 data/testmod/loot_tables/blocks/plush_fence_gate.json
+8a8ddb2ca8ee10e02f8686157a9ade39c948a4c7 data/testmod/loot_tables/blocks/plush_pressure_plate.json
+62171135a26d8adbdc32f896ef76f6abedbb639e data/testmod/loot_tables/blocks/plush_slab.json
+d3440e67af7519dba58b5965d98bde5970eafaf3 data/testmod/loot_tables/blocks/plush_stairs.json
+7bb0bcb11a7a11701f9b0c9fa7ab5a2d03d53bd2 data/testmod/loot_tables/blocks/plush_trapdoor.json
+6610f376c56113094e358a62068988baf2d2d5c3 data/testmod/loot_tables/blocks/plush_walls.json
 0d42567eb318dfa41261605b6fec81990fd0ddd9 data/testmod/loot_tables/blocks/slimpo.json
 943aac898321f701851ba8fd563b878626dbc55b data/testmod/loot_tables/blocks/slimpo_netherrack.json
 f92aac0731883cc6d163cab09af6f56bcbfc2fd1 data/testmod/loot_tables/blocks/slorp_block.json

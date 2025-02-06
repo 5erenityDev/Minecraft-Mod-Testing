@@ -54,6 +54,20 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         /////////SERENITY//////////
         ///////////////////////////
         this.dropSelf(ModBlocks.SPEED_BLOCK.get());
+        this.dropSelf(ModBlocks.PLUSH_BLOCK.get());
+
+        this.dropSelf(ModBlocks.PLUSH_WALLS.get());
+        this.dropSelf(ModBlocks.PLUSH_FENCE.get());
+        this.dropSelf(ModBlocks.PLUSH_FENCE_GATE.get());
+        this.dropSelf(ModBlocks.PLUSH_BUTTON.get());
+        this.dropSelf(ModBlocks.PLUSH_PRESSURE_PLATE.get());
+        this.dropSelf(ModBlocks.PLUSH_STAIRS.get());
+        this.dropSelf(ModBlocks.PLUSH_TRAPDOOR.get());
+
+        this.add(ModBlocks.PLUSH_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.PLUSH_SLAB.get()));
+        this.add(ModBlocks.PLUSH_DOOR.get(),
+                block -> createDoorTable(ModBlocks.PLUSH_DOOR.get()));
 
     }
 
