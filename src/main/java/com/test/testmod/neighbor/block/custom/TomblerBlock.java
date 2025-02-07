@@ -28,9 +28,10 @@ public class TomblerBlock extends Block {
     public InteractionResult use(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, InteractionHand pHand, BlockHitResult pHit) {
         pLevel.playSound(pPlayer, pPos, SoundEvents.ENDERMAN_STARE, SoundSource.BLOCKS, 1f, 1f);
         pLevel.playSound(pPlayer, pPos, SoundEvents.LIGHTNING_BOLT_THUNDER, SoundSource.BLOCKS, 0.5f, 1f);
-        pLevel.setRainLevel(1);
-        pLevel.setThunderLevel(1);
-
+        if(!pLevel.isClientSide()) {
+            pLevel.setRainLevel(1);
+            pLevel.setThunderLevel(1);
+        }
         return InteractionResult.SUCCESS;
     }
 
