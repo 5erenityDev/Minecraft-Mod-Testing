@@ -3,10 +3,7 @@ package com.test.testmod.item;
 import com.test.testmod.TestMod;
 import com.test.testmod.neighbor.item.custom.FuelItem;
 import com.test.testmod.neighbor.item.custom.GrobblerItem;
-import com.test.testmod.serenity.item.custom.DoohickeyItem;
-import com.test.testmod.serenity.item.custom.MaceItem;
-import com.test.testmod.serenity.item.custom.SlimeMaceItem;
-import com.test.testmod.serenity.item.custom.TeleportStaffItem;
+import com.test.testmod.serenity.item.custom.*;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -69,7 +66,7 @@ public class ModItems {
 
     public static final RegistryObject<Item> CHUCKSTER_FRUIT = ITEMS.register(
             "chuckster_fruit",
-            () -> new Item(new Item.Properties().food(ModFoods.CHUCKSTER_FRUIT))
+            () -> new ChucksterFruitItem(new Item.Properties().food(ModFoods.CHUCKSTER_FRUIT))
     );
 
     public static final RegistryObject<Item> TELEPORT_STAFF = ITEMS.register(
