@@ -20,6 +20,11 @@
   "item.testmod.slorp_axe": "Slorp Axe",
   "item.testmod.slorp_hoe": "Slorp Hoe",
 
+  "item.testmod.slorp_helmet": "Slorp Helmet",
+  "item.testmod.slorp_chestplate": "Slorp Chestplate",
+  "item.testmod.slorp_leggings": "Slorp Leggings",
+  "item.testmod.slorp_boots": "Slorp Boots",
+
 
 
   "block.testmod.garugamesh_stairs": "Garugamesh Stairs",

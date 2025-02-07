@@ -3,6 +3,7 @@ package com.test.testmod.item;
 import com.test.testmod.TestMod;
 import com.test.testmod.neighbor.item.custom.FuelItem;
 import com.test.testmod.neighbor.item.custom.GrobblerItem;
+import com.test.testmod.neighbor.item.custom.SlorperItem;
 import com.test.testmod.serenity.item.custom.DoohickeyItem;
 import com.test.testmod.serenity.item.custom.MaceItem;
 import com.test.testmod.serenity.item.custom.SlimeMaceItem;
@@ -35,7 +36,7 @@ public class ModItems {
     public static final RegistryObject<Item> ANGRY_SLORP = ITEMS.register
             ("angry_slorp", () -> new FuelItem(new Item.Properties(), 2000));
     public static final RegistryObject<Item> SLORPER = ITEMS.register
-            ("slorper", () -> new BowItem(new Item.Properties().defaultDurability(400)));
+            ("slorper", () -> new SlorperItem(new Item.Properties().defaultDurability(400)));
 
     public static final RegistryObject<Item> SLORP_SWORD = ITEMS.register
             ("slorp_sword", () -> new SwordItem(ModToolTiers.SLORP, 3,5,

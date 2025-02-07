@@ -8,7 +8,7 @@ import net.minecraft.world.item.Item;
 
 public class ModItemProperties {
     public static void addCustomProperties() {
-    slorperBow(ModItems.SLORPER.get());
+    //slorperBow(ModItems.SLORPER.get());
     }
 
 
@@ -21,6 +21,8 @@ public class ModItemProperties {
                 }
             }));
             ItemProperties.register(item, new ResourceLocation("pulling"), (ClampedItemPropertyFunction)((p_174630_, p_174631_, p_174632_, p_174633_) -> p_174632_ != null && p_174632_.isUsingItem() && p_174632_.getUseItem() == p_174630_ ? 1.0F : 0.0F));
+
+
         }
     }
 
