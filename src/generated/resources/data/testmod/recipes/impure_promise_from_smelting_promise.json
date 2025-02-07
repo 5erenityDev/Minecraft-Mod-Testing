@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 250,
+  "experience": 5.0,
+  "group": "Promise",
+  "ingredient": {
+    "item": "testmod:promise"
+  },
+  "result": "testmod:impure_promise"
+}

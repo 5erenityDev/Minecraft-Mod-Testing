@@ -35,6 +35,8 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.add(ModBlocks.SLIMPO.get(), block -> createBulkOreDrops(ModBlocks.SLIMPO.get(), ModItems.WINGLE.get()));
         this.add(ModBlocks.SLIMPO_NETHERRACK.get(), block -> createBulkOreDrops(ModBlocks.SLIMPO_NETHERRACK.get(), ModItems.WINGLE.get()));
         this.add(ModBlocks.SLORP_BLOCK.get(), block -> createBulkOreDrops(ModBlocks.SLORP_BLOCK.get(), ModItems.ANGRY_SLORP.get()));
+        this.add(ModBlocks.PROMISE_ORE.get(), block -> createSmallOreDrops(ModBlocks.PROMISE_ORE.get(), ModItems.PROMISE.get()));
+
 
         this.dropSelf(ModBlocks.GARUGAMESH_WALLS.get());
         this.dropSelf(ModBlocks.GARUGAMESH_FENCE.get());
@@ -85,6 +87,15 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 (LootPoolEntryContainer.Builder) this.applyExplosionDecay(pBlock,
                         LootItem.lootTableItem(item)
                                 .apply(SetItemCountFunction.setCount(UniformGenerator.between(6.0F, 12.0F)))
+                                .apply(ApplyBonusCount.addUniformBonusCount(Enchantments.BLOCK_FORTUNE)
+                                )));
+    }
+
+    protected LootTable.Builder createSmallOreDrops (Block pBlock, Item item) {
+        return createSilkTouchDispatchTable(pBlock,
+                (LootPoolEntryContainer.Builder) this.applyExplosionDecay(pBlock,
+                        LootItem.lootTableItem(item)
+                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(1.0F, 1.0F)))
                                 .apply(ApplyBonusCount.addUniformBonusCount(Enchantments.BLOCK_FORTUNE)
                                 )));
     }

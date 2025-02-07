@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 150,
+  "experience": 5.0,
+  "group": "Promise",
+  "ingredient": {
+    "item": "testmod:promise"
+  },
+  "result": "testmod:impure_promise"
+}

@@ -34,14 +34,16 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
 
         this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(ModBlocks.SLIMPO_NETHERRACK.get())
-                .add(ModBlocks.SLIMPO.get());
+                .add(ModBlocks.SLIMPO.get())
+                .add(ModBlocks.PROMISE_ORE.get());
 
         this.tag(BlockTags.MINEABLE_WITH_HOE)
                 .add(ModBlocks.SLORP_BLOCK.get());
 
 
 
-        this.tag(Tags.Blocks.NEEDS_NETHERITE_TOOL);
+        this.tag(Tags.Blocks.NEEDS_NETHERITE_TOOL)
+                .add(ModBlocks.PROMISE_ORE.get());
 
         this.tag(BlockTags.NEEDS_DIAMOND_TOOL);
 

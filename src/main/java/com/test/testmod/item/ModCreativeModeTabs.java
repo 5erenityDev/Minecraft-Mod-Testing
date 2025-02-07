@@ -84,6 +84,17 @@ public class ModCreativeModeTabs {
                     }).build()
     );
 
+    public static final RegistryObject<CreativeModeTab> Promise_Tab = CREATIVE_MODE_TABS.register(
+            "promise_tab", () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.PURE_PROMISE.get()))
+                    .title(Component.translatable("creativetab.promise_tab"))
+                    .displayItems((itemDisplayParameters, output) -> {
+                        output.accept(ModItems.PROMISE.get());
+                        output.accept(ModItems.PURE_PROMISE.get());
+                        output.accept(ModItems.IMPURE_PROMISE.get());
+                        output.accept(ModItems.PROMISE_SWORD.get());
+                        output.accept(ModBlocks.PROMISE_ORE.get());
+                    }).build()
+    );
 
 
 }

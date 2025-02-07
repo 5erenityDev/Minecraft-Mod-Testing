@@ -39,6 +39,18 @@ public class ModItems {
     public static final RegistryObject<Item> SLORPER = ITEMS.register
             ("slorper", () -> new SlorperItem(new Item.Properties().defaultDurability(400)));
 
+    public static final RegistryObject<Item> PROMISE = ITEMS.register
+            ("promise", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> IMPURE_PROMISE = ITEMS.register
+            ("impure_promise", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> PURE_PROMISE = ITEMS.register
+            ("pure_promise", () -> new Item(new Item.Properties().fireResistant()));
+
+    public static final RegistryObject<Item> PROMISE_SWORD = ITEMS.register
+            ("promise_sword", () -> new SwordItem(ModToolTiers.PROMISE, 6,0,
+                    new Item.Properties().defaultDurability(2000).fireResistant()));
+
+
     public static final RegistryObject<Item> SLORP_SWORD = ITEMS.register
             ("slorp_sword", () -> new SwordItem(ModToolTiers.SLORP, 3,5,
                     new Item.Properties().defaultDurability(600)));

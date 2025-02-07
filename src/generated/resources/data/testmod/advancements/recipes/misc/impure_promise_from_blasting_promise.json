@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_pure_promise": {
+    "has_promise": {
       "conditions": {
         "items": [
           {
             "items": [
-              "testmod:pure_promise"
+              "testmod:promise"
             ]
           }
         ]
@@ -15,20 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "testmod:slorp_sword"
+        "recipe": "testmod:impure_promise_from_blasting_promise"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_pure_promise",
+      "has_promise",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "testmod:slorp_sword"
+      "testmod:impure_promise_from_blasting_promise"
     ]
   },
   "sends_telemetry_event": false

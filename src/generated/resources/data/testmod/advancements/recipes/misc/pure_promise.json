@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_pure_promise": {
+    "has_nether_star": {
       "conditions": {
         "items": [
           {
             "items": [
-              "testmod:pure_promise"
+              "minecraft:nether_star"
             ]
           }
         ]
@@ -15,20 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "testmod:slorp_sword"
+        "recipe": "testmod:pure_promise"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_pure_promise",
+      "has_nether_star",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "testmod:slorp_sword"
+      "testmod:pure_promise"
     ]
   },
   "sends_telemetry_event": false

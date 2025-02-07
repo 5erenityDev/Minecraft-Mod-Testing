@@ -56,6 +56,10 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleHandHeldItem(ModItems.SLORP_SWORD);
         simpleHandHeldItem(ModItems.SLORP_AXE);
 
+        simpleItem(ModItems.PROMISE);
+        simpleItem(ModItems.IMPURE_PROMISE);
+        simpleItem(ModItems.PURE_PROMISE);
+
 
         evenSimplerBlockItem(ModBlocks.GARUGAMESH_STAIRS);
         evenSimplerBlockItem(ModBlocks.GARUGAMESH_SLAB);

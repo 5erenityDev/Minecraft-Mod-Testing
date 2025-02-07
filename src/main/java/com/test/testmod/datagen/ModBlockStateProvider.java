@@ -23,6 +23,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.SLIMPO_NETHERRACK);
         blockWithItem(ModBlocks.TOMBLER);
         blockWithItem(ModBlocks.SLORP_BLOCK);
+        blockWithItem(ModBlocks.PROMISE_ORE);
 
         stairsBlock(((StairBlock) ModBlocks.GARUGAMESH_STAIRS.get()), blockTexture(ModBlocks.GARUGAMESH.get()));
         slabBlock(((SlabBlock) ModBlocks.GARUGAMESH_SLAB.get()), blockTexture(ModBlocks.GARUGAMESH.get()), blockTexture(ModBlocks.GARUGAMESH.get()));

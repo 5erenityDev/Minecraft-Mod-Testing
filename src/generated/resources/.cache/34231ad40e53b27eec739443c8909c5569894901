@@ -1,11 +1,11 @@
-// 1.20.1	2025-02-06T13:17:59.6377832	Tags for minecraft:block mod id testmod
+// 1.20.1	2025-02-07T03:14:51.4067506	Tags for minecraft:block mod id testmod
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/forge/tags/blocks/needs_gold_tool.json
-35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/forge/tags/blocks/needs_netherite_tool.json
+a969affa572f7f5f039d69d3f2cd1b5354c9e708 data/forge/tags/blocks/needs_netherite_tool.json
 0c85eabb85c614a8c46d451202256b0a605a459c data/forge/tags/blocks/needs_wood_tool.json
 196f7cf888a42328ef4f004436d0cfaa7c72b895 data/minecraft/tags/blocks/fences.json
 a6cf87c548ec177c2723f4a1c71a7a01e3341033 data/minecraft/tags/blocks/fence_gates.json
 0c85eabb85c614a8c46d451202256b0a605a459c data/minecraft/tags/blocks/mineable/hoe.json
-882d0eff0d332f5b9b7ee0cf9056f7afcb29fbf5 data/minecraft/tags/blocks/mineable/pickaxe.json
+564a66aef69877f3e007fedff900879e7f39f1a9 data/minecraft/tags/blocks/mineable/pickaxe.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/blocks/needs_diamond_tool.json
 9725c1035a69259f895d7b212ce2513649143f2e data/minecraft/tags/blocks/needs_iron_tool.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/blocks/needs_stone_tool.json

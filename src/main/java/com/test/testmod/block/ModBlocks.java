@@ -67,6 +67,13 @@ public class ModBlocks {
                     .strength(3).requiresCorrectToolForDrops()
             ));
 
+    public static final RegistryObject<Block> PROMISE_ORE = registerBlock
+            ("promise_ore", () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.STONE)
+                    .sound(SoundType.AMETHYST)
+                    .strength(2f).requiresCorrectToolForDrops(), UniformInt.of(5, 6)
+            ));
+
+
 
     //Slabs, Stairs, Doors, Pressure plates, Buttons etc
 

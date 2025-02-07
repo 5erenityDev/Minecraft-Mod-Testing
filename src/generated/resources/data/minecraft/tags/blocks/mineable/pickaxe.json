@@ -1,6 +1,7 @@
 {
   "values": [
     "testmod:slimpo_netherrack",
-    "testmod:slimpo"
+    "testmod:slimpo",
+    "testmod:promise_ore"
   ]
 }

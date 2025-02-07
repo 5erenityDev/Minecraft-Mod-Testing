@@ -5,6 +5,7 @@ import com.test.testmod.block.ModBlocks;
 import com.test.testmod.item.ModItems;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.AbstractCookingRecipe;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.RecipeSerializer;
@@ -18,6 +19,8 @@ import java.util.function.Consumer;
 public class ModRecipeProvider extends RecipeProvider implements IConditionBuilder {
     private static final List<ItemLike> WINGLE_SMELTABLES = List.of(ModItems.WINGLE.get(),
             ModBlocks.SLIMPO.get(), ModBlocks.SLIMPO_NETHERRACK.get());
+    private static final List<ItemLike> PROMISE_SMELTABLES = List.of(ModItems.PROMISE.get(),
+            ModBlocks.PROMISE_ORE.get());
 
     public ModRecipeProvider(PackOutput pOutput) {
         super(pOutput);
@@ -31,6 +34,9 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         oreBlasting(pWriter, WINGLE_SMELTABLES, RecipeCategory.MISC, ModItems.THE_SLORBO.get(), 1, 150, "Slorbo");
         oreSmelting(pWriter, WINGLE_SMELTABLES, RecipeCategory.MISC, ModItems.THE_SLORBO.get(), 1, 50, "Slorbo");
 
+        oreSmelting(pWriter, PROMISE_SMELTABLES, RecipeCategory.MISC, ModItems.IMPURE_PROMISE.get(), 5, 250, "Promise");
+        oreBlasting(pWriter, PROMISE_SMELTABLES, RecipeCategory.MISC, ModItems.IMPURE_PROMISE.get(), 5, 150, "Promise");
+
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.GARUGAMESH.get())
                 .pattern("WWW")
                 .pattern("WWW")
@@ -38,6 +44,25 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('W', ModItems.THE_SLORBO.get())
                 .unlockedBy(getHasName(ModItems.WINGLE.get()), has(ModItems.WINGLE.get()))
                 .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.PURE_PROMISE.get())
+                .pattern(" I ")
+                .pattern("ISI")
+                .pattern(" I ")
+                .define('I', ModItems.IMPURE_PROMISE.get())
+                .define('S', Items.NETHER_STAR)
+                .unlockedBy(getHasName(Items.NETHER_STAR), has(Items.NETHER_STAR))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.PROMISE_SWORD.get())
+                .pattern(" D ")
+                .pattern(" D ")
+                .pattern(" S ")
+                .define('D', ModItems.PURE_PROMISE.get())
+                .define('S', Items.DARK_OAK_LOG)
+                .unlockedBy(getHasName(ModItems.PURE_PROMISE.get()), has(ModItems.PURE_PROMISE.get()))
+                .save(pWriter);
+
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.SLORP_BLOCK.get())
                 .pattern("AAA")

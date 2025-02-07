@@ -1,5 +1,6 @@
 {
   "creativetab.neighbor_tab": "Neighbor's Stuff",
+  "creativetab.promise_tab": "Promise",
 
   "block.testmod.tombler": "Tombler",
   "block.testmod.garugamesh": "Garugamesh",
@@ -7,12 +8,20 @@
   "block.testmod.slimpo_netherrack": "Nether Slimpo",
   "block.testmod.slorp_block": "Slorp Congregation",
 
+  "block.testmod.promise_ore": "Promise Ore",
+
   "item.testmod.slop": "Slop",
   "item.testmod.the_slorbo": "The Slorbo",
   "item.testmod.grobbler": "Grobbler",
   "item.testmod.wingle": "Wingle!",
   "item.testmod.angry_slorp": "Angry Slorp",
   "item.testmod.slorper": "Slorper",
+
+  "item.testmod.promise": "Promise",
+  "item.testmod.pure_promise": "Pure Promise",
+  "item.testmod.impure_promise": "Impure Promise",
+
+  "item.testmod.promise_sword": "Promise Sword",
 
   "item.testmod.slorp_sword": "Slorp Sword",
   "item.testmod.slorp_pickaxe": "Slorp Pickaxe",

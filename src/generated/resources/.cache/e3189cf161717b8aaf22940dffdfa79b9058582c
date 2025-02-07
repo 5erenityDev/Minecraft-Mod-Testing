@@ -1,4 +1,4 @@
-// 1.20.1	2025-02-06T13:28:04.665299	Block States: testmod
+// 1.20.1	2025-02-07T03:14:51.4087456	Block States: testmod
 ce520c39b2145a73d0f2e9621c01137375c09796 assets/testmod/blockstates/garugamesh.json
 3a275abac4c9aa4eae339db2abcdadae477de6ee assets/testmod/blockstates/garugamesh_button.json
 94c9340019f9c9e96f504430550b957b721ee1b1 assets/testmod/blockstates/garugamesh_door.json
@@ -19,6 +19,7 @@ d5f9da414d1317e19d5ce9175cc114407c5bc67d assets/testmod/blockstates/plush_slab.j
 92b8c19e3403a31cf3642bd18b5b2c03c331eab7 assets/testmod/blockstates/plush_stairs.json
 afc4dd30b0590284a4177bc36a35adabf5a36868 assets/testmod/blockstates/plush_trapdoor.json
 d2eea4c4b875570e46a3d9dafdf8716969564782 assets/testmod/blockstates/plush_walls.json
+11a4fc65720bd7e48238666958fea0adf776668a assets/testmod/blockstates/promise_ore.json
 6645fec381e4c351b69bafddd325235d26b640a6 assets/testmod/blockstates/slimpo.json
 45d7f84463fef97cdd8347716da56e005bf14733 assets/testmod/blockstates/slimpo_netherrack.json
 99d235b03a92fc9b886e898825ccda074600e7cb assets/testmod/blockstates/slorp_block.json
@@ -84,6 +85,7 @@ ffbb9a6441b47d8d81370a9f0362648647592d3f assets/testmod/models/block/plush_trapd
 c9515fe0b6968c27b004cf15ef8a2a045b9cddaa assets/testmod/models/block/plush_walls_post.json
 9ef108dc035dad8c833a3bbf473c988f8a47ebea assets/testmod/models/block/plush_walls_side.json
 c72e9a29443f6ba0b92e8cfe7e2e8d00908a4e8b assets/testmod/models/block/plush_walls_side_tall.json
+e07520706dcff1acbd24a4977a5807492be0c981 assets/testmod/models/block/promise_ore.json
 7983b30d168ed113a96c352a761668f59e46201a assets/testmod/models/block/slimpo.json
 5a45916bd80a4cc0fc80665cb484db106fc94b27 assets/testmod/models/block/slimpo_netherrack.json
 26f48526605797e4c2eb223f0133ffd7c0f2c2e0 assets/testmod/models/block/slorp_block.json
@@ -91,6 +93,7 @@ c72e9a29443f6ba0b92e8cfe7e2e8d00908a4e8b assets/testmod/models/block/plush_walls
 21c8bd025dbcc8fc22150eeaeef589727fc51634 assets/testmod/models/block/tombler.json
 1f84c078f057922dcfa37e55ec2429f9d80ed2a7 assets/testmod/models/item/garugamesh.json
 5ab423d7b3930955f800168c588b48f01d3981c8 assets/testmod/models/item/plush_block.json
+552a3c2e05d7fd2452571e1717b9ef0fe61e499d assets/testmod/models/item/promise_ore.json
 cd647650ea51e20d4939e0fc75e833e36ed0fc17 assets/testmod/models/item/slimpo.json
 8b59dd025051ebe36394c726b24ab2d1d4049444 assets/testmod/models/item/slimpo_netherrack.json
 8ad3a7e26bea764cef5ce2d00f806c1f2389c91c assets/testmod/models/item/slorp_block.json

@@ -16,4 +16,9 @@ public class ModToolTiers {
             new ForgeTier(5, 2000, 3f,6, 30,
                     ModTags.Blocks.NEEDS_SLORP_TOOL, () -> Ingredient.of(ModItems.ANGRY_SLORP.get())),
             new ResourceLocation(TestMod.MODID, "angry_slorp" ), List.of(Tiers.NETHERITE), List.of());
+
+    public static final Tier PROMISE = TierSortingRegistry.registerTier(
+            new ForgeTier(6, 4000, 6f,20, 30,
+                    ModTags.Blocks.NEEDS_PROMISE_TOOL, () -> Ingredient.of(ModItems.PURE_PROMISE.get())),
+            new ResourceLocation(TestMod.MODID, "pure_promise" ), List.of(ModToolTiers.SLORP), List.of());
 }

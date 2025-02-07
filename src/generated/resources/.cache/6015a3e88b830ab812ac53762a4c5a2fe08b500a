@@ -1,4 +1,4 @@
-// 1.20.1	2025-02-06T22:38:45.5432259	Item Models: testmod
+// 1.20.1	2025-02-07T03:45:23.9924476	Item Models: testmod
 adb2ea84f25c9864828f71e7182f44fdb8de3d81 assets/testmod/models/item/angry_slorp.json
 44951230b880af5658570705e35c18d9127d3136 assets/testmod/models/item/chuckster_fruit.json
 09bae91bbae1c93bf7f36bbb9f47f1217225a7f8 assets/testmod/models/item/garugamesh_button.json
@@ -11,6 +11,7 @@ fd3fb7bbb67788fec8675af7fd8c10e0ecef4284 assets/testmod/models/item/garugamesh_p
 33656496876ef02a315c90b19018cf6d3d865e3c assets/testmod/models/item/garugamesh_trapdoor.json
 4f956b5bea0e96e6f2cef0e25bb78527a43a5df8 assets/testmod/models/item/garugamesh_walls.json
 7430bfbe55526b43779142774905856f0f1bcd84 assets/testmod/models/item/grobbler.json
+ee3854db8ece839bccfefc6e5403836832a01aa9 assets/testmod/models/item/impure_promise.json
 af80d2ea1812d21f2e2a98b3007bd50f3588e3f2 assets/testmod/models/item/mace.json
 38940b3b1f414847b35b22288576b8e6c86fd5a0 assets/testmod/models/item/plush_button.json
 2881323fa1a14937ade7f973d4d9e84caf615fb7 assets/testmod/models/item/plush_door.json
@@ -21,6 +22,8 @@ f5b78931bf855ca7ccde1db5f91c3724467924d8 assets/testmod/models/item/plush_pressu
 2c3e55482d94a8e73f94fbe0579fd1b64c02e5a5 assets/testmod/models/item/plush_stairs.json
 c6165b8eda379ee72d2e8419b6f8318e877f881f assets/testmod/models/item/plush_trapdoor.json
 3b05f301c962d85607b1863df338fd0a8fb10545 assets/testmod/models/item/plush_walls.json
+7ebcde5d1d75da609ac9447693797f136a460af4 assets/testmod/models/item/promise.json
+57a9e16255c68b5b1a9ee467987c855c94ec843d assets/testmod/models/item/pure_promise.json
 33b0244feb9d455659960194542cef63d4fea0b2 assets/testmod/models/item/slime_mace.json
 0a1877f4f2017866410ca8a54f7178ea253ea766 assets/testmod/models/item/slop.json
 339db1d6ac64cf8c53f7cef4ababb6e4664703e2 assets/testmod/models/item/slorp_axe.json
