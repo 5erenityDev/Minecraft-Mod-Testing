@@ -1,5 +1,6 @@
 package com.test.testmod.neighbor.item.custom;
 
+import net.minecraft.client.multiplayer.chat.LoggedChatMessage;
 import net.minecraft.network.chat.Component;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
