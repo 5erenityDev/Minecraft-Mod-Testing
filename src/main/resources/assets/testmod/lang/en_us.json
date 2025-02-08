@@ -23,6 +23,12 @@
 
   "item.testmod.promise_sword": "Promise Sword",
 
+  "item.testmod.promise_helmet": "Promise Helmet",
+  "item.testmod.promise_chestplate": "Promise Chestplate",
+  "item.testmod.promise_leggings": "Promise Leggings",
+  "item.testmod.promise_boots": "Promise Boots",
+
+
   "item.testmod.slorp_sword": "Slorp Sword",
   "item.testmod.slorp_pickaxe": "Slorp Pickaxe",
   "item.testmod.slorp_shovel": "Slorp Shovel",

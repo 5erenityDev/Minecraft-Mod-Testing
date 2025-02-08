@@ -50,6 +50,15 @@ public class ModItems {
             ("promise_sword", () -> new SwordItem(ModToolTiers.PROMISE, 6,0,
                     new Item.Properties().defaultDurability(2000).fireResistant()));
 
+    public static final RegistryObject<Item> PROMISE_HELMET = ITEMS.register
+            ("promise_helmet", () -> new ArmorItem(ModArmorMaterials.PROMISE, ArmorItem.Type.HELMET, new Item.Properties().fireResistant()));
+    public static final RegistryObject<Item> PROMISE_CHESTPLATE = ITEMS.register
+            ("promise_chestplate", () -> new ArmorItem(ModArmorMaterials.PROMISE, ArmorItem.Type.CHESTPLATE, new Item.Properties().fireResistant()));
+    public static final RegistryObject<Item> PROMISE_LEGGINGS = ITEMS.register
+            ("promise_leggings", () -> new ArmorItem(ModArmorMaterials.PROMISE, ArmorItem.Type.LEGGINGS, new Item.Properties().fireResistant()));
+    public static final RegistryObject<Item> PROMISE_BOOTS = ITEMS.register
+            ("promise_boots", () -> new ArmorItem(ModArmorMaterials.PROMISE, ArmorItem.Type.BOOTS, new Item.Properties().fireResistant()));
+
 
     public static final RegistryObject<Item> SLORP_SWORD = ITEMS.register
             ("slorp_sword", () -> new SwordItem(ModToolTiers.SLORP, 3,5,

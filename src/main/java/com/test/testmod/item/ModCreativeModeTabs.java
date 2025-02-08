@@ -93,6 +93,10 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.IMPURE_PROMISE.get());
                         output.accept(ModItems.PROMISE_SWORD.get());
                         output.accept(ModBlocks.PROMISE_ORE.get());
+                        output.accept(ModItems.PROMISE_HELMET.get());
+                        output.accept(ModItems.PROMISE_CHESTPLATE.get());
+                        output.accept(ModItems.PROMISE_LEGGINGS.get());
+                        output.accept(ModItems.PROMISE_BOOTS.get());
                     }).build()
     );
 

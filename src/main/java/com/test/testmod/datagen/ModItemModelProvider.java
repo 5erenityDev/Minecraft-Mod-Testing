@@ -60,6 +60,10 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.IMPURE_PROMISE);
         simpleItem(ModItems.PURE_PROMISE);
 
+        trimmedArmorItem(ModItems.PROMISE_HELMET);
+        trimmedArmorItem(ModItems.PROMISE_CHESTPLATE);
+        trimmedArmorItem(ModItems.PROMISE_LEGGINGS);
+        trimmedArmorItem(ModItems.PROMISE_BOOTS);
 
         evenSimplerBlockItem(ModBlocks.GARUGAMESH_STAIRS);
         evenSimplerBlockItem(ModBlocks.GARUGAMESH_SLAB);
@@ -71,6 +75,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         trimmedArmorItem(ModItems.SLORP_CHESTPLATE);
         trimmedArmorItem(ModItems.SLORP_LEGGINGS);
         trimmedArmorItem(ModItems.SLORP_BOOTS);
+
+
 
         fenceInventory("garugamesh_fence", modLoc("block/garugamesh"));
         buttonInventory("garugamesh_button", modLoc("block/garugamesh"));

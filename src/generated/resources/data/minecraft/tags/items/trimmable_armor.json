@@ -3,6 +3,10 @@
     "testmod:slorp_helmet",
     "testmod:slorp_boots",
     "testmod:slorp_leggings",
-    "testmod:slorp_chestplate"
+    "testmod:slorp_chestplate",
+    "testmod:promise_helmet",
+    "testmod:promise_chestplate",
+    "testmod:promise_leggings",
+    "testmod:promise_boots"
   ]
 }

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "D": {
+      "item": "testmod:the_slorbo"
+    },
+    "S": {
+      "item": "testmod:angry_slorp"
+    }
+  },
+  "pattern": [
+    "   ",
+    "D D",
+    "S S"
+  ],
+  "result": {
+    "item": "testmod:slorp_boots"
+  },
+  "show_notification": true
+}

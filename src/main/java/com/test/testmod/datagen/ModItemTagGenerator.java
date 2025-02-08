@@ -26,7 +26,11 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModItems.SLORP_HELMET.get(),
                         ModItems.SLORP_BOOTS.get(),
                         ModItems.SLORP_LEGGINGS.get(),
-                        ModItems.SLORP_CHESTPLATE.get());
+                        ModItems.SLORP_CHESTPLATE.get())
+                .add(ModItems.PROMISE_HELMET.get(),
+                        ModItems.PROMISE_CHESTPLATE.get(),
+                        ModItems.PROMISE_LEGGINGS.get(),
+                        ModItems.PROMISE_BOOTS.get());
 
 
 

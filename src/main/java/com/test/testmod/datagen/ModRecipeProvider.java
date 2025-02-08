@@ -80,6 +80,68 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModItems.WINGLE.get()), has(ModItems.WINGLE.get()))
                 .save(pWriter);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.SLORP_HELMET.get())
+                .pattern("SSS")
+                .pattern("D D")
+                .pattern("   ")
+                .define('D', ModItems.THE_SLORBO.get())
+                .define('S', ModItems.ANGRY_SLORP.get())
+                .unlockedBy(getHasName(ModItems.THE_SLORBO.get()), has(ModItems.THE_SLORBO.get()))
+                .save(pWriter);
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.SLORP_CHESTPLATE.get())
+                .pattern("D D")
+                .pattern("SSS")
+                .pattern("SDS")
+                .define('D', ModItems.THE_SLORBO.get())
+                .define('S', ModItems.ANGRY_SLORP.get())
+                .unlockedBy(getHasName(ModItems.THE_SLORBO.get()), has(ModItems.THE_SLORBO.get()))
+                .save(pWriter);
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.SLORP_LEGGINGS.get())
+                .pattern("DSD")
+                .pattern("S S")
+                .pattern("S S")
+                .define('D', ModItems.THE_SLORBO.get())
+                .define('S', ModItems.ANGRY_SLORP.get())
+                .unlockedBy(getHasName(ModItems.THE_SLORBO.get()), has(ModItems.THE_SLORBO.get()))
+                .save(pWriter);
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.SLORP_BOOTS.get())
+                .pattern("   ")
+                .pattern("D D")
+                .pattern("S S")
+                .define('D', ModItems.THE_SLORBO.get())
+                .define('S', ModItems.ANGRY_SLORP.get())
+                .unlockedBy(getHasName(ModItems.THE_SLORBO.get()), has(ModItems.THE_SLORBO.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.PROMISE_HELMET.get())
+                .pattern("PPP")
+                .pattern("P P")
+                .pattern("   ")
+                .define('P', ModItems.PURE_PROMISE.get())
+                .unlockedBy(getHasName(ModItems.PURE_PROMISE.get()), has(ModItems.PURE_PROMISE.get()))
+                .save(pWriter);
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.PROMISE_CHESTPLATE.get())
+                .pattern("P P")
+                .pattern("PPP")
+                .pattern("PPP")
+                .define('P', ModItems.PURE_PROMISE.get())
+                .unlockedBy(getHasName(ModItems.PURE_PROMISE.get()), has(ModItems.PURE_PROMISE.get()))
+                .save(pWriter);
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.PROMISE_LEGGINGS.get())
+                .pattern("PPP")
+                .pattern("P P")
+                .pattern("P P")
+                .define('P', ModItems.PURE_PROMISE.get())
+                .unlockedBy(getHasName(ModItems.PURE_PROMISE.get()), has(ModItems.PURE_PROMISE.get()))
+                .save(pWriter);
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.PROMISE_BOOTS.get())
+                .pattern("   ")
+                .pattern("P P")
+                .pattern("P P")
+                .define('P', ModItems.PURE_PROMISE.get())
+                .unlockedBy(getHasName(ModItems.PURE_PROMISE.get()), has(ModItems.PURE_PROMISE.get()))
+                .save(pWriter);
+
         ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.SLORP_SWORD.get())
                 .pattern(" D ")
                 .pattern(" D ")
