@@ -13,10 +13,11 @@ public class ChucksterFruitItem extends Item {
 
     @Override
     public ItemStack finishUsingItem(ItemStack pStack, Level pLevel, LivingEntity pLivingEntity) {
-        pLivingEntity.sendSystemMessage(Component.literal("I'm a Chuckster!"));
+        if (pLevel.isClientSide) {
+            pLivingEntity.sendSystemMessage(Component.literal("I'm a Chuckster!"));
 
-        pLivingEntity.setDeltaMovement(5, 5, 0);
-
+            pLivingEntity.setDeltaMovement(5, 5, 0);
+        }
         return this.isEdible() ? pLivingEntity.eat(pLevel, pStack) : pStack;
     }
 

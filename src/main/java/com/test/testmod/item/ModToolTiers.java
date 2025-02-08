@@ -21,4 +21,10 @@ public class ModToolTiers {
             new ForgeTier(6, 4000, 6f,20, 30,
                     ModTags.Blocks.NEEDS_PROMISE_TOOL, () -> Ingredient.of(ModItems.PURE_PROMISE.get())),
             new ResourceLocation(TestMod.MODID, "pure_promise" ), List.of(ModToolTiers.SLORP), List.of());
+
+
+    public static final Tier PERMAFROST = TierSortingRegistry.registerTier(
+            new ForgeTier(2, 250, 20.0F, 2.0F, 14,
+                    ModTags.Blocks.NEEDS_PERMAFROST_TOOL, () -> Ingredient.of(ModItems.PERMAFROST.get())),
+            new ResourceLocation(TestMod.MODID, "permafrost" ), List.of(Tiers.IRON), List.of());
 }

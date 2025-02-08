@@ -115,4 +115,29 @@ public class ModItems {
             () -> new SlimeMaceItem(new Item.Properties().durability(100))
     );
 
+
+    public static final RegistryObject<Item> PERMAFROST = ITEMS.register
+            ("permafrost", () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> PERMAFROST_ESTOC = ITEMS.register
+            ("permafrost_estoc", () -> new SwordItem(ModToolTiers.PERMAFROST, 3,50,
+                    new Item.Properties().defaultDurability(600)));
+    public static final RegistryObject<Item> PERMAFROST_ICE_AXE = ITEMS.register
+            ("permafrost_ice_axe", () -> new PickaxeItem(ModToolTiers.PERMAFROST, 1,8,
+                    new Item.Properties().defaultDurability(600)));
+    public static final RegistryObject<Item> PERMAFROST_SLEDGEHAMMER = ITEMS.register
+            ("permafrost_sledgehammer", () -> new AxeItem(ModToolTiers.PERMAFROST, 10,2,
+                    new Item.Properties().defaultDurability(600)));
+    public static final RegistryObject<Item> PERMAFROST_SCYTHE = ITEMS.register
+            ("permafrost_scythe", () -> new HoeItem(ModToolTiers.PERMAFROST, 0,2,
+                    new Item.Properties().defaultDurability(800)));
+    public static final RegistryObject<Item> PERMAFROST_ICE_SCRAPER = ITEMS.register
+            ("permafrost_ice_scraper", () -> new ShovelItem(ModToolTiers.PERMAFROST, 2,1,
+                    new Item.Properties().defaultDurability(600)));
+
+    public static final RegistryObject<Item> PERMAFROST_ICE_LAUNCHER = ITEMS.register(
+            "permafrost_ice_launcher",
+            () -> new PermafrostIceLauncherItem(new Item.Properties().durability(600))
+    );
+
 }

@@ -102,6 +102,15 @@ public class ModItemModelProvider extends ItemModelProvider {
         buttonInventory("plush_button", modLoc("block/plush_block"));
         wallInventory("plush_walls", modLoc("block/plush_block"));
         trapdoorBottom("plush_trapdoor", modLoc("block/plush_trapdoor"));
+
+        simpleHandHeldItem(ModItems.PERMAFROST);
+
+        simpleHandHeldItem(ModItems.PERMAFROST_SCYTHE);
+        simpleHandHeldItem(ModItems.PERMAFROST_ICE_AXE);
+        simpleHandHeldItem(ModItems.PERMAFROST_ICE_SCRAPER);
+        simpleHandHeldItem(ModItems.PERMAFROST_ESTOC);
+        simpleHandHeldItem(ModItems.PERMAFROST_SLEDGEHAMMER);
+        simpleHandHeldItem(ModItems.PERMAFROST_ICE_LAUNCHER);
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {

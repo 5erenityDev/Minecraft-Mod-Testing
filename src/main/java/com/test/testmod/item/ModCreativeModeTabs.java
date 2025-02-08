@@ -60,6 +60,22 @@ public class ModCreativeModeTabs {
                     }).build()
     );
 
+    public static final RegistryObject<CreativeModeTab> Promise_Tab = CREATIVE_MODE_TABS.register(
+            "promise_tab", () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.PURE_PROMISE.get()))
+                    .title(Component.translatable("creativetab.promise_tab"))
+                    .displayItems((itemDisplayParameters, output) -> {
+                        output.accept(ModItems.PROMISE.get());
+                        output.accept(ModItems.PURE_PROMISE.get());
+                        output.accept(ModItems.IMPURE_PROMISE.get());
+                        output.accept(ModItems.PROMISE_SWORD.get());
+                        output.accept(ModBlocks.PROMISE_ORE.get());
+                        output.accept(ModItems.PROMISE_HELMET.get());
+                        output.accept(ModItems.PROMISE_CHESTPLATE.get());
+                        output.accept(ModItems.PROMISE_LEGGINGS.get());
+                        output.accept(ModItems.PROMISE_BOOTS.get());
+                    }).build()
+    );
+
     public static final RegistryObject<CreativeModeTab> SERENITY_TAB = CREATIVE_MODE_TABS.register(
             "serenity_tab",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.TELEPORT_STAFF.get()))
@@ -81,24 +97,16 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.PLUSH_PRESSURE_PLATE.get());
                         output.accept(ModBlocks.PLUSH_TRAPDOOR.get());
                         output.accept(ModBlocks.PLUSH_WALLS.get());
+
+                        output.accept(ModItems.PERMAFROST_SLEDGEHAMMER.get());
+                        output.accept(ModItems.PERMAFROST_SCYTHE.get());
+                        output.accept(ModItems.PERMAFROST_ICE_AXE.get());
+                        output.accept(ModItems.PERMAFROST_ICE_SCRAPER.get());
+                        output.accept(ModItems.PERMAFROST_ESTOC.get());
                     }).build()
     );
 
-    public static final RegistryObject<CreativeModeTab> Promise_Tab = CREATIVE_MODE_TABS.register(
-            "promise_tab", () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.PURE_PROMISE.get()))
-                    .title(Component.translatable("creativetab.promise_tab"))
-                    .displayItems((itemDisplayParameters, output) -> {
-                        output.accept(ModItems.PROMISE.get());
-                        output.accept(ModItems.PURE_PROMISE.get());
-                        output.accept(ModItems.IMPURE_PROMISE.get());
-                        output.accept(ModItems.PROMISE_SWORD.get());
-                        output.accept(ModBlocks.PROMISE_ORE.get());
-                        output.accept(ModItems.PROMISE_HELMET.get());
-                        output.accept(ModItems.PROMISE_CHESTPLATE.get());
-                        output.accept(ModItems.PROMISE_LEGGINGS.get());
-                        output.accept(ModItems.PROMISE_BOOTS.get());
-                    }).build()
-    );
+    
 
 
 }

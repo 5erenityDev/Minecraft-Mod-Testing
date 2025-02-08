@@ -79,11 +79,22 @@
   "block.testmod.plush_door": "Plush Door",
   "block.testmod.plush_trapdoor": "Plush Trap Door",
 
+  "item.testmod.permafrost": "Permafrost",
+
+  "item.testmod.permafrost_estoc": "Permafrost Estoc",
+  "item.testmod.permafrost_ice_axe": "Permafrost Ice Axe",
+  "item.testmod.permafrost_ice_scraper": "Permafrost Ice Scraper",
+  "item.testmod.permafrost_ice_launcher": "Permafrost Ice Launcher",
+  "item.testmod.permafrost_sledgehammer": "Permafrost Sledgehammer",
+  "item.testmod.permafrost_scythe": "Permafrost Scythe",
+
   "item.testmod.teleport_staff": "Teleport Staff",
   "item.testmod.mace": "Mace",
   "item.testmod.slime_mace": "Slime Mace",
   "item.testmod.chuckster_fruit": "Chuckster Fruit",
   "item.testmod.doohickey": "Doohickey",
+
+
 
   "tooltip.testmod.speed_block.tooltip": "Block that increases speed and jump height when stood on.",
 

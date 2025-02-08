@@ -15,7 +15,7 @@ public class ModTags {
         public static final TagKey<Block> NEEDS_SLORP_TOOL = tag("needs_slorp_tool");
         public static final TagKey<Block> NEEDS_PROMISE_TOOL = tag("needs_promise_tool");
 
-
+        public static final TagKey<Block> NEEDS_PERMAFROST_TOOL = tag("needs_permafrost_tool");
 
 
         private static TagKey<Block> tag(String name) {

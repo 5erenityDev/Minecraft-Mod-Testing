@@ -1,4 +1,4 @@
-// 1.20.1	2025-02-07T22:56:03.9018179	Item Models: testmod
+// 1.20.1	2025-02-08T14:22:31.2115665	Item Models: testmod
 adb2ea84f25c9864828f71e7182f44fdb8de3d81 assets/testmod/models/item/angry_slorp.json
 44951230b880af5658570705e35c18d9127d3136 assets/testmod/models/item/chuckster_fruit.json
 09bae91bbae1c93bf7f36bbb9f47f1217225a7f8 assets/testmod/models/item/garugamesh_button.json
@@ -13,6 +13,13 @@ fd3fb7bbb67788fec8675af7fd8c10e0ecef4284 assets/testmod/models/item/garugamesh_p
 7430bfbe55526b43779142774905856f0f1bcd84 assets/testmod/models/item/grobbler.json
 ee3854db8ece839bccfefc6e5403836832a01aa9 assets/testmod/models/item/impure_promise.json
 af80d2ea1812d21f2e2a98b3007bd50f3588e3f2 assets/testmod/models/item/mace.json
+82b9c0aec6354178c9da6bd5695a1584ca558c0d assets/testmod/models/item/permafrost.json
+4201422f4cc7dcfeb96d81f9b926d5fef3e54384 assets/testmod/models/item/permafrost_estoc.json
+4173101d4004bb20c9d3ca200865e5b395c18930 assets/testmod/models/item/permafrost_ice_axe.json
+c161c338be45a3d9b64711ac351d051f11eb9a46 assets/testmod/models/item/permafrost_ice_launcher.json
+18c29ec20c18b1ef013b29e70be5800f0fa1eec7 assets/testmod/models/item/permafrost_ice_scraper.json
+acc510ca2e5c1d1eb255232494b6ddad6a152cd8 assets/testmod/models/item/permafrost_scythe.json
+ea29dd12b96648c9b75a69bbf80c9e1ed40e1fe9 assets/testmod/models/item/permafrost_sledgehammer.json
 38940b3b1f414847b35b22288576b8e6c86fd5a0 assets/testmod/models/item/plush_button.json
 2881323fa1a14937ade7f973d4d9e84caf615fb7 assets/testmod/models/item/plush_door.json
 75482c7144b5f2179ebfe587470ad9ad6a6cae39 assets/testmod/models/item/plush_fence.json
