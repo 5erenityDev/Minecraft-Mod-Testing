@@ -4,6 +4,7 @@ import com.test.testmod.TestMod;
 import com.test.testmod.block.ModBlocks;
 import com.test.testmod.neighbor.item.custom.FuelItem;
 import com.test.testmod.neighbor.item.custom.GrobblerItem;
+import com.test.testmod.neighbor.item.custom.ModArmorItem;
 import com.test.testmod.neighbor.item.custom.SlorperItem;
 import com.test.testmod.serenity.item.custom.DoohickeyItem;
 import com.test.testmod.serenity.item.custom.MaceItem;
@@ -52,7 +53,7 @@ public class ModItems {
                     new Item.Properties().defaultDurability(2000).fireResistant()));
 
     public static final RegistryObject<Item> PROMISE_HELMET = ITEMS.register
-            ("promise_helmet", () -> new ArmorItem(ModArmorMaterials.PROMISE, ArmorItem.Type.HELMET, new Item.Properties().fireResistant()));
+            ("promise_helmet", () -> new ModArmorItem(ModArmorMaterials.PROMISE, ArmorItem.Type.HELMET, new Item.Properties().fireResistant()));
     public static final RegistryObject<Item> PROMISE_CHESTPLATE = ITEMS.register
             ("promise_chestplate", () -> new ArmorItem(ModArmorMaterials.PROMISE, ArmorItem.Type.CHESTPLATE, new Item.Properties().fireResistant()));
     public static final RegistryObject<Item> PROMISE_LEGGINGS = ITEMS.register
