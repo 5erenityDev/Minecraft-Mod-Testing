@@ -1,6 +1,7 @@
 package com.test.testmod.item;
 
 import com.test.testmod.TestMod;
+import com.test.testmod.block.ModBlocks;
 import com.test.testmod.neighbor.item.custom.FuelItem;
 import com.test.testmod.neighbor.item.custom.GrobblerItem;
 import com.test.testmod.neighbor.item.custom.SlorperItem;
@@ -95,6 +96,11 @@ public class ModItems {
             () -> new ChucksterFruitItem(new Item.Properties().food(ModFoods.CHUCKSTER_FRUIT))
     );
 
+    public static final RegistryObject<Item> CHUCKSTER_SEEDS = ITEMS.register(
+            "chuckster_seeds",
+            () -> new ItemNameBlockItem(ModBlocks.CHUCKSTER_CROP.get(), new Item.Properties())
+    );
+
     public static final RegistryObject<Item> TELEPORT_STAFF = ITEMS.register(
             "teleport_staff",
             () -> new TeleportStaffItem(new Item.Properties().durability(100))
@@ -140,4 +146,16 @@ public class ModItems {
             () -> new PermafrostIceLauncherItem(new Item.Properties().durability(600))
     );
 
+    public static final RegistryObject<Item> PERMAFROST_HELMET = ITEMS.register
+            ("permafrost_helmet", () -> new ModArmorItem(ModArmorMaterials.PERMAFROST, ArmorItem.Type.HELMET,
+                    new Item.Properties()));
+    public static final RegistryObject<Item> PERMAFROST_CHESTPLATE = ITEMS.register
+            ("permafrost_chestplate", () -> new ModArmorItem(ModArmorMaterials.PERMAFROST, ArmorItem.Type.CHESTPLATE,
+                    new Item.Properties()));
+    public static final RegistryObject<Item> PERMAFROST_LEGGINGS = ITEMS.register
+            ("permafrost_leggings", () -> new ModArmorItem(ModArmorMaterials.PERMAFROST, ArmorItem.Type.LEGGINGS,
+                    new Item.Properties()));
+    public static final RegistryObject<Item> PERMAFROST_BOOTS = ITEMS.register
+            ("permafrost_boots", () -> new ModArmorItem(ModArmorMaterials.PERMAFROST, ArmorItem.Type.BOOTS,
+                    new Item.Properties()));
 }

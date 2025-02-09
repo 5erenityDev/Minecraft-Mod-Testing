@@ -1,0 +1,9 @@
+{
+  "entries": [
+    "testmod:permafrost_from_igloos",
+    "testmod:permafrost_from_stray",
+    "testmod:doohickey_from_suspicious_sand",
+    "testmod:doohickey_from_dead_bush"
+  ],
+  "replace": false
+}

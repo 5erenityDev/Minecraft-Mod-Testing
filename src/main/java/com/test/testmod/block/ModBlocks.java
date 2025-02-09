@@ -3,6 +3,7 @@ package com.test.testmod.block;
 import com.test.testmod.TestMod;
 import com.test.testmod.neighbor.block.custom.TomblerBlock;
 import com.test.testmod.item.ModItems;
+import com.test.testmod.serenity.block.custom.ChucksterCropBlock;
 import com.test.testmod.serenity.block.custom.SpeedBlock;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.util.valueproviders.UniformInt;
@@ -163,4 +164,7 @@ public class ModBlocks {
             ("plush_trapdoor", () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.PURPLE_WOOL).noOcclusion(),
                     BlockSetType.DARK_OAK
             ));
+
+    public static final RegistryObject<Block> CHUCKSTER_CROP = BLOCKS.register("chuckster_crop",
+            () -> new ChucksterCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion().noCollission()));
 }

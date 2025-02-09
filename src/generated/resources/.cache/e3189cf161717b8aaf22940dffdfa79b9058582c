@@ -1,4 +1,5 @@
-// 1.20.1	2025-02-07T03:14:51.4087456	Block States: testmod
+// 1.20.1	2025-02-08T20:23:47.7094332	Block States: testmod
+8bedb7df98a17db23b9d87063ef1f8ea59b352cf assets/testmod/blockstates/chuckster_crop.json
 ce520c39b2145a73d0f2e9621c01137375c09796 assets/testmod/blockstates/garugamesh.json
 3a275abac4c9aa4eae339db2abcdadae477de6ee assets/testmod/blockstates/garugamesh_button.json
 94c9340019f9c9e96f504430550b957b721ee1b1 assets/testmod/blockstates/garugamesh_door.json
@@ -25,6 +26,12 @@ d2eea4c4b875570e46a3d9dafdf8716969564782 assets/testmod/blockstates/plush_walls.
 99d235b03a92fc9b886e898825ccda074600e7cb assets/testmod/blockstates/slorp_block.json
 1853250fa6bff919d7a0b0b7ffcb93f843e3d2f0 assets/testmod/blockstates/speed_block.json
 4e70418d9e6d6c61783142115434f75ed90bd761 assets/testmod/blockstates/tombler.json
+9c616c20f9fc7de880c9cc099c32d64aad1b6f0a assets/testmod/models/block/chuckster_stage0.json
+143e602145275dcd2c6140bde5bf2a107e0bf35e assets/testmod/models/block/chuckster_stage1.json
+8866e48a528a8501c744e5bbe0bf5d09c26bd16f assets/testmod/models/block/chuckster_stage2.json
+315472cef4aef7ccb4893a008f5be8f65151a562 assets/testmod/models/block/chuckster_stage3.json
+e30a037a9fe241498cc195c21c560a4436366c6e assets/testmod/models/block/chuckster_stage4.json
+b3f4e340bb91f357c64be31c0819337f9d0f48fd assets/testmod/models/block/chuckster_stage5.json
 9301afb301f4c427778bba0f29ac4f8bdb3d5ae5 assets/testmod/models/block/garugamesh.json
 a6f721acab2aa5e96b04f8856242626a9882d12f assets/testmod/models/block/garugamesh_button.json
 aa9a1a870643d6e28c98be09d63edfde81b5059c assets/testmod/models/block/garugamesh_button_pressed.json

@@ -1,0 +1,14 @@
+{
+  "type": "testmod:add_item",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:entities/stray"
+    },
+    {
+      "chance": 0.15,
+      "condition": "minecraft:random_chance"
+    }
+  ],
+  "item": "testmod:permafrost"
+}

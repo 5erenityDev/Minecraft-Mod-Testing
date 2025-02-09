@@ -37,5 +37,10 @@ public class ModItemTagGenerator extends ItemTagsProvider {
         ///////////////////////////
         /////////SERENITY//////////
         ///////////////////////////
+        this.tag(ItemTags.TRIMMABLE_ARMOR)
+                .add(ModItems.PERMAFROST_HELMET.get(),
+                        ModItems.PERMAFROST_BOOTS.get(),
+                        ModItems.PERMAFROST_LEGGINGS.get(),
+                        ModItems.PERMAFROST_BOOTS.get());
     }
 }

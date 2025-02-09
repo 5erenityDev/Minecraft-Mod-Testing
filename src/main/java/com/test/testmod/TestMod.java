@@ -4,6 +4,7 @@ import com.mojang.logging.LogUtils;
 import com.test.testmod.block.ModBlocks;
 import com.test.testmod.item.ModCreativeModeTabs;
 import com.test.testmod.item.ModItems;
+import com.test.testmod.loot.ModLootModifiers;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -36,7 +37,10 @@ public class TestMod
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+
         ModCreativeModeTabs.register(modEventBus);
+
+        ModLootModifiers.register(modEventBus);
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);

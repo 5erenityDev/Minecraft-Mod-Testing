@@ -85,9 +85,10 @@ public class ModItemModelProvider extends ItemModelProvider {
 
 
         ///////////////////////////
-        /////////SERENITY//////////e
+        /////////SERENITY//////////
         ///////////////////////////
         simpleItem(ModItems.CHUCKSTER_FRUIT);
+        simpleItem(ModItems.CHUCKSTER_SEEDS);
         simpleItem(ModItems.MACE);
         simpleItem(ModItems.TELEPORT_STAFF);
         simpleItem(ModItems.SLIME_MACE);
@@ -111,6 +112,11 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleHandHeldItem(ModItems.PERMAFROST_ESTOC);
         simpleHandHeldItem(ModItems.PERMAFROST_SLEDGEHAMMER);
         simpleHandHeldItem(ModItems.PERMAFROST_ICE_LAUNCHER);
+
+        trimmedArmorItem(ModItems.PERMAFROST_HELMET);
+        trimmedArmorItem(ModItems.PERMAFROST_CHESTPLATE);
+        trimmedArmorItem(ModItems.PERMAFROST_LEGGINGS);
+        trimmedArmorItem(ModItems.PERMAFROST_BOOTS);
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {

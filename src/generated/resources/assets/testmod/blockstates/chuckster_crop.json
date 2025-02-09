@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "age=0": {
+      "model": "testmod:block/chuckster_stage0"
+    },
+    "age=1": {
+      "model": "testmod:block/chuckster_stage1"
+    },
+    "age=2": {
+      "model": "testmod:block/chuckster_stage2"
+    },
+    "age=3": {
+      "model": "testmod:block/chuckster_stage3"
+    },
+    "age=4": {
+      "model": "testmod:block/chuckster_stage4"
+    },
+    "age=5": {
+      "model": "testmod:block/chuckster_stage5"
+    }
+  }
+}

@@ -2,6 +2,8 @@ package com.test.testmod.datagen.loot;
 
 import com.test.testmod.block.ModBlocks;
 import com.test.testmod.item.ModItems;
+import com.test.testmod.serenity.block.custom.ChucksterCropBlock;
+import net.minecraft.advancements.critereon.StatePropertiesPredicate;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.item.Item;
@@ -12,6 +14,8 @@ import net.minecraft.world.level.storage.loot.entries.LootItem;
 import net.minecraft.world.level.storage.loot.entries.LootPoolEntryContainer;
 import net.minecraft.world.level.storage.loot.functions.ApplyBonusCount;
 import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
+import net.minecraft.world.level.storage.loot.predicates.LootItemBlockStatePropertyCondition;
+import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
 import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
 import net.minecraftforge.registries.RegistryObject;
 
@@ -71,6 +75,14 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.add(ModBlocks.PLUSH_DOOR.get(),
                 block -> createDoorTable(ModBlocks.PLUSH_DOOR.get()));
 
+
+        LootItemCondition.Builder lootitemcondition$builder = LootItemBlockStatePropertyCondition
+                .hasBlockStateProperties(ModBlocks.CHUCKSTER_CROP.get())
+                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(ChucksterCropBlock.AGE, 5));
+
+        this.add(ModBlocks.CHUCKSTER_CROP.get(), createCropDrops(ModBlocks.CHUCKSTER_CROP.get(), ModItems.CHUCKSTER_FRUIT.get(),
+                ModItems.CHUCKSTER_SEEDS.get(), lootitemcondition$builder));
+
     }
 
     protected LootTable.Builder createCopperLikeOreDrops(Block pBlock, Item item) {
@@ -108,7 +120,6 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                                 .apply(ApplyBonusCount.addUniformBonusCount(Enchantments.BLOCK_FORTUNE)
                                 )));
     }
-
 
     @Override
     protected Iterable<Block> getKnownBlocks() {

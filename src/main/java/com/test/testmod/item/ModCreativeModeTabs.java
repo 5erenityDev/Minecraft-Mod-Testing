@@ -85,6 +85,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.TELEPORT_STAFF.get());
                         output.accept(ModItems.MACE.get());
                         output.accept(ModItems.CHUCKSTER_FRUIT.get());
+                        output.accept(ModItems.CHUCKSTER_SEEDS.get());
                         output.accept(ModItems.DOOHICKEY.get());
                         output.accept(ModItems.SLIME_MACE.get());
 
@@ -98,15 +99,30 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.PLUSH_TRAPDOOR.get());
                         output.accept(ModBlocks.PLUSH_WALLS.get());
 
-                        output.accept(ModItems.PERMAFROST_SLEDGEHAMMER.get());
-                        output.accept(ModItems.PERMAFROST_SCYTHE.get());
-                        output.accept(ModItems.PERMAFROST_ICE_AXE.get());
-                        output.accept(ModItems.PERMAFROST_ICE_SCRAPER.get());
-                        output.accept(ModItems.PERMAFROST_ESTOC.get());
                     }).build()
     );
 
-    
+    public static final RegistryObject<CreativeModeTab> PERMAFROST_TAB = CREATIVE_MODE_TABS.register(
+            "permafrost_tab",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.PERMAFROST_ESTOC.get()))
+                    .title(Component.translatable("creativetab.permafrost_tab"))
+                    .displayItems((itemDisplayParameters, output) -> {
+
+                        output.accept(ModItems.PERMAFROST.get());
+                        output.accept(ModItems.PERMAFROST_ICE_AXE.get());
+                        output.accept(ModItems.PERMAFROST_ESTOC.get());
+                        output.accept(ModItems.PERMAFROST_SLEDGEHAMMER.get());
+                        output.accept(ModItems.PERMAFROST_SCYTHE.get());
+                        output.accept(ModItems.PERMAFROST_ICE_SCRAPER.get());
+                        output.accept(ModItems.PERMAFROST_ICE_LAUNCHER.get());
+
+                        output.accept(ModItems.PERMAFROST_HELMET.get());
+                        output.accept(ModItems.PERMAFROST_CHESTPLATE.get());
+                        output.accept(ModItems.PERMAFROST_LEGGINGS.get());
+                        output.accept(ModItems.PERMAFROST_BOOTS.get());
+
+                    }).build()
+    );
 
 
 }

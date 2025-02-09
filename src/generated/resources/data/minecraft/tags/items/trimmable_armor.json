@@ -7,6 +7,10 @@
     "testmod:promise_helmet",
     "testmod:promise_chestplate",
     "testmod:promise_leggings",
-    "testmod:promise_boots"
+    "testmod:promise_boots",
+    "testmod:permafrost_helmet",
+    "testmod:permafrost_boots",
+    "testmod:permafrost_leggings",
+    "testmod:permafrost_boots"
   ]
 }

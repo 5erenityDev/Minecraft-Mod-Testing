@@ -1,0 +1,6 @@
+// 1.20.1	2025-02-08T16:34:42.4701369	Global Loot Modifiers : testmod
+731e698b7b51202e0bbf8ba2b9875d3cd6017303 data/forge/loot_modifiers/global_loot_modifiers.json
+355cdc8d2239b32c446f909abf357e58d1d602ec data/testmod/loot_modifiers/doohickey_from_dead_bush.json
+1a31e7c82aeb1e8c1a507b9160073eea2fb2ac9f data/testmod/loot_modifiers/doohickey_from_suspicious_sand.json
+af0b992d0e4c5a2b5db1aaf4a80667a564025241 data/testmod/loot_modifiers/permafrost_from_igloos.json
+712f9f770370285b2b3e43cb5823981b0987a378 data/testmod/loot_modifiers/permafrost_from_stray.json

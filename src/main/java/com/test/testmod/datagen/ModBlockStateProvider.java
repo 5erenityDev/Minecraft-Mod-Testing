@@ -2,11 +2,17 @@ package com.test.testmod.datagen;
 
 import com.test.testmod.TestMod;
 import com.test.testmod.block.ModBlocks;
+import com.test.testmod.serenity.block.custom.ChucksterCropBlock;
 import net.minecraft.data.PackOutput;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.*;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
+import net.minecraftforge.client.model.generators.ConfiguredModel;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.RegistryObject;
+
+import java.util.function.Function;
 
 public class ModBlockStateProvider extends BlockStateProvider {
     public ModBlockStateProvider(PackOutput output, ExistingFileHelper exFileHelper) {
@@ -58,6 +64,23 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         doorBlockWithRenderType((DoorBlock) ModBlocks.PLUSH_DOOR.get(), modLoc("block/plush_door_bottom"), modLoc("block/plush_door_top"), "cutout");
         trapdoorBlockWithRenderType(((TrapDoorBlock) ModBlocks.PLUSH_TRAPDOOR.get()), modLoc("block/plush_trapdoor"), true, "cutout");
+
+        makeChucksterCrop((CropBlock) ModBlocks.CHUCKSTER_CROP.get(), "chuckster_stage", "chuckster_stage");
+    }
+
+    public void makeChucksterCrop(CropBlock block, String modelName, String textureName) {
+        Function<BlockState, ConfiguredModel[]> function = state -> chucksterStates(state, block, modelName, textureName);
+
+        getVariantBuilder(block).forAllStates(function);
+    }
+
+
+    private ConfiguredModel[] chucksterStates(BlockState state, CropBlock block, String modelName, String textureName) {
+        ConfiguredModel[] models = new ConfiguredModel[1];
+        models[0] = new ConfiguredModel(models().crop(modelName + state.getValue(((ChucksterCropBlock) block).getAgeProperty()),
+                new ResourceLocation(TestMod.MODID, "block/" + textureName + state.getValue(((ChucksterCropBlock) block).getAgeProperty()))).renderType("cutout"));
+
+        return models;
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {

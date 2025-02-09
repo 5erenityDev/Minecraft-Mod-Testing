@@ -13,9 +13,11 @@ public enum ModArmorMaterials implements ArmorMaterial {
     SLORP("slorp", 26,new int[]{ 6, 9, 6, 4 }, 25, SoundEvents.SLIME_BLOCK_HIT,
             1f, 2f, () -> Ingredient.of(ModItems.ANGRY_SLORP.get())),
     PROMISE("promise", 27, new int[]{10, 15, 10, 8}, 25, SoundEvents.ARMOR_EQUIP_DIAMOND,
-            2f, 3f, () -> Ingredient.of(ModItems.PURE_PROMISE.get()));
+            2f, 3f, () -> Ingredient.of(ModItems.PURE_PROMISE.get())),
 
 
+    PERMAFROST("permafrost", 26,new int[]{ 999, 999, 999, 999 }, 25, SoundEvents.SNOW_STEP,
+            1f, 2f, () -> Ingredient.of(ModItems.PERMAFROST.get()));
 
 
  private final String name;

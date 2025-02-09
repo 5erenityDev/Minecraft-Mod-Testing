@@ -65,6 +65,7 @@
 
 
   "creativetab.serenity_tab": "Serenity's Stuff",
+  "creativetab.permafrost_tab": "Permafrost",
 
   "block.testmod.speed_block": "Speed Block",
   "block.testmod.plush_block": "Plush Block",
@@ -88,13 +89,18 @@
   "item.testmod.permafrost_sledgehammer": "Permafrost Sledgehammer",
   "item.testmod.permafrost_scythe": "Permafrost Scythe",
 
+  "item.testmod.permafrost_helmet": "Permafrost Helmet",
+  "item.testmod.permafrost_chestplate": "Permafrost Chestplate",
+  "item.testmod.permafrost_leggings": "Permafrost Leggings",
+  "item.testmod.permafrost_boots": "Permafrost Boots",
+
+
   "item.testmod.teleport_staff": "Teleport Staff",
   "item.testmod.mace": "Mace",
   "item.testmod.slime_mace": "Slime Mace",
-  "item.testmod.chuckster_fruit": "Chuckster Fruit",
   "item.testmod.doohickey": "Doohickey",
-
-
+  "item.testmod.chuckster_fruit": "Chuckster Fruit",
+  "item.testmod.chuckster_seeds": "Chuckster Seeds",
 
   "tooltip.testmod.speed_block.tooltip": "Block that increases speed and jump height when stood on.",
 
