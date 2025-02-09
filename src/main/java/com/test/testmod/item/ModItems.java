@@ -4,7 +4,7 @@ import com.test.testmod.TestMod;
 import com.test.testmod.block.ModBlocks;
 import com.test.testmod.neighbor.item.custom.FuelItem;
 import com.test.testmod.neighbor.item.custom.GrobblerItem;
-import com.test.testmod.neighbor.item.custom.ModArmorItem;
+import com.test.testmod.item.ModArmorItem;
 import com.test.testmod.neighbor.item.custom.SlorperItem;
 import com.test.testmod.serenity.item.custom.DoohickeyItem;
 import com.test.testmod.serenity.item.custom.MaceItem;
