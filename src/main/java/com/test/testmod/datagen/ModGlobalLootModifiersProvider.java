@@ -1,6 +1,7 @@
 package com.test.testmod.datagen;
 
 import com.test.testmod.TestMod;
+import com.test.testmod.block.ModBlocks;
 import com.test.testmod.item.ModItems;
 
 import com.test.testmod.loot.AddItemModifier;
@@ -21,6 +22,9 @@ public class ModGlobalLootModifiersProvider extends GlobalLootModifierProvider {
 
     @Override
     protected void start() {
+
+        //Serenity
+
         add("doohickey_from_dead_bush", new AddItemModifier(new LootItemCondition[] {
                 LootItemBlockStatePropertyCondition.hasBlockStateProperties(Blocks.DEAD_BUSH).build(),
                 LootItemRandomChanceCondition.randomChance(0.001f).build()}, ModItems.DOOHICKEY.get()));
@@ -34,6 +38,17 @@ public class ModGlobalLootModifiersProvider extends GlobalLootModifierProvider {
                 LootItemRandomChanceCondition.randomChance(0.7f).build()}, ModItems.PERMAFROST.get()));
 
         add("doohickey_from_suspicious_sand", new AddSusSandItemModifier(new LootItemCondition[] {
-                new LootTableIdCondition.Builder(new ResourceLocation("archaeology/deser_pyramid")).build() }, ModItems.DOOHICKEY.get()));
+                new LootTableIdCondition.Builder(new ResourceLocation("archaeology/desert_pyramid")).build() }, ModItems.DOOHICKEY.get()));
+
+        //Neighbor
+
+        add("slorper_from_slorp_mass", new AddItemModifier(new LootItemCondition[] {
+               LootItemBlockStatePropertyCondition.hasBlockStateProperties(ModBlocks.SLORP_BLOCK.get()).build(),
+                LootItemRandomChanceCondition.randomChance(0.3f).build()}, ModItems.SLORPER.get()));
+
+        add("pure_promise_from_enderdragon", new AddItemModifier(new LootItemCondition[]{
+                new LootTableIdCondition.Builder(new ResourceLocation("entities/ender_dragon")).build(),
+                LootItemRandomChanceCondition.randomChance(0.1f).build()}, ModItems.PURE_PROMISE.get()));
+
     }
 }

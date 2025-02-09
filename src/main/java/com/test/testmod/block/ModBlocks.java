@@ -1,12 +1,15 @@
 package com.test.testmod.block;
 
 import com.test.testmod.TestMod;
+import com.test.testmod.neighbor.block.custom.MashedPotatoSquashCropBlock;
+import com.test.testmod.neighbor.block.custom.StompleCropBlock;
 import com.test.testmod.neighbor.block.custom.TomblerBlock;
 import com.test.testmod.item.ModItems;
 import com.test.testmod.serenity.block.custom.ChucksterCropBlock;
 import com.test.testmod.serenity.block.custom.SpeedBlock;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.util.valueproviders.UniformInt;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
@@ -113,6 +116,23 @@ public class ModBlocks {
             ("garugamesh_trapdoor", () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK).sound(SoundType.AMETHYST).noOcclusion(),
                     BlockSetType.DARK_OAK
             ));
+
+    public static final RegistryObject<Block> GIGGLE = registerBlock
+            ("giggle", () -> new FlowerBlock(() -> MobEffects.MOVEMENT_SPEED, 6, BlockBehaviour.Properties.copy(Blocks.ALLIUM).noOcclusion().noCollission()
+            ));
+    public static final RegistryObject<Block> POTTED_GIGGLE = BLOCKS.register
+            ("potted_giggle", () -> new FlowerPotBlock(() -> (FlowerPotBlock) Blocks.FLOWER_POT, ModBlocks.GIGGLE, BlockBehaviour.Properties.copy(Blocks.POTTED_AZALEA).noOcclusion()
+            ));
+
+    //Neighbor Crops
+    public static final RegistryObject<Block> MASHEDPOTATOSQUASH_CROP = BLOCKS.register("mashedpotatosquash_crop",
+            () -> new MashedPotatoSquashCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion().noCollission()));
+
+    public static final RegistryObject<Block> STOMPLE_CROP = BLOCKS.register("stomple_crop",
+            () -> new StompleCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion().noCollission()));
+
+
+    //Serenity
 
 
     public static final RegistryObject<Block> SPEED_BLOCK = registerBlock(

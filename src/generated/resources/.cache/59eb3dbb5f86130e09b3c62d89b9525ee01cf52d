@@ -1,4 +1,4 @@
-// 1.20.1	2025-02-08T20:23:47.7074631	Loot Tables
+// 1.20.1	2025-02-09T07:06:14.1285767	Loot Tables
 e37ca48b1cc85998410a4129ba117f54f2519701 data/testmod/loot_tables/blocks/chuckster_crop.json
 737bc65e5641c21d14707b20f673619b0a249bc4 data/testmod/loot_tables/blocks/garugamesh.json
 1b3b7aa05178645753edef2b76c5839ebcb36c17 data/testmod/loot_tables/blocks/garugamesh_button.json
@@ -10,6 +10,8 @@ f67e5362d384d370ecffe06da091455ad926b3fc data/testmod/loot_tables/blocks/garugam
 adfe8d0bc2e51c766c0092f25e78478b6bda6d96 data/testmod/loot_tables/blocks/garugamesh_stairs.json
 bbaa11bf3b84309f4bbf73014a4e2ab3b7c33bb9 data/testmod/loot_tables/blocks/garugamesh_trapdoor.json
 b8114547091f8c9b78ff349666d1a1e89e0b7345 data/testmod/loot_tables/blocks/garugamesh_walls.json
+157ba2a571aae2a47b80957692c4bd98d5cd721e data/testmod/loot_tables/blocks/giggle.json
+35db86190322b05524179e7a7657e59d0ee1b0db data/testmod/loot_tables/blocks/mashedpotatosquash_crop.json
 ffc094bd78afe2c1b198a7bf480ca3917ed1f12d data/testmod/loot_tables/blocks/plush_block.json
 ad61e558d64ff80b89bbae84716b8e9ab2c5aa59 data/testmod/loot_tables/blocks/plush_button.json
 33ddf12155e1ba576a073211bc095ca748a9bc57 data/testmod/loot_tables/blocks/plush_door.json
@@ -20,9 +22,11 @@ ad61e558d64ff80b89bbae84716b8e9ab2c5aa59 data/testmod/loot_tables/blocks/plush_b
 d3440e67af7519dba58b5965d98bde5970eafaf3 data/testmod/loot_tables/blocks/plush_stairs.json
 7bb0bcb11a7a11701f9b0c9fa7ab5a2d03d53bd2 data/testmod/loot_tables/blocks/plush_trapdoor.json
 6610f376c56113094e358a62068988baf2d2d5c3 data/testmod/loot_tables/blocks/plush_walls.json
+1e47001f066a2d8286848b368804b78c0a460619 data/testmod/loot_tables/blocks/potted_giggle.json
 0a71fe3802ccd3978fb5f2faf61437c0584c9b97 data/testmod/loot_tables/blocks/promise_ore.json
 0d42567eb318dfa41261605b6fec81990fd0ddd9 data/testmod/loot_tables/blocks/slimpo.json
 943aac898321f701851ba8fd563b878626dbc55b data/testmod/loot_tables/blocks/slimpo_netherrack.json
 f92aac0731883cc6d163cab09af6f56bcbfc2fd1 data/testmod/loot_tables/blocks/slorp_block.json
 15ad48da2e53771a176b4d2e8450444cfbb0770f data/testmod/loot_tables/blocks/speed_block.json
+d311eacf1a406f5f775771c88753b56b067099cd data/testmod/loot_tables/blocks/stomple_crop.json
 46f63a308dc48e9ad0a2e726bf33b7c173f187bd data/testmod/loot_tables/blocks/tombler.json

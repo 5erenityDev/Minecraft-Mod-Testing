@@ -2,8 +2,10 @@
   "entries": [
     "testmod:permafrost_from_igloos",
     "testmod:permafrost_from_stray",
+    "testmod:pure_promise_from_enderdragon",
     "testmod:doohickey_from_suspicious_sand",
-    "testmod:doohickey_from_dead_bush"
+    "testmod:doohickey_from_dead_bush",
+    "testmod:slorper_from_slorp_mass"
   ],
   "replace": false
 }

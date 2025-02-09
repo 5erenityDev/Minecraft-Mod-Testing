@@ -5,6 +5,8 @@ import com.test.testmod.block.ModBlocks;
 import com.test.testmod.item.ModCreativeModeTabs;
 import com.test.testmod.item.ModItems;
 import com.test.testmod.loot.ModLootModifiers;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.FlowerPotBlock;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -54,7 +56,9 @@ public class TestMod
 
     private void commonSetup(final FMLCommonSetupEvent event)
     {
-
+    event.enqueueWork(() -> {
+        ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.GIGGLE.getId(), ModBlocks.POTTED_GIGGLE);
+    });
     }
 
     // Add the example block item to the building blocks tab

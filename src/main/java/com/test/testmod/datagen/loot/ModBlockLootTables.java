@@ -2,6 +2,8 @@ package com.test.testmod.datagen.loot;
 
 import com.test.testmod.block.ModBlocks;
 import com.test.testmod.item.ModItems;
+import com.test.testmod.neighbor.block.custom.MashedPotatoSquashCropBlock;
+import com.test.testmod.neighbor.block.custom.StompleCropBlock;
 import com.test.testmod.serenity.block.custom.ChucksterCropBlock;
 import net.minecraft.advancements.critereon.StatePropertiesPredicate;
 import net.minecraft.data.loot.BlockLootSubProvider;
@@ -33,6 +35,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         ///////////////////////////
         this.dropSelf(ModBlocks.TOMBLER.get());
         this.dropSelf(ModBlocks.GARUGAMESH.get());
+        this.dropSelf(ModBlocks.GIGGLE.get());
 
         //this.add(ModBlocks.SAPPHIRE_ORE.get(), block -> createCopperLikeOreDrops(ModBlocks.SAPPHIRE_ORE.get(), ModItems.RAW_SAPPHIRE.get()));
 
@@ -40,6 +43,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.add(ModBlocks.SLIMPO_NETHERRACK.get(), block -> createBulkOreDrops(ModBlocks.SLIMPO_NETHERRACK.get(), ModItems.WINGLE.get()));
         this.add(ModBlocks.SLORP_BLOCK.get(), block -> createBulkOreDrops(ModBlocks.SLORP_BLOCK.get(), ModItems.ANGRY_SLORP.get()));
         this.add(ModBlocks.PROMISE_ORE.get(), block -> createSmallOreDrops(ModBlocks.PROMISE_ORE.get(), ModItems.PROMISE.get()));
+        this.add(ModBlocks.POTTED_GIGGLE.get(), block -> createPotFlowerItemTable(ModBlocks.GIGGLE.get()));
 
 
         this.dropSelf(ModBlocks.GARUGAMESH_WALLS.get());
@@ -55,6 +59,22 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 block -> createSlabItemTable(ModBlocks.GARUGAMESH_SLAB.get()));
         this.add(ModBlocks.GARUGAMESH_DOOR.get(),
                 block -> createDoorTable(ModBlocks.GARUGAMESH_DOOR.get()));
+
+        LootItemCondition.Builder squashlootitemcondition$builder = LootItemBlockStatePropertyCondition
+                .hasBlockStateProperties(ModBlocks.MASHEDPOTATOSQUASH_CROP.get())
+                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(MashedPotatoSquashCropBlock.AGE, 7));
+
+        LootItemCondition.Builder stomplerlootitemcondition$builder = LootItemBlockStatePropertyCondition
+                .hasBlockStateProperties(ModBlocks.STOMPLE_CROP.get())
+                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(StompleCropBlock.AGE, 9));
+
+        this.add(ModBlocks.MASHEDPOTATOSQUASH_CROP.get(), createCropDrops(ModBlocks.MASHEDPOTATOSQUASH_CROP.get(), ModItems.MASHEDPOTATOSQUASH.get(),
+                ModItems.MASHEDPOTATOSQUASH_SEEDS.get(), squashlootitemcondition$builder)
+                .apply(SetItemCountFunction.setCount(UniformGenerator.between(1, 2))));
+
+        this.add(ModBlocks.STOMPLE_CROP.get(), createCropDrops(ModBlocks.STOMPLE_CROP.get(), ModItems.STOMPLER_FRUIT.get(),
+                ModItems.STOMPLER_SEEDS.get(), stomplerlootitemcondition$builder)
+                .apply(SetItemCountFunction.setCount(UniformGenerator.between(1, 4))));
 
         ///////////////////////////
         /////////SERENITY//////////

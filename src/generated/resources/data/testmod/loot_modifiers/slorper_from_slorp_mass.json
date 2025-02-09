@@ -1,0 +1,14 @@
+{
+  "type": "testmod:add_item",
+  "conditions": [
+    {
+      "block": "testmod:slorp_block",
+      "condition": "minecraft:block_state_property"
+    },
+    {
+      "chance": 0.3,
+      "condition": "minecraft:random_chance"
+    }
+  ],
+  "item": "testmod:slorper"
+}

@@ -87,6 +87,15 @@ public class ModItems {
     public static final RegistryObject<Item> SLORP_BOOTS = ITEMS.register
             ("slorp_boots", () -> new ArmorItem(ModArmorMaterials.SLORP, ArmorItem.Type.BOOTS, new Item.Properties()));
 
+    public static final RegistryObject<Item> MASHEDPOTATOSQUASH_SEEDS = ITEMS.register("mashedpotatosquash_seeds",
+                    () -> new ItemNameBlockItem(ModBlocks.MASHEDPOTATOSQUASH_CROP.get(), new Item.Properties()));
+    public static final RegistryObject<Item> MASHEDPOTATOSQUASH = ITEMS.register(
+            "mashedpotatosquash", () -> new Item(new Item.Properties().food(ModFoods.MASHEDPOTATOSQUASH)));
+    public static final RegistryObject<Item> STOMPLER_SEEDS = ITEMS.register("stompler_seeds",
+            () -> new ItemNameBlockItem(ModBlocks.STOMPLE_CROP.get(), new Item.Properties()));
+    public static final RegistryObject<Item> STOMPLER_FRUIT = ITEMS.register(
+            "stompler_fruit", () -> new Item(new Item.Properties().food(ModFoods.STOMPLER_FRUIT)));
+
 
 
 

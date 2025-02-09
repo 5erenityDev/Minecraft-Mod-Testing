@@ -17,6 +17,12 @@
   "item.testmod.angry_slorp": "Angry Slorp",
   "item.testmod.slorper": "Slorper",
 
+  "item.testmod.mashedpotatosquash_seeds": "Mashed Potato Squash Seeds",
+  "item.testmod.stompler_seeds": "Stompler Seeds",
+  "item.testmod.mashedpotatosquash": "Mashed Potato Squash",
+  "item.testmod.stompler_fruit": "Stompler Fruit",
+  "block.testmod.giggle": "Giggle!!!",
+
   "item.testmod.promise": "Promise",
   "item.testmod.pure_promise": "Pure Promise",
   "item.testmod.impure_promise": "Impure Promise",

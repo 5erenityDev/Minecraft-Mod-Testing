@@ -2,6 +2,8 @@ package com.test.testmod.datagen;
 
 import com.test.testmod.TestMod;
 import com.test.testmod.block.ModBlocks;
+import com.test.testmod.neighbor.block.custom.MashedPotatoSquashCropBlock;
+import com.test.testmod.neighbor.block.custom.StompleCropBlock;
 import com.test.testmod.serenity.block.custom.ChucksterCropBlock;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
@@ -10,6 +12,7 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
 import net.minecraftforge.client.model.generators.ConfiguredModel;
 import net.minecraftforge.common.data.ExistingFileHelper;
+import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.RegistryObject;
 
 import java.util.function.Function;
@@ -31,6 +34,11 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.SLORP_BLOCK);
         blockWithItem(ModBlocks.PROMISE_ORE);
 
+        simpleBlockWithItem(ModBlocks.GIGGLE.get(), models().cross(blockTexture(ModBlocks.GIGGLE.get()).getPath(),
+                blockTexture(ModBlocks.GIGGLE.get())).renderType("cutout"));
+        simpleBlockWithItem(ModBlocks.POTTED_GIGGLE.get(), models().singleTexture("potted_giggle",
+                new ResourceLocation("flower_pot_cross"), "plant", blockTexture(ModBlocks.GIGGLE.get())).renderType("cutout"));
+
         stairsBlock(((StairBlock) ModBlocks.GARUGAMESH_STAIRS.get()), blockTexture(ModBlocks.GARUGAMESH.get()));
         slabBlock(((SlabBlock) ModBlocks.GARUGAMESH_SLAB.get()), blockTexture(ModBlocks.GARUGAMESH.get()), blockTexture(ModBlocks.GARUGAMESH.get()));
 
@@ -44,6 +52,9 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         doorBlockWithRenderType((DoorBlock) ModBlocks.GARUGAMESH_DOOR.get(), modLoc("block/garugamesh_door_bottom"), modLoc("block/garugamesh_door_top"), "cutout");
         trapdoorBlockWithRenderType(((TrapDoorBlock) ModBlocks.GARUGAMESH_TRAPDOOR.get()), modLoc("block/garugamesh_trapdoor"), true, "cutout");
+
+        makeMashedPotatoSquashCrop((CropBlock) ModBlocks.MASHEDPOTATOSQUASH_CROP.get(), "mashedpotatosquash_stage", "mashedpotatosquash_stage");
+        makeStomplerCrop((CropBlock) ModBlocks.STOMPLE_CROP.get(), "stompler_stage", "stompler_stage");
 
         ///////////////////////////
         /////////SERENITY//////////
@@ -85,5 +96,36 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {
         simpleBlockWithItem(blockRegistryObject.get(), cubeAll(blockRegistryObject.get()));
+
+
     }
+
+
+    private ConfiguredModel[] mashedPotatoSquashStates(BlockState state, CropBlock block, String modelname, String textureName) {
+        ConfiguredModel[] models = new ConfiguredModel[1];
+        models[0] = new ConfiguredModel(models().crop(modelname + state.getValue(((MashedPotatoSquashCropBlock) block).getAgeProperty()),
+                new ResourceLocation(TestMod.MODID, "block/" + textureName + state.getValue(((MashedPotatoSquashCropBlock) block).getAgeProperty()))).renderType("cutout"));
+
+        return models;
+    }
+
+    public void makeMashedPotatoSquashCrop(CropBlock block, String modelName, String textureName) {
+        Function<BlockState, ConfiguredModel[]> function = state -> mashedPotatoSquashStates(state, block, modelName, textureName);
+
+        getVariantBuilder(block).forAllStates(function);
+    }
+
+    private ConfiguredModel[] stomplerStates(BlockState state, CropBlock block, String modelname, String textureName) {
+        ConfiguredModel[] models = new ConfiguredModel[1];
+        models[0] = new ConfiguredModel(models().crop(modelname + state.getValue(((StompleCropBlock) block).getAgeProperty()),
+                new ResourceLocation(TestMod.MODID, "block/" + textureName + state.getValue(((StompleCropBlock) block).getAgeProperty()))).renderType("cutout"));
+
+        return models;
+    }
+    public void makeStomplerCrop(CropBlock block, String modelName, String textureName) {
+        Function<BlockState, ConfiguredModel[]> function = state -> stomplerStates(state, block, modelName, textureName);
+
+        getVariantBuilder(block).forAllStates(function);
+    }
+
 }

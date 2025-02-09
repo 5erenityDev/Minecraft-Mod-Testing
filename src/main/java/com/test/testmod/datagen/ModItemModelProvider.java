@@ -50,6 +50,10 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.GROBBLER);
         simpleItem(ModItems.THE_SLORBO);
         simpleItem(ModItems.WINGLE);
+        simpleItem(ModItems.MASHEDPOTATOSQUASH_SEEDS);
+        simpleItem(ModItems.STOMPLER_SEEDS);
+        simpleItem(ModItems.MASHEDPOTATOSQUASH);
+        simpleItem(ModItems.STOMPLER_FRUIT);
         simpleHandHeldItem(ModItems.SLORP_HOE);
         simpleHandHeldItem(ModItems.SLORP_PICKAXE);
         simpleHandHeldItem(ModItems.SLORP_SHOVEL);
@@ -75,6 +79,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         trimmedArmorItem(ModItems.SLORP_CHESTPLATE);
         trimmedArmorItem(ModItems.SLORP_LEGGINGS);
         trimmedArmorItem(ModItems.SLORP_BOOTS);
+
+        simpleBlockItemBlockTexture(ModBlocks.GIGGLE);
 
 
 
@@ -136,6 +142,13 @@ public class ModItemModelProvider extends ItemModelProvider {
         new ResourceLocation("item/generated")).texture("layer0",
         new ResourceLocation(TestMod.MODID, "item/" + item.getId().getPath()));
     }
+
+    private ItemModelBuilder simpleBlockItemBlockTexture(RegistryObject<Block> item) {
+        return withExistingParent(item.getId().getPath(),
+                new ResourceLocation("item/generated")).texture("layer0",
+                new ResourceLocation(TestMod.MODID, "block/" + item.getId().getPath()));
+    }
+
     private ItemModelBuilder simpleHandHeldItem(RegistryObject<Item> item) {
         return withExistingParent(item.getId().getPath(),
                 new ResourceLocation("item/handheld")).texture("layer0",

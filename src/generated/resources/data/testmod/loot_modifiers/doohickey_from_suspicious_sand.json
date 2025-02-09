@@ -3,7 +3,7 @@
   "conditions": [
     {
       "condition": "forge:loot_table_id",
-      "loot_table_id": "minecraft:archaeology/deser_pyramid"
+      "loot_table_id": "minecraft:archaeology/desert_pyramid"
     }
   ],
   "item": "testmod:doohickey"

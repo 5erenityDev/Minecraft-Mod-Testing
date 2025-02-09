@@ -1,4 +1,4 @@
-// 1.20.1	2025-02-08T20:31:40.0503988	Item Models: testmod
+// 1.20.1	2025-02-09T06:45:43.1461256	Item Models: testmod
 adb2ea84f25c9864828f71e7182f44fdb8de3d81 assets/testmod/models/item/angry_slorp.json
 44951230b880af5658570705e35c18d9127d3136 assets/testmod/models/item/chuckster_fruit.json
 9ff0dbd20421c41e3e5228b66ca1f2778e7f1ac6 assets/testmod/models/item/chuckster_seeds.json
@@ -11,9 +11,12 @@ fd3fb7bbb67788fec8675af7fd8c10e0ecef4284 assets/testmod/models/item/garugamesh_p
 35885c5b7f7ad4d445411845d11c3a782ad7d213 assets/testmod/models/item/garugamesh_stairs.json
 33656496876ef02a315c90b19018cf6d3d865e3c assets/testmod/models/item/garugamesh_trapdoor.json
 4f956b5bea0e96e6f2cef0e25bb78527a43a5df8 assets/testmod/models/item/garugamesh_walls.json
+e9a7ae801b7532bb07631e2fd8459fed484da4f1 assets/testmod/models/item/giggle.json
 7430bfbe55526b43779142774905856f0f1bcd84 assets/testmod/models/item/grobbler.json
 ee3854db8ece839bccfefc6e5403836832a01aa9 assets/testmod/models/item/impure_promise.json
 af80d2ea1812d21f2e2a98b3007bd50f3588e3f2 assets/testmod/models/item/mace.json
+ab210a9411bbed55833b80d517350a5e47d12935 assets/testmod/models/item/mashedpotatosquash.json
+0de72103fd86ae7efa3173c12643a35d82bba3d8 assets/testmod/models/item/mashedpotatosquash_seeds.json
 82b9c0aec6354178c9da6bd5695a1584ca558c0d assets/testmod/models/item/permafrost.json
 3fcb1087cd39c5aeaa9480b0193c177f1bccb122 assets/testmod/models/item/permafrost_boots.json
 92c4ee8e478ed4969066786e0275288fbb6d8b40 assets/testmod/models/item/permafrost_boots_amethyst_trim.json
@@ -171,6 +174,8 @@ a4be8f11e8a521bb4dde0b2b43f63cf7332a8cf4 assets/testmod/models/item/slorp_leggin
 448a7c4c0edda9660df3efb9f4ced3a660bcb373 assets/testmod/models/item/slorp_pickaxe.json
 8a1420c00b45429e56e55dc2a176bd661eb27840 assets/testmod/models/item/slorp_shovel.json
 31dedac989ddd7118b6d8cdd75a10ef4a0d0465a assets/testmod/models/item/slorp_sword.json
+d96455f2ea60c83366214a1dbdf93085e3f56d53 assets/testmod/models/item/stompler_fruit.json
+51088482f9dd026c85f303f82872c4edb3422e10 assets/testmod/models/item/stompler_seeds.json
 6fc7dbc13bd84671ab7e15e73698965e2ee637b8 assets/testmod/models/item/teleport_staff.json
 08c577af638bac558b0eb1c9a74e6c97c30cee77 assets/testmod/models/item/the_slorbo.json
 cd24a84a7ddcaea3d469e9e4d3170f0253918ee0 assets/testmod/models/item/wingle.json

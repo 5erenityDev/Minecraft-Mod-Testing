@@ -48,6 +48,10 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.SLORP_LEGGINGS.get());
                         output.accept(ModItems.SLORP_BOOTS.get());
 
+                        output.accept(ModItems.MASHEDPOTATOSQUASH_SEEDS.get());
+                        output.accept(ModItems.STOMPLER_SEEDS.get());
+                        output.accept(ModBlocks.GIGGLE.get());
+
                         output.accept(ModBlocks.GARUGAMESH_SLAB.get());
                         output.accept(ModBlocks.GARUGAMESH_STAIRS.get());
                         output.accept(ModBlocks.GARUGAMESH_DOOR.get());
