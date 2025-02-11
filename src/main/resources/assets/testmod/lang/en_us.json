@@ -59,6 +59,9 @@
   "block.testmod.garugamesh_trapdoor": "Garugamesh Trap Door",
 
 
+  "entity.minecraft.villager.testmod.tomblerlord": "Tombler Lord",
+
+
 
   "tooltip.testmod.grobbler": "Gives you the contents of your enderchest",
   "tooltip.testmod.tombler": "Do not click them, they despise you",

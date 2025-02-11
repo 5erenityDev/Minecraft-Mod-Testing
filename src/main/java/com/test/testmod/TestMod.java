@@ -5,6 +5,7 @@ import com.test.testmod.block.ModBlocks;
 import com.test.testmod.item.ModCreativeModeTabs;
 import com.test.testmod.item.ModItems;
 import com.test.testmod.loot.ModLootModifiers;
+import com.test.testmod.villager.ModVillagers;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.FlowerPotBlock;
 import net.minecraftforge.api.distmarker.Dist;
@@ -43,6 +44,7 @@ public class TestMod
         ModCreativeModeTabs.register(modEventBus);
 
         ModLootModifiers.register(modEventBus);
+        ModVillagers.register(modEventBus);
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
