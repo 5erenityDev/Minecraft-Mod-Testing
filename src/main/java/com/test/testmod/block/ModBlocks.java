@@ -1,12 +1,14 @@
 package com.test.testmod.block;
 
 import com.test.testmod.TestMod;
+import com.test.testmod.neighbor.block.custom.GiggleFlowerBlock;
 import com.test.testmod.neighbor.block.custom.MashedPotatoSquashCropBlock;
 import com.test.testmod.neighbor.block.custom.StompleCropBlock;
 import com.test.testmod.neighbor.block.custom.TomblerBlock;
 import com.test.testmod.item.ModItems;
 import com.test.testmod.serenity.block.custom.ChucksterCropBlock;
 import com.test.testmod.serenity.block.custom.SpeedBlock;
+import com.test.testmod.sound.ModSounds;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.effect.MobEffects;
@@ -77,6 +79,10 @@ public class ModBlocks {
                     .strength(2f).requiresCorrectToolForDrops(), UniformInt.of(5, 6)
             ));
 
+    public static final RegistryObject<Block> PROMISE_BLOCK = registerBlock
+            ("promise_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK).sound(ModSounds.PROMISE_BLOCK_SOUNDS)
+            ));
+
 
 
     //Slabs, Stairs, Doors, Pressure plates, Buttons etc
@@ -118,7 +124,7 @@ public class ModBlocks {
             ));
 
     public static final RegistryObject<Block> GIGGLE = registerBlock
-            ("giggle", () -> new FlowerBlock(() -> MobEffects.MOVEMENT_SPEED, 6, BlockBehaviour.Properties.copy(Blocks.ALLIUM).noOcclusion().noCollission()
+            ("giggle", () -> new GiggleFlowerBlock(() -> MobEffects.MOVEMENT_SPEED, 6, BlockBehaviour.Properties.copy(Blocks.ALLIUM).noOcclusion().noCollission()
             ));
     public static final RegistryObject<Block> POTTED_GIGGLE = BLOCKS.register
             ("potted_giggle", () -> new FlowerPotBlock(() -> (FlowerPotBlock) Blocks.FLOWER_POT, ModBlocks.GIGGLE, BlockBehaviour.Properties.copy(Blocks.POTTED_AZALEA).noOcclusion()

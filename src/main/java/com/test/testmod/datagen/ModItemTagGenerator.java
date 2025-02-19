@@ -32,6 +32,9 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                         ModItems.PROMISE_LEGGINGS.get(),
                         ModItems.PROMISE_BOOTS.get());
 
+        this.tag(ItemTags.MUSIC_DISCS)
+                .add(ModItems.MUSIC_DISC_KANPAI.get());
+
 
 
         ///////////////////////////

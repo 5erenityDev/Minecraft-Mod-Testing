@@ -11,6 +11,7 @@ import com.test.testmod.serenity.item.custom.MaceItem;
 import com.test.testmod.serenity.item.custom.SlimeMaceItem;
 import com.test.testmod.serenity.item.custom.TeleportStaffItem;
 import com.test.testmod.serenity.item.custom.*;
+import com.test.testmod.sound.ModSounds;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -40,6 +41,9 @@ public class ModItems {
             ("angry_slorp", () -> new FuelItem(new Item.Properties(), 2000));
     public static final RegistryObject<Item> SLORPER = ITEMS.register
             ("slorper", () -> new SlorperItem(new Item.Properties().defaultDurability(400)));
+
+    public static final RegistryObject<Item> MUSIC_DISC_KANPAI = ITEMS.register
+            ("music_disc_kanpai", () -> new RecordItem(6, ModSounds.KANPAI, new Item.Properties().stacksTo(1), 4420));
 
     public static final RegistryObject<Item> PROMISE = ITEMS.register
             ("promise", () -> new Item(new Item.Properties()));

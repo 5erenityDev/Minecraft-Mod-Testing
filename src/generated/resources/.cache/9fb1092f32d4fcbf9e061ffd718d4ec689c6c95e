@@ -1,4 +1,4 @@
-// 1.20.1	2025-02-07T22:56:03.9008208	Recipes
+// 1.20.1	2025-02-11T00:28:10.2383787	Recipes
 a8e348fe37247045f4a1448909e356b1be8352b4 data/testmod/advancements/recipes/combat/promise_boots.json
 aaed77ead31272bacdb7fda28fc34ec22c6d9e40 data/testmod/advancements/recipes/combat/promise_chestplate.json
 c385484f70fc86235a6f33adf338d18f4af5022c data/testmod/advancements/recipes/combat/promise_helmet.json
@@ -15,6 +15,7 @@ aae1f685a4765d2324ac2aa2b27157ae1f2839cd data/testmod/advancements/recipes/misc/
 fe62a4d8dbafe4207ac324b39be21f3e7f0fe63d data/testmod/advancements/recipes/misc/impure_promise_from_smelting_promise.json
 d06582ebb5e59abb80fe6b408b8268107fba388d data/testmod/advancements/recipes/misc/impure_promise_from_smelting_promise_ore.json
 5880fccf534c5ef61469613df80a154a818ca818 data/testmod/advancements/recipes/misc/plush_door.json
+b03de0bedf605fa765c66d6828bfb89fccc570af data/testmod/advancements/recipes/misc/promise_block.json
 cd1d8b3b29cb45d1c95b69a22eeefc42931eaf94 data/testmod/advancements/recipes/misc/pure_promise.json
 e2963b7acb962013d118b411e12105b7240b3069 data/testmod/advancements/recipes/misc/slorp_block.json
 4971e65e1f22c0d6bbeb22b91346c224c7709638 data/testmod/advancements/recipes/misc/speed_block.json
@@ -39,6 +40,7 @@ f88cca0a08dbcb03f13c51ee4d5dc58145b7d580 data/testmod/recipes/chuckster_fruit.js
 3e7c53dd98c10dbcbecd1d71a98d593ec7a1b811 data/testmod/recipes/impure_promise_from_smelting_promise.json
 58d3178f7fc1ca7e11e750152eb61509b8d8bafc data/testmod/recipes/impure_promise_from_smelting_promise_ore.json
 39afc67e00da4b4e958f22d4775ab13dea155b20 data/testmod/recipes/plush_door.json
+a11229d87a3544ec7857122e51c9a273f0387772 data/testmod/recipes/promise_block.json
 56223d1ee05654e5d397c927368ef6601aef96af data/testmod/recipes/promise_boots.json
 20f6fc030c3592e65b5179fec83cc5521a23c5aa data/testmod/recipes/promise_chestplate.json
 0858e2e3b055dead536e48b7069f673f8c522864 data/testmod/recipes/promise_helmet.json

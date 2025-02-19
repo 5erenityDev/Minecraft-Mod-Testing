@@ -33,6 +33,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.TOMBLER);
         blockWithItem(ModBlocks.SLORP_BLOCK);
         blockWithItem(ModBlocks.PROMISE_ORE);
+        blockWithItem(ModBlocks.PROMISE_BLOCK);
 
         simpleBlockWithItem(ModBlocks.GIGGLE.get(), models().cross(blockTexture(ModBlocks.GIGGLE.get()).getPath(),
                 blockTexture(ModBlocks.GIGGLE.get())).renderType("cutout"));

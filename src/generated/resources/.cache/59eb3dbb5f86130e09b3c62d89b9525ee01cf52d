@@ -1,4 +1,4 @@
-// 1.20.1	2025-02-09T07:06:14.1285767	Loot Tables
+// 1.20.1	2025-02-11T00:28:10.2184328	Loot Tables
 e37ca48b1cc85998410a4129ba117f54f2519701 data/testmod/loot_tables/blocks/chuckster_crop.json
 737bc65e5641c21d14707b20f673619b0a249bc4 data/testmod/loot_tables/blocks/garugamesh.json
 1b3b7aa05178645753edef2b76c5839ebcb36c17 data/testmod/loot_tables/blocks/garugamesh_button.json
@@ -23,6 +23,7 @@ d3440e67af7519dba58b5965d98bde5970eafaf3 data/testmod/loot_tables/blocks/plush_s
 7bb0bcb11a7a11701f9b0c9fa7ab5a2d03d53bd2 data/testmod/loot_tables/blocks/plush_trapdoor.json
 6610f376c56113094e358a62068988baf2d2d5c3 data/testmod/loot_tables/blocks/plush_walls.json
 1e47001f066a2d8286848b368804b78c0a460619 data/testmod/loot_tables/blocks/potted_giggle.json
+e4c277431780d75abce9ca7fd0fd39d2d5b0a144 data/testmod/loot_tables/blocks/promise_block.json
 0a71fe3802ccd3978fb5f2faf61437c0584c9b97 data/testmod/loot_tables/blocks/promise_ore.json
 0d42567eb318dfa41261605b6fec81990fd0ddd9 data/testmod/loot_tables/blocks/slimpo.json
 943aac898321f701851ba8fd563b878626dbc55b data/testmod/loot_tables/blocks/slimpo_netherrack.json

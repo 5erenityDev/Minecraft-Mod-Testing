@@ -2,9 +2,11 @@ package com.test.testmod;
 
 import com.mojang.logging.LogUtils;
 import com.test.testmod.block.ModBlocks;
+import com.test.testmod.event.ModEvents;
 import com.test.testmod.item.ModCreativeModeTabs;
 import com.test.testmod.item.ModItems;
 import com.test.testmod.loot.ModLootModifiers;
+import com.test.testmod.sound.ModSounds;
 import com.test.testmod.villager.ModVillagers;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.FlowerPotBlock;
@@ -42,6 +44,8 @@ public class TestMod
         ModBlocks.register(modEventBus);
 
         ModCreativeModeTabs.register(modEventBus);
+
+        ModSounds.register(modEventBus);
 
         ModLootModifiers.register(modEventBus);
         ModVillagers.register(modEventBus);

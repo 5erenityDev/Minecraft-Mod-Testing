@@ -64,6 +64,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.IMPURE_PROMISE);
         simpleItem(ModItems.PURE_PROMISE);
 
+        simpleItem(ModItems.MUSIC_DISC_KANPAI);
+
         trimmedArmorItem(ModItems.PROMISE_HELMET);
         trimmedArmorItem(ModItems.PROMISE_CHESTPLATE);
         trimmedArmorItem(ModItems.PROMISE_LEGGINGS);

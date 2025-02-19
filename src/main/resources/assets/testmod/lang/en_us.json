@@ -46,6 +46,9 @@
   "item.testmod.slorp_leggings": "Slorp Leggings",
   "item.testmod.slorp_boots": "Slorp Boots",
 
+  "item.testmod.music_disc_kanpai": "Kanpai Funk Music Disk",
+  "item.testmod.music_disc_kanpai.desc": "Kanpai Funk - Akiko Wada",
+
 
 
   "block.testmod.garugamesh_stairs": "Garugamesh Stairs",
@@ -65,6 +68,8 @@
 
   "tooltip.testmod.grobbler": "Gives you the contents of your enderchest",
   "tooltip.testmod.tombler": "Do not click them, they despise you",
+
+  "sounds.testmod.giggle_laugh": "Giggle",
 
 
 

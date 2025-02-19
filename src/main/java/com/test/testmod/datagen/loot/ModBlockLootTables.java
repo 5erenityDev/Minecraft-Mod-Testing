@@ -53,6 +53,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.GARUGAMESH_PRESSURE_PLATE.get());
         this.dropSelf(ModBlocks.GARUGAMESH_STAIRS.get());
         this.dropSelf(ModBlocks.GARUGAMESH_TRAPDOOR.get());
+        this.dropSelf(ModBlocks.PROMISE_BLOCK.get());
 
 
         this.add(ModBlocks.GARUGAMESH_SLAB.get(),

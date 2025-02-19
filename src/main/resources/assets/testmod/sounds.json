@@ -1,0 +1,48 @@
+{
+  "giggle_laugh": {
+    "subtitle": "sounds.testmod.giggle_laugh",
+    "sounds" : [
+      "testmod:giggle_laugh"
+    ]
+  },
+
+  "promise_block_step": {
+    "subtitle": "sounds.testmod.promise_block_step",
+    "sounds" : [
+      "testmod:promise_block_step"
+    ]
+  },
+  "promise_block_break": {
+    "subtitle": "sounds.testmod.promise_block_break",
+    "sounds" : [
+      "testmod:promise_block_break"
+    ]
+  },
+  "promise_block_place": {
+    "subtitle": "sounds.testmod.promise_block_place",
+    "sounds" : [
+      "testmod:promise_block_place"
+    ]
+  },
+  "promise_block_fall": {
+    "subtitle": "sounds.testmod.promise_block_fall",
+    "sounds" : [
+      "testmod:promise_block_fall"
+    ]
+  },
+  "promise_block_hit": {
+    "subtitle": "sounds.testmod.promise_block_hit",
+    "sounds" : [
+      "testmod:promise_block_hit"
+    ]
+  },
+  "kanpai": {
+    "sounds": [
+      {
+        "name": "testmod:kanpai",
+        "stream": true
+      }
+    ]
+  }
+
+}
