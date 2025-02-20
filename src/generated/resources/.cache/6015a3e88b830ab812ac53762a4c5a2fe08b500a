@@ -1,4 +1,4 @@
-// 1.20.1	2025-02-11T02:33:19.3195938	Item Models: testmod
+// 1.20.1	2025-02-19T13:44:25.5493893	Item Models: testmod
 adb2ea84f25c9864828f71e7182f44fdb8de3d81 assets/testmod/models/item/angry_slorp.json
 44951230b880af5658570705e35c18d9127d3136 assets/testmod/models/item/chuckster_fruit.json
 9ff0dbd20421c41e3e5228b66ca1f2778e7f1ac6 assets/testmod/models/item/chuckster_seeds.json
@@ -12,6 +12,7 @@ fd3fb7bbb67788fec8675af7fd8c10e0ecef4284 assets/testmod/models/item/garugamesh_p
 33656496876ef02a315c90b19018cf6d3d865e3c assets/testmod/models/item/garugamesh_trapdoor.json
 4f956b5bea0e96e6f2cef0e25bb78527a43a5df8 assets/testmod/models/item/garugamesh_walls.json
 e9a7ae801b7532bb07631e2fd8459fed484da4f1 assets/testmod/models/item/giggle.json
+63ec6c618a3a23eab4cab9c52d7d3250de9b516e assets/testmod/models/item/giggler_spawn_egg.json
 7430bfbe55526b43779142774905856f0f1bcd84 assets/testmod/models/item/grobbler.json
 ee3854db8ece839bccfefc6e5403836832a01aa9 assets/testmod/models/item/impure_promise.json
 af80d2ea1812d21f2e2a98b3007bd50f3588e3f2 assets/testmod/models/item/mace.json

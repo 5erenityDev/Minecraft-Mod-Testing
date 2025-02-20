@@ -2,6 +2,7 @@ package com.test.testmod.item;
 
 import com.test.testmod.TestMod;
 import com.test.testmod.block.ModBlocks;
+import com.test.testmod.entity.ModEntities;
 import com.test.testmod.neighbor.item.custom.FuelItem;
 import com.test.testmod.neighbor.item.custom.GrobblerItem;
 import com.test.testmod.item.ModArmorItem;
@@ -13,6 +14,7 @@ import com.test.testmod.serenity.item.custom.TeleportStaffItem;
 import com.test.testmod.serenity.item.custom.*;
 import com.test.testmod.sound.ModSounds;
 import net.minecraft.world.item.*;
+import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -41,6 +43,10 @@ public class ModItems {
             ("angry_slorp", () -> new FuelItem(new Item.Properties(), 2000));
     public static final RegistryObject<Item> SLORPER = ITEMS.register
             ("slorper", () -> new SlorperItem(new Item.Properties().defaultDurability(400)));
+
+    public static final RegistryObject<Item> GIGGLER_SPAWN_EGG = ITEMS.register
+            ("giggler_spawn_egg", () -> new ForgeSpawnEggItem(ModEntities.GIGGLER,0xFEE12B, 0xEFFD5F,
+                    new Item.Properties()));
 
     public static final RegistryObject<Item> MUSIC_DISC_KANPAI = ITEMS.register
             ("music_disc_kanpai", () -> new RecordItem(6, ModSounds.KANPAI, new Item.Properties().stacksTo(1), 4420));

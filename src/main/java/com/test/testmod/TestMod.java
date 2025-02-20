@@ -2,12 +2,16 @@ package com.test.testmod;
 
 import com.mojang.logging.LogUtils;
 import com.test.testmod.block.ModBlocks;
+import com.test.testmod.entity.ModEntities;
+import com.test.testmod.entity.client.GigglerRenderer;
 import com.test.testmod.event.ModEvents;
 import com.test.testmod.item.ModCreativeModeTabs;
 import com.test.testmod.item.ModItems;
 import com.test.testmod.loot.ModLootModifiers;
 import com.test.testmod.sound.ModSounds;
 import com.test.testmod.villager.ModVillagers;
+import net.minecraft.client.renderer.entity.EntityRenderer;
+import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.FlowerPotBlock;
 import net.minecraftforge.api.distmarker.Dist;
@@ -49,6 +53,7 @@ public class TestMod
 
         ModLootModifiers.register(modEventBus);
         ModVillagers.register(modEventBus);
+        ModEntities.register(modEventBus);
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
@@ -82,12 +87,10 @@ public class TestMod
 
     // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
     @Mod.EventBusSubscriber(modid = MODID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
-    public static class ClientModEvents
-    {
+    public static class ClientModEvents {
         @SubscribeEvent
-        public static void onClientSetup(FMLClientSetupEvent event)
-        {
-
+        public static void onClientSetup(FMLClientSetupEvent event) {
+            EntityRenderers.register(ModEntities.GIGGLER.get(), GigglerRenderer::new);
         }
     }
 }

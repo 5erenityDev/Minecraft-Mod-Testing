@@ -2,15 +2,17 @@ package com.test.testmod.event;
 
 import com.test.testmod.TestMod;
 import com.test.testmod.block.ModBlocks;
+import com.test.testmod.entity.ModEntities;
+import com.test.testmod.entity.custom.GigglerEntity;
 import com.test.testmod.item.ModItems;
 import com.test.testmod.villager.ModVillagers;
 import it.unimi.dsi.fastutil.ints.Int2ObjectMap;
-import it.unimi.dsi.fastutil.ints.Int2ObjectMaps;
 import net.minecraft.world.entity.npc.VillagerProfession;
 import net.minecraft.world.entity.npc.VillagerTrades;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.trading.MerchantOffer;
+import net.minecraftforge.event.entity.EntityAttributeCreationEvent;
 import net.minecraftforge.event.village.VillagerTradesEvent;
 import net.minecraftforge.event.village.WandererTradesEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -20,6 +22,9 @@ import java.util.List;
 
 @Mod.EventBusSubscriber(modid = TestMod.MODID)
 public class ModEvents {
+
+
+
 
     @SubscribeEvent
     public static void addTrades(VillagerTradesEvent event) {

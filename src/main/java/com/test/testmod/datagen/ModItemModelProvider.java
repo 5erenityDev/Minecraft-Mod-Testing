@@ -84,6 +84,8 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         simpleBlockItemBlockTexture(ModBlocks.GIGGLE);
 
+        withExistingParent(ModItems.GIGGLER_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
+
 
 
         fenceInventory("garugamesh_fence", modLoc("block/garugamesh"));
