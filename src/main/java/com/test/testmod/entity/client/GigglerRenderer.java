@@ -24,7 +24,7 @@ public class GigglerRenderer extends GeoEntityRenderer<GigglerEntity> {
     public void render(GigglerEntity entity, float entityYaw, float partialTick, PoseStack poseStack, MultiBufferSource bufferSource, int packedLight) {
 
         if(entity.isBaby()) {
-            poseStack.scale(0.2f, 0.2f, 0.2f);
+            poseStack.scale(0.4f, 0.4f, 0.4f);
         }
 
         super.render(entity, entityYaw, partialTick, poseStack, bufferSource, packedLight);

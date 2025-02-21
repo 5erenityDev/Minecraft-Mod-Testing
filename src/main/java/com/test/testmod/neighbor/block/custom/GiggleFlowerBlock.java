@@ -25,10 +25,16 @@ public class GiggleFlowerBlock extends FlowerBlock {
 
     @Override
     public void randomTick(BlockState pState, ServerLevel pLevel, BlockPos pPos, RandomSource pRandom) {
-        if (pLevel.random.nextInt(10) == 1) {
+        if (pLevel.random.nextInt(300) == 1 && pLevel.isLoaded(pPos)) {
             pLevel.playSound((Player) null, pPos.getX(), pPos.getY(), pPos.getZ(), ModSounds.GIGGLE_LAUGH.get(),
-                    SoundSource.BLOCKS, 1f, 1f);
+                    SoundSource.BLOCKS, 0.2f, 1.2f);
         }
 
     }
+
+    @Override
+    public boolean isRandomlyTicking(BlockState pState) {
+        return true;
+    }
+
 }

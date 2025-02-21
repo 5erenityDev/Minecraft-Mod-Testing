@@ -17,7 +17,7 @@ public class ModEntities {
     public static final RegistryObject<EntityType<GigglerEntity>> GIGGLER =
             ENTITY_TYPES.register("giggler",
                     () -> EntityType.Builder.of(GigglerEntity::new, MobCategory.CREATURE)
-                            .sized(1f, 1f)
+                            .sized(0.5f, 0.5f)
                             .build("giggler"));
 
     public static void register(IEventBus eventbus) {
