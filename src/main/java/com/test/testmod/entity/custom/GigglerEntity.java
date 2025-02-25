@@ -17,16 +17,17 @@ import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.Level;
 import org.jetbrains.annotations.Nullable;
 import software.bernie.geckolib.animatable.GeoEntity;
+import software.bernie.geckolib.constant.DefaultAnimations;
 import software.bernie.geckolib.core.animatable.GeoAnimatable;
 import software.bernie.geckolib.core.animatable.instance.AnimatableInstanceCache;
 import software.bernie.geckolib.core.animatable.instance.SingletonAnimatableInstanceCache;
 import software.bernie.geckolib.core.animation.*;
 import software.bernie.geckolib.core.object.PlayState;
+import software.bernie.geckolib.util.GeckoLibUtil;
 
 public class GigglerEntity extends Animal implements GeoEntity {
 
-    private AnimatableInstanceCache cache = new SingletonAnimatableInstanceCache(this);
-
+    private final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
     private RawAnimation ATTACK = RawAnimation.begin().thenPlay("animation.giggler.attack");
 
     public GigglerEntity(EntityType<? extends Animal> pEntityType, Level pLevel) {
