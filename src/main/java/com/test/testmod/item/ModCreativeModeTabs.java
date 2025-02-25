@@ -43,6 +43,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.SLORP_SHOVEL.get());
                         output.accept(ModItems.SLORP_SWORD.get());
                         output.accept(ModItems.GIGGLER_SPAWN_EGG.get());
+                        output.accept(ModItems.NERVITE_SPAWN_EGG.get());
 
                         output.accept(ModItems.SLORP_HELMET.get());
                         output.accept(ModItems.SLORP_CHESTPLATE.get());

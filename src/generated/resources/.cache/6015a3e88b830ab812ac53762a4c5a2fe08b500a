@@ -1,4 +1,4 @@
-// 1.20.1	2025-02-19T13:44:25.5493893	Item Models: testmod
+// 1.20.1	2025-02-25T02:50:42.3440145	Item Models: testmod
 adb2ea84f25c9864828f71e7182f44fdb8de3d81 assets/testmod/models/item/angry_slorp.json
 44951230b880af5658570705e35c18d9127d3136 assets/testmod/models/item/chuckster_fruit.json
 9ff0dbd20421c41e3e5228b66ca1f2778e7f1ac6 assets/testmod/models/item/chuckster_seeds.json
@@ -19,6 +19,7 @@ af80d2ea1812d21f2e2a98b3007bd50f3588e3f2 assets/testmod/models/item/mace.json
 ab210a9411bbed55833b80d517350a5e47d12935 assets/testmod/models/item/mashedpotatosquash.json
 0de72103fd86ae7efa3173c12643a35d82bba3d8 assets/testmod/models/item/mashedpotatosquash_seeds.json
 14ab9a17395c7eb9efb1ce6670ffaa82cf378811 assets/testmod/models/item/music_disc_kanpai.json
+63ec6c618a3a23eab4cab9c52d7d3250de9b516e assets/testmod/models/item/nervite_spawn_egg.json
 82b9c0aec6354178c9da6bd5695a1584ca558c0d assets/testmod/models/item/permafrost.json
 3fcb1087cd39c5aeaa9480b0193c177f1bccb122 assets/testmod/models/item/permafrost_boots.json
 92c4ee8e478ed4969066786e0275288fbb6d8b40 assets/testmod/models/item/permafrost_boots_amethyst_trim.json

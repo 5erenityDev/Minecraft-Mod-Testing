@@ -2,6 +2,7 @@ package com.test.testmod.entity;
 
 import com.test.testmod.TestMod;
 import com.test.testmod.entity.custom.GigglerEntity;
+import com.test.testmod.entity.custom.NerviteEntity;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
@@ -19,6 +20,13 @@ public class ModEntities {
                     () -> EntityType.Builder.of(GigglerEntity::new, MobCategory.CREATURE)
                             .sized(0.5f, 0.5f)
                             .build("giggler"));
+
+    public static final RegistryObject<EntityType<NerviteEntity>> NERVITE =
+            ENTITY_TYPES.register("nervite",
+                    () -> EntityType.Builder.of(NerviteEntity::new, MobCategory.CREATURE)
+                            .sized(1f, 1f)
+                            .build("nervite"));
+
 
     public static void register(IEventBus eventbus) {
         ENTITY_TYPES.register(eventbus);

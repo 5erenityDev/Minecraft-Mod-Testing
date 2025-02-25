@@ -4,6 +4,8 @@ import com.mojang.logging.LogUtils;
 import com.test.testmod.block.ModBlocks;
 import com.test.testmod.entity.ModEntities;
 import com.test.testmod.entity.client.GigglerRenderer;
+import com.test.testmod.entity.client.NerviteRenderer;
+import com.test.testmod.entity.custom.NerviteEntity;
 import com.test.testmod.event.ModEvents;
 import com.test.testmod.item.ModCreativeModeTabs;
 import com.test.testmod.item.ModItems;
@@ -91,6 +93,7 @@ public class TestMod
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
             EntityRenderers.register(ModEntities.GIGGLER.get(), GigglerRenderer::new);
+            EntityRenderers.register(ModEntities.NERVITE.get(), NerviteRenderer::new);
         }
     }
 }

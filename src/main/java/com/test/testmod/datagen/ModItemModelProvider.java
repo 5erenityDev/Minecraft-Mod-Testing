@@ -85,6 +85,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleBlockItemBlockTexture(ModBlocks.GIGGLE);
 
         withExistingParent(ModItems.GIGGLER_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
+        withExistingParent(ModItems.NERVITE_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
 
 
 

@@ -48,6 +48,10 @@ public class ModItems {
             ("giggler_spawn_egg", () -> new ForgeSpawnEggItem(ModEntities.GIGGLER,0xFEE12B, 0xEFFD5F,
                     new Item.Properties()));
 
+    public static final RegistryObject<Item> NERVITE_SPAWN_EGG = ITEMS.register
+            ("nervite_spawn_egg", () -> new ForgeSpawnEggItem(ModEntities.NERVITE,0x787276, 0xD6CFC7,
+                    new Item.Properties()));
+
     public static final RegistryObject<Item> MUSIC_DISC_KANPAI = ITEMS.register
             ("music_disc_kanpai", () -> new RecordItem(6, ModSounds.KANPAI, new Item.Properties().stacksTo(1), 4420));
 
